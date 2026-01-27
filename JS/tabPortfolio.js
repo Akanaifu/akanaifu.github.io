@@ -103,7 +103,7 @@ function buildGroupedTbodyHtml(groups, headers) {
 	//   hearders[3] == valorisée
 	return groups
 		.map(({ categorie, rows }) => {
-			const catClass = "cat-" + slugify(categorie);
+			const catClass = `cat-${slugify(categorie)}`;
 			return rows
 				.map((row, idx) => {
 					const nomSlug = slugify(row.nom);

@@ -153,12 +153,12 @@ function displayActivity(activity) {
 	if (backLink) {
 		try {
 			backLink.href = new URL("../tabPortfolio.html", location.href).href;
-		} catch (e) {
+		} catch (_e) {
 			backLink.href = "../tabPortfolio.html";
 		}
 	}
 
-	if (activity.preuves.some((p) => p.lien && p.lien.includes("instagram.com"))) {
+	if (activity.preuves.some((p) => p.lien?.includes("instagram.com"))) {
 		loadInstagramEmbed();
 	}
 
@@ -205,13 +205,13 @@ function initImageZoom() {
 // initialize PDF print/open controls
 function initPdfControls() {
 	document.querySelectorAll(".btn-print").forEach((btn) => {
-		btn.addEventListener("click", async (e) => {
+		btn.addEventListener("click", async (_e) => {
 			const src = btn.dataset.src;
 			if (!src) return;
 
 			// Try to find corresponding iframe
 			const iframe = document.querySelector(`iframe.pdf-frame[src="${src}"]`);
-			if (iframe && iframe.contentWindow) {
+			if (iframe?.contentWindow) {
 				try {
 					// Some browsers require the iframe to be fully loaded
 					if (!iframe.dataset.loaded) {
