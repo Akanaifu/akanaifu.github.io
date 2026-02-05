@@ -43,13 +43,13 @@ function createHeader() {
 
 	// Use absolute pathname resolution for accurate active link detection
 	const currentPath = window.location.pathname.endsWith("/")
-		? window.location.pathname + "index.html"
+		? `${window.location.pathname}index.html`
 		: window.location.pathname;
 	nav.querySelectorAll("a").forEach((link) => {
 		const href = link.getAttribute("href");
 		if (!href) return;
 		const linkPath = new URL(href, window.location.href).pathname;
-		const normalizedLinkPath = linkPath.endsWith("/") ? linkPath + "index.html" : linkPath;
+		const normalizedLinkPath = linkPath.endsWith("/") ? `${linkPath}index.html` : linkPath;
 		if (normalizedLinkPath === currentPath) {
 			link.classList.add("active");
 		}
