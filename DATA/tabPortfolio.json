@@ -1,6 +1,6 @@
 [
 	{
-		"categorie": "Challenge",
+		"categorie": "Électronique digitale",
 		"nom": "Hackathon 2024",
 		"date": "25-27 Octobre 2024",
 		"heures_prestees": "44h",
@@ -18,7 +18,7 @@
 		]
 	},
 	{
-		"categorie": "Challenge",
+		"categorie": "Électronique digitale",
 		"nom": "Hackathon 2025",
 		"date": "24-26 Ocotbre 2025",
 		"heures_prestees": "44h",
@@ -40,7 +40,7 @@
 		]
 	},
 	{
-		"categorie": "Challenge",
+		"categorie": "Sécurité des réseaux",
 		"nom": "CSCB 2024",
 		"date": "8-9 Mars 2024",
 		"heures_prestees": "24h",
@@ -58,7 +58,7 @@
 		]
 	},
 	{
-		"categorie": "Challenge",
+		"categorie": "Sécurité des réseaux",
 		"nom": "CSCB 2025",
 		"date": "14-15 Mars 2025",
 		"heures_prestees": "24h",
@@ -86,8 +86,8 @@
 		]
 	},
 	{
-		"categorie": "Tutorat",
-		"nom": "Programmation",
+		"categorie": "Développement informatique",
+		"nom": "Tutorat programmation",
 		"date": "2024-2025",
 		"heures_prestees": "47h",
 		"heures_valorisees": "8h",
@@ -100,8 +100,8 @@
 		]
 	},
 	{
-		"categorie": "Tutorat",
-		"nom": "Math",
+		"categorie": "Mathématique",
+		"nom": "Tutorat math",
 		"date": "2025",
 		"heures_prestees": "2h",
 		"heures_valorisees": "2h",
@@ -114,7 +114,7 @@
 		]
 	},
 	{
-		"categorie": "LAN EPHEC",
+		"categorie": "Administration des réseaux",
 		"nom": "LAN EPHEC 2024",
 		"date": "27 Avril 2024",
 		"heures_prestees": "11h",
@@ -128,7 +128,7 @@
 		]
 	},
 	{
-		"categorie": "LAN EPHEC",
+		"categorie": "Administration des réseaux",
 		"nom": "LAN EPHEC 2025",
 		"date": "26 Avril 2025",
 		"heures_prestees": "11h",
@@ -254,7 +254,7 @@
 		]
 	},
 	{
-		"categorie": "Challenge",
+		"categorie": "Sécurité des réseaux",
 		"nom": "CSCB 2026",
 		"date": "Mars 2026",
 		"heures_prestees": "24h",
@@ -268,7 +268,7 @@
 		]
 	},
 	{
-		"categorie": "Conférence",
+		"categorie": "Administration des réseaux",
 		"nom": "Cloud avec M365 et Azure Infrastructure",
 		"date": "3 Novembre 2025",
 		"heures_prestees": "2h",
@@ -282,7 +282,7 @@
 		]
 	},
 	{
-		"categorie": "Dev web",
+		"categorie": "Développement informatique",
 		"nom": "Easter egg IT 2025",
 		"date": "2 décembre 2025",
 		"heures_prestees": "5.5h",
