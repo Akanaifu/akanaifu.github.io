@@ -148,7 +148,7 @@ body {
 		content: attr(data-label);
 		font-weight: 600;
 		text-transform: capitalize;
-		color: #000000;
+		color: #1a1a1a;
 		text-align: left;
 		flex-shrink: 0;
 		margin-right: 12px;
