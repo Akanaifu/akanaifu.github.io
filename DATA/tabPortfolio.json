@@ -72,7 +72,7 @@
 		]
 	},
 	{
-		"categorie": "Conférence",
+		"categorie": "Atelier réparation",
 		"nom": "Let's fix it",
 		"date": "18 Mars 2024",
 		"heures_prestees": "2.5h",
@@ -272,7 +272,7 @@
 		"nom": "Cloud avec M365 et Azure Infrastructure",
 		"date": "3 Novembre 2025",
 		"heures_prestees": "2h",
-		"heures_valorisees": "2h",
+		"heures_valorisees": "0h",
 		"description": "Conférence sur l'utilisation d'outils microsoft",
 		"preuves": [
 			{
@@ -286,7 +286,7 @@
 		"nom": "Easter egg IT 2025",
 		"date": "2 décembre 2025",
 		"heures_prestees": "5.5h",
-		"heures_valorisees": "5.5h",
+		"heures_valorisees": "2h",
 		"description": "amélioration site web easter egg (ajout backend)",
 		"preuves": [
 			{
@@ -298,5 +298,14 @@
 				"legende": "appel discord avec Pierre-Alexandre Hausman"
 			}
 		]
+	},
+	{
+		"categorie": "Softskills",
+		"nom": "Rock (danse)",
+		"date": "20252026-",
+		"heures_prestees": "8h",
+		"heures_valorisees": "0h",
+		"description": "Danse le rock à l'évèmenent Rock Fever organisé à Sainte-Barbe",
+		"preuves": []
 	}
 ]
