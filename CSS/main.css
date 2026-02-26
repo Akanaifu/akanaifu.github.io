@@ -138,6 +138,23 @@ li {
 	margin-bottom: 8px;
 }
 
+.github-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.github-preuve {
+	display: flex;
+	justify-content: center;
+}
+
+.github-icon {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
 	body {
 		padding: 8px;

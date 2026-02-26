@@ -64,6 +64,25 @@ body {
 	margin-bottom: 32px;
 }
 
+.description-text {
+	margin: 0;
+	padding: 18px 20px;
+	background: rgba(0, 255, 255, 0.05);
+	border: 1px solid #00ffff;
+	border-left: 4px solid #00ffff;
+	border-radius: 8px;
+	line-height: 1.8;
+	letter-spacing: 0.2px;
+	text-wrap: pretty;
+	box-shadow: 0 0 14px rgba(0, 255, 255, 0.14);
+}
+
+.description-text::first-letter {
+	font-size: 1.4em;
+	font-weight: 700;
+	color: #66ffff;
+}
+
 .description h2,
 .preuves h2 {
 	color: #00ffff;
@@ -91,7 +110,7 @@ body {
 	padding: 12px;
 	background: transparent;
 	border-radius: 4px;
-	border: 1px solid #333;
+	border: 1px solid #00ffff;
 }
 
 .preuve-item a {
@@ -107,6 +126,23 @@ body {
 	text-shadow:
 		0 0 20px rgba(0, 255, 255, 1),
 		0 0 35px rgba(0, 255, 255, 0.8);
+}
+
+.github-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.github-preuve {
+	display: flex;
+	justify-content: center;
+}
+
+.github-icon {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
 }
 
 .image-preuve {
