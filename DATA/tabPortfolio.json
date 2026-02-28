@@ -5,7 +5,7 @@
 		"date": "25-27 Octobre 2024",
 		"heures_prestees": "44h",
 		"heures_valorisees": "10h",
-		"description": "Participation au hackathon annuel de l'EPHEC 2024. Remise à niveau d'un baby foot pour pouvoir compter le score automatiquement grâce à des capteurs dans les goals.",
+		"description": "Participation au hackathon annuel de l'EPHEC 2024. Remise à niveau d'un baby foot pour pouvoir compter le score automatiquement grâce à des capteurs dans les goals. Je n'ai pas fait le hackathon de l'année précédente car je trouvais que je n'avais pas les skills nécessaire à faire un projet à hauteur d'un hackathon. En 2e, j'avais déjà plus les outils, ce qui m'a permis de bien travailler sur le projet ainsi que d'aider les autres membres de mon groupe. Je me dis que j'aurais quand même pu participer à l'édition 2023 malgré mon manque de connaissance car ça permet d'avoir un aperçu de à quoi je vais être formé et déjà un peu à apprendre",
 		"preuves": [
 			{
 				"lien": "https://github.com/Nini1551/Hackaton2024",
@@ -23,7 +23,7 @@
 		"date": "24-26 Ocotbre 2025",
 		"heures_prestees": "44h",
 		"heures_valorisees": "10h",
-		"description": "Participation au hackathon annuel de l'EPHEC 2025. A partir d'un petit piano mécanique trouvé dans une brocante, nous avons rajouté une partie électronique afin de le transformer en piano 'fantôme'.",
+		"description": "Participation au hackathon annuel de l'EPHEC 2025. A partir d'un petit piano mécanique trouvé dans une brocante, nous avons rajouté une partie électronique afin de le transformer en piano 'fantôme'. Lors de cette édition, j'ai remarqué l'écart avec l'année précédente. Pour l'édition 2024, je savais faire ce qu'on me demandait mais je n'avais pas une bonne vision des différentes tâches à faire et l'ordre des étapes pour y arriver. Grâce aux différents projets et cours de bac 2 et du début de bac 3, avec mon groupe, nous avons pu bien décomposer le projet et se répartir les tâches.",
 		"preuves": [
 			{
 				"lien": "https://github.com/Akanaifu/RizzBee",
@@ -162,8 +162,12 @@
 				"legende": "Post Instagram de l'équipe"
 			},
 			{
-				"lien": "https://www.facebook.com/photo.php?fbid=1085725463345007&set=a.208713874379508&type=3",
+				"lien": "https://www.facebook.com/aseusinfo/posts/pfbid0Ht2cfUxBTgEVBjbhxBgupjo4dhsCBCRDcqhCMfARHqn9GHs3aRqU8RNExpLdYXHil?fb_width=500&fb_height=700",
 				"legende": "Tournoi ASEUS indoor 2024"
+			},
+			{
+				"lien": "https://www.facebook.com/aseusinfo/posts/pfbid0r4KVydygXRiiTgAqTDeNE3UTviPVeMRikeTiy7KzhRHNqU2NKWESP5EehaegKTR6l?fb_width=500&fb_height=800",
+				"legende": "Tournoi ASEUS indoor 2025"
 			}
 		]
 	},
