@@ -44,7 +44,7 @@
 		"nom": "CSCB 2024",
 		"date": "8-9 Mars 2024",
 		"heures_prestees": "24h",
-		"heures_valorisees": "5h",
+		"heures_valorisees": "0h",
 		"description": "Compétition de cybersécurité nationale 2024.",
 		"preuves": [
 			{
@@ -261,13 +261,13 @@
 		"categorie": "Sécurité des réseaux",
 		"nom": "CSCB 2026",
 		"date": "Mars 2026",
-		"heures_prestees": "24h",
-		"heures_valorisees": "0h",
-		"description": "Compétition de cybersécurité nationale 2026. Pas encore participé.",
+		"heures_prestees": "36h",
+		"heures_valorisees": "5h",
+		"description": "Compétition de cybersécurité nationale 2026.",
 		"preuves": [
 			{
-				"lien": "",
-				"legende": "Badge de participation CSCB 2026"
+				"lien": "cscb2026.png",
+				"legende": "Classement CSCB 2026"
 			}
 		]
 	},
