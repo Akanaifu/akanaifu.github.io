@@ -21,7 +21,6 @@ function createHeader() {
       </button>
       <nav class="header-nav">
         <a href="${relativePath}projets.html">Projets</a>
-        <a href="${relativePath}cv.html">CV</a>
         <a href="${relativePath}tabPortfolio.html">Portfolio</a>
       </nav>
     </div>

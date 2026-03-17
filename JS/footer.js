@@ -18,9 +18,7 @@ function createFooter() {
       <nav class="footer-links">
         <a href="${relativePath}index.html">Accueil</a>
         <a href="${relativePath}projets.html">Projets</a>
-        <a href="${relativePath}cv.html">CV</a>
         <a href="${relativePath}tabPortfolio.html">Portfolio</a>
-        <a href="${relativePath}about.html">A propos</a>
       </nav>
       <div class="footer-right">
         <div class="footer-socials">

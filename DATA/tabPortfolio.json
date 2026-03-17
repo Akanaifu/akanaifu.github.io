@@ -304,6 +304,15 @@
 		]
 	},
 	{
+		"categorie": "Développement informatique",
+		"nom": "Portfolio",
+		"date": "2025-2026",
+		"heures_prestees": "",
+		"heures_valorisees": "",
+		"description": "création de ce portfolio",
+		"preuves": []
+	},
+	{
 		"categorie": "Softskills",
 		"nom": "Rock (danse)",
 		"date": "20252026-",
