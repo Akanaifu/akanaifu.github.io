@@ -11,22 +11,15 @@ function createFooter() {
   footer.className = "site-footer";
   footer.innerHTML = `
     <div class="footer-inner">
-<<<<<<< HEAD
-      <div class="footer-brand">Nathan Lemaire</div>
-=======
       <div class="footer-left">
         <div class="footer-brand">Nathan Lemaire</div>
         <div class="footer-subtitle">Étudiant à l'EPHEC</div>
       </div>
->>>>>>> 9cf82d2b0e5cc84d0f5a89ecbd9ef1b260eeb673
       <nav class="footer-links">
         <a href="${relativePath}index.html">Accueil</a>
         <a href="${relativePath}projets.html">Projets</a>
         <a href="${relativePath}tabPortfolio.html">Portfolio</a>
       </nav>
-<<<<<<< HEAD
-      <div class="footer-meta">(c) <span id="footer-year"></span> Nathan Lemaire</div>
-=======
       <div class="footer-right">
         <div class="footer-socials">
           <a href="https://github.com/akanaifu" target="_blank" rel="noopener noreferrer" title="GitHub">
@@ -42,7 +35,6 @@ function createFooter() {
         <div class="footer-meta">&copy; <span id="footer-year"></span> Nathan Lemaire</div>
         <a class="footer-source" href="https://github.com/akanaifu/akanaifu.github.io" target="_blank" rel="noopener noreferrer">Code source</a>
       </div>
->>>>>>> 9cf82d2b0e5cc84d0f5a89ecbd9ef1b260eeb673
     </div>
   `;
 
