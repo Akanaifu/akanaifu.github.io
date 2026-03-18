@@ -62,22 +62,20 @@ function slugify(str) {
     .replace(/^-+|-+$/g, ""); // supprime tirets en bordure
 }
 
-function generatePastelColors(categories) {
-  const count = categories.length;
+function generateThemeColors(categories) {
   const colors = {};
+  const huePalette = [188, 198, 210, 224, 242, 268, 300];
 
   categories.forEach((category, index) => {
-    const hue = (index * 360) / count;
-    const saturation = 50 + (index % 3) * 5; // Varie entre 50-60%
-    const lightness = 88 + (index % 2) * 2; // Varie entre 88-90%
+    const hue = huePalette[index % huePalette.length];
+    const alpha = 0.16 + (index % 3) * 0.02;
 
-    const background = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-
-    // Couleur de texte: même teinte mais beaucoup plus sombre
-    const textLightness = 25 + (index % 3) * 5; // Varie entre 25-35%
-    const text = `hsl(${hue}, ${saturation + 10}%, ${textLightness}%)`;
-
-    colors[category] = { background, text };
+    colors[category] = {
+      rowBackground: `linear-gradient(135deg, rgba(18, 24, 34, 0.88), hsla(${hue}, 78%, 52%, ${alpha}))`,
+      rowText: `hsl(${hue}, 85%, 88%)`,
+      categoryText: `hsl(${hue}, 95%, 82%)`,
+      border: `hsla(${hue}, 85%, 62%, 0.45)`,
+    };
   });
 
   return colors;
@@ -101,12 +99,18 @@ function injectCategoryStyles(categoryColors) {
 
     cssRules += `
       #table tr.cat-${className} {
-        background: ${couleurs.background};
+        background: ${couleurs.rowBackground};
       }
-      #table tr.cat-${className} td,
-      #table tr.cat-${className} td.category-label,
+      #table tr.cat-${className} td {
+        color: ${couleurs.rowText};
+        border-bottom-color: rgba(120, 170, 190, 0.25);
+      }
+      #table tr.cat-${className} td.category-label {
+        color: ${couleurs.categoryText};
+        border-left: 3px solid ${couleurs.border};
+      }
       #table tr.cat-${className} a.activity-link {
-        color: ${couleurs.text};
+        color: ${couleurs.rowText};
       }
     `;
   }
@@ -204,7 +208,7 @@ async function createTab(idTab, file) {
     }
 
     const categories = [...new Set(data.map((a) => a.categorie))];
-    const categoryColors = generatePastelColors(categories);
+    const categoryColors = generateThemeColors(categories);
     injectCategoryStyles(categoryColors);
 
     const table = document.getElementById(idTab);
