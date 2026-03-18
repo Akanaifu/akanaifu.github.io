@@ -1,115 +1,120 @@
 {
-  "hero": {
-    "title": "Bienvenue sur mon Portfolio",
-    "subtitle": "Développeur passionné par la programmation, l'électronique et les défis technologiques"
-  },
-  "sections": [
-    {
-      "type": "about",
-      "className": "content-section about",
-      "title": "Qui suis-je",
-      "paragraphs": [
-        "Je suis un passionné de technologie et de création. Curieux par nature, j'aime explorer des domaines variés allant de la <strong>programmation</strong> à l'<strong>électronique</strong>.",
-        "Au-delà du code, je suis également fasciné par l'univers des animés et j'aime me détendre en pratiquant du sport ou en jouant à l'un ou l'autre jeu vidéo. Pour moi, l'important est de rester en apprentissage continu et de diversifier ces centres d'intérêts."
-      ]
-    },
-    {
-      "type": "timeline",
-      "className": "content-section timeline",
-      "title": "Mon Parcours",
-      "items": [
-        {
-          "title": "Parcours à l'Ephec",
-          "entries": [
-            {
-              "badge": "Secteur",
-              "text": "En cours de Bac 3 en Technologie de l'informatique."
-            },
-            {
-              "badge": "Stage",
-              "text": "Actuellement en stage à l'Ephec en électronique. Je m'occupe de la gestion de différentes machine de prototypages (imprimante 3D, découpeuse laser, CNC)."
-            }
-          ]
-        },
-        {
-          "title": "Parcours avant l'Ephec",
-          "entries": [
-            {
-              "badge": "Secondaire",
-              "text": "Science et Mathématiques avancées"
-            },
-            {
-              "badge": "Prépa",
-              "text": "2 années de classe préparatoire en ingénierie civile"
-            },
-            {
-              "badge": "Bac 1 + Année bisseur",
-              "text": "Consolidation des fondamentaux en génie civil"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "cards",
-      "className": "content-section skills",
-      "title": "Domaines d'Expertise",
-      "cards": [
-        {
-          "title": "Programmation",
-          "description": "Développement web, backend et scripting en plusieurs langages"
-        },
-        {
-          "title": "Électronique",
-          "description": "Conception de circuits et projets embarqués"
-        }
-      ]
-    },
-    {
-      "type": "cards",
-      "className": "content-section skills",
-      "title": "Compétences",
-      "cards": [
-        {
-          "title": "Développement Web",
-          "description": "HTML5, CSS3, JavaScript, responsive design, ..."
-        },
-        {
-          "title": "Programmation",
-          "description": "Algorithmes, résolution de problèmes, architecture logique"
-        },
-        {
-          "title": "Outils & Versioning",
-          "description": "Git, GitHub, organisation de projet et suivi des versions"
-        },
-        {
-          "title": "Électronique",
-          "description": "Prototypage, fabrication numérique, gestion de machines de labo"
-        },
-        {
-          "title": "Soft Skills",
-          "description": "Travail en équipe, autonomie, communication, apprentissage continu"
-        },
-        {
-          "title": "Gestion de Projet",
-          "description": "Participation à des hackathons, coordination et livrables techniques"
-        }
-      ]
-    },
-    {
-      "type": "cards",
-      "className": "content-section skills",
-      "title": "Hobby",
-      "cards": [
-        {
-          "title": "Jeux Vidéo",
-          "description": "Super Smash Bros, Xenoblade Chronicles, Pokémon, The Legend of Zelda, R.E.P.O, Céleste, Bravely Default, Octopath Traveler, Clash of Clans, Hearstone Battleground"
-        },
-        {
-          "title": "Sport",
-          "description": "Vélo, Ultimate Frisbee, Gymnastique, Judo"
-        }
-      ]
-    }
-  ]
+	"hero": {
+		"title": "Bienvenue sur mon Portfolio",
+		"subtitle": "Développeur passionné par la programmation, l'électronique et les défis technologiques"
+	},
+	"sections": [
+		{
+			"type": "about",
+			"className": "content-section about",
+			"title": "Qui suis-je",
+			"paragraphs": [
+				"Je suis un passionné de technologie et de création. Curieux par nature, j'aime explorer des domaines variés allant de la <strong>programmation</strong> à l'<strong>électronique</strong>.",
+				"Au-delà du code, je suis également fasciné par l'univers des animés et j'aime me détendre en pratiquant du sport ou en jouant à l'un ou l'autre jeu vidéo. Pour moi, l'important est de rester en apprentissage continu et de diversifier ces centres d'intérêts."
+			]
+		},
+		{
+			"type": "timeline",
+			"className": "content-section timeline",
+			"title": "Mon Parcours",
+			"items": [
+				{
+					"title": "Ephec",
+					"entries": [
+						{
+							"badge": "Secteur",
+							"text": "En cours de Bac 3 en Technologie de l'informatique."
+						},
+						{
+							"badge": "Stage",
+							"text": "Actuellement en stage à l'Ephec en électronique. Je m'occupe de la gestion de différentes machine de prototypages (imprimante 3D, découpeuse laser, CNC)."
+						}
+					]
+				},
+				{
+					"title": "UCLouvain - Ingénieur civil",
+					"entries": [
+						{
+							"badge": "Bac 1 + Année bisseur",
+							"text": "Consolidation des fondamentaux en génie civil"
+						}
+					]
+				},
+				{
+					"title": "Secondaire - Saint Boniface Parnasse",
+					"entries": [
+						{
+							"badge": "Secondaire",
+							"text": "Science et Mathématiques avancées"
+						},
+						{
+							"badge": "Prépa",
+							"text": "1 an de prépa math pour l'examen d'entré d'ingénieur civil lors de ma rétho"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "cards",
+			"className": "content-section skills",
+			"title": "Domaines d'Expertise",
+			"cards": [
+				{
+					"title": "Programmation",
+					"description": "Développement web, backend et scripting en plusieurs langages"
+				},
+				{
+					"title": "Électronique",
+					"description": "Conception de circuits et projets embarqués"
+				}
+			]
+		},
+		{
+			"type": "cards",
+			"className": "content-section skills",
+			"title": "Compétences",
+			"cards": [
+				{
+					"title": "Développement Web",
+					"description": "HTML5, CSS3, JavaScript, responsive design, ..."
+				},
+				{
+					"title": "Programmation",
+					"description": "Algorithmes, résolution de problèmes, architecture logique"
+				},
+				{
+					"title": "Outils & Versioning",
+					"description": "Git, GitHub, organisation de projet et suivi des versions"
+				},
+				{
+					"title": "Électronique",
+					"description": "Prototypage, fabrication numérique, gestion de machines de labo"
+				},
+				{
+					"title": "Soft Skills",
+					"description": "Travail en équipe, autonomie, communication, apprentissage continu"
+				},
+				{
+					"title": "Gestion de Projet",
+					"description": "Participation à des hackathons, coordination et livrables techniques"
+				}
+			]
+		},
+		{
+			"type": "cards",
+			"className": "content-section skills",
+			"title": "Hobby",
+			"cards": [
+				{
+					"title": "Jeux Vidéo",
+					"description": "Super Smash Bros, Xenoblade Chronicles, Pokémon, The Legend of Zelda, R.E.P.O, Céleste, Bravely Default, Octopath Traveler, Clash of Clans, Hearstone Battleground"
+				},
+				{
+					"title": "Sport",
+					"description": "Vélo, Ultimate Frisbee, Gymnastique, Judo"
+				}
+			]
+		}
+	]
 }
