@@ -23,6 +23,26 @@ header {
 	gap: 16px;
 }
 
+.header-profile-link {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 50%;
+	line-height: 0;
+	transition: transform 0.3s ease;
+}
+
+.header-profile-link:hover {
+	transform: translateY(-1px) scale(1.03);
+}
+
+.header-profile-link:focus-visible {
+	outline: 2px solid #66ffff;
+	outline-offset: 3px;
+}
+
 .header-profile-img {
 	width: 48px;
 	height: 48px;

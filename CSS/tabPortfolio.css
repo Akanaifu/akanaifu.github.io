@@ -1,5 +1,11 @@
 /* Styles spécifiques au tableau - les styles de base sont dans main.css */
 
+.table-container {
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
 #table {
 	width: 100%;
 	max-width: 1200px;
@@ -45,6 +51,7 @@
 	font-weight: 500;
 	transition: all 0.3s ease;
 	color: inherit;
+	text-underline-offset: 3px;
 }
 
 #table a.activity-link:hover {
@@ -82,6 +89,10 @@
 }
 
 @media (max-width: 768px) {
+	.table-container {
+		padding: 0 4px;
+	}
+
 	#table {
 		margin: 16px auto;
 	}
@@ -95,6 +106,10 @@
 
 /* Responsive pour mobile - Mode carte */
 @media (max-width: 640px) {
+	.table-container {
+		overflow: visible;
+	}
+
 	#table {
 		box-shadow: none;
 		background: transparent;
@@ -114,22 +129,36 @@
 
 	#table tr {
 		margin-bottom: 16px;
-		border-radius: 6px;
-		box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+		padding: 10px 0;
+		border-radius: 10px;
+		box-shadow:
+			0 0 22px rgba(0, 255, 255, 0.22),
+			0 6px 16px rgba(0, 0, 0, 0.35);
 		overflow: hidden;
-		background: #1a1a1a;
+		background: linear-gradient(135deg, rgba(26, 26, 26, 0.92), rgba(26, 10, 46, 0.84));
 		border: none;
 	}
 
+	#table tr[class*="cat-"] {
+		background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(14, 26, 31, 0.9));
+	}
+
+	#table tr[class*="cat-"] td,
+	#table tr[class*="cat-"] a.activity-link {
+		color: #d9ffff;
+	}
+
 	#table td {
-		padding: 8px 16px;
-		text-align: right;
+		padding: 10px 14px;
+		text-align: left;
 		position: relative;
 		border-bottom: 1px solid #333;
-		min-height: 32px;
+		min-height: 40px;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-start;
+		gap: 10px;
+		word-break: break-word;
 	}
 
 	#table td:last-child {
@@ -140,18 +169,23 @@
 		content: attr(data-label);
 		font-weight: 600;
 		text-transform: capitalize;
-		color: #1a1a1a;
+		color: #8ffbff;
 		text-align: left;
+		min-width: 46%;
 		flex-shrink: 0;
-		margin-right: 12px;
+		margin-right: 2px;
 	}
 
 	#table td.category-label {
 		text-align: center;
-		font-size: 1.1rem;
+		font-size: 1rem;
+		font-weight: 800;
 		padding: 12px;
 		border-bottom: 2px solid #00ffff;
 		display: block;
+		color: #00ffff;
+		background: linear-gradient(90deg, rgba(0, 255, 255, 0.16), rgba(255, 0, 255, 0.12));
+		letter-spacing: 0.3px;
 	}
 
 	#table td.category-label::before {
@@ -171,28 +205,68 @@
 
 	#table tr.total-row td::before {
 		color: #00ffff;
+		min-width: 46%;
+	}
+
+	#table a.activity-link {
+		display: inline-flex;
+		width: 100%;
+		min-height: 34px;
+		align-items: center;
+		font-weight: 700;
+		line-height: 1.35;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+	}
+
+	#table td[data-label="Nom"] {
+		align-items: flex-start;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	#table tr.total-row {
+		background: linear-gradient(135deg, rgba(0, 31, 41, 0.9), rgba(39, 8, 50, 0.9));
+	}
+
+	#table tr.total-row td {
+		font-weight: 800;
 	}
 }
 
 /* Très petits écrans */
 @media (max-width: 480px) {
+	main {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
 	#table tr {
 		margin-bottom: 12px;
 	}
 
 	#table td {
-		padding: 6px 12px;
-		font-size: 0.8rem;
-		min-height: 28px;
+		padding: 8px 12px;
+		font-size: 0.82rem;
+		min-height: 36px;
 	}
 
 	#table td::before {
 		font-size: 0.75rem;
-		margin-right: 8px;
+		min-width: 44%;
+		margin-right: 2px;
 	}
 
 	#table td.category-label {
 		padding: 10px;
 		font-size: 1rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#table a.activity-link,
+	#table tr,
+	#table td {
+		transition: none;
 	}
 }

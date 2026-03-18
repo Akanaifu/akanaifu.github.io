@@ -101,12 +101,12 @@ function injectCategoryStyles(categoryColors) {
 
     cssRules += `
       #table tr.cat-${className} {
-        background: ${couleurs.background} !important;
+        background: ${couleurs.background};
       }
       #table tr.cat-${className} td,
       #table tr.cat-${className} td.category-label,
       #table tr.cat-${className} a.activity-link {
-        color: ${couleurs.text} !important;
+        color: ${couleurs.text};
       }
     `;
   }
