@@ -1,3 +1,9 @@
+function redirectToProfileEasterEgg() {
+  const urlParts = ["https://www.", "youtube.com/watch?v=", "dQw4w9WgXcQ"];
+  const targetUrl = urlParts.join("");
+  window.open(targetUrl, "_blank", "noopener,noreferrer");
+}
+
 function createHeader() {
   const pathname = window.location.pathname;
   const segments = pathname.split("/").filter(Boolean);
@@ -11,9 +17,9 @@ function createHeader() {
   header.innerHTML = `
     <div class="header-container">
       <div class="header-left">
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="header-profile-link" aria-label="Ouvrir le lien profil">
         <img src="${relativePath}IMG/photo_profil/Nathan1.jpg" alt="Nathan Lemaire" class="header-profile-img" />
-      </a>
+      </button>
       <a href="${relativePath}index.html" class="header-logo">Nathan Lemaire</a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu">
@@ -30,6 +36,11 @@ function createHeader() {
 
   const menuToggle = header.querySelector(".menu-toggle");
   const nav = header.querySelector(".header-nav");
+  const profileLink = header.querySelector(".header-profile-link");
+
+  if (profileLink) {
+    profileLink.addEventListener("click", redirectToProfileEasterEgg);
+  }
 
   menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
