@@ -315,10 +315,32 @@
 	{
 		"categorie": "Softskills",
 		"nom": "Rock (danse)",
-		"date": "20252026-",
+		"date": "2025-2026",
 		"heures_prestees": "8h",
 		"heures_valorisees": "0h",
 		"description": "Danse le rock à l'évèmenent Rock Fever organisé à Sainte-Barbe",
 		"preuves": []
+	},
+	{
+		"categorie": "Networking",
+		"nom": "Digital Talent Night",
+		"date": "17/03/2026",
+		"heures_prestees": "5h",
+		"heures_valorisees": "5h",
+		"description": "Soirée de networking avec des entreprises pour trouver un futur traavail",
+		"preuves": [
+			{
+				"lien": "talentNight1.jpg",
+				"legende": "début de l'event"
+			},
+			{
+				"lien": "talentNight2.jpg",
+				"legende": "suite de l'apéro de l'event"
+			},
+			{
+				"lien": "talentNight3.jpg",
+				"legende": "fin de l'event"
+			}
+		]
 	}
 ]
