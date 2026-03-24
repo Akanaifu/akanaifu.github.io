@@ -525,11 +525,24 @@ li {
 	.card {
 		padding: 16px;
 	}
+
+	.timeline-content p {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+	}
+
+	.timeline-content .badge {
+		align-self: flex-start;
+	}
 }
 
 @media (max-width: 480px) {
 	body {
-		padding: 4px;
+		padding-top: calc(4px + env(safe-area-inset-top, 0px));
+		padding-right: calc(4px + env(safe-area-inset-right, 0px));
+		padding-bottom: calc(4px + env(safe-area-inset-bottom, 0px));
+		padding-left: calc(4px + env(safe-area-inset-left, 0px));
 	}
 
 	main {
@@ -563,5 +576,40 @@ li {
 
 	.content-section {
 		padding: 16px 12px;
+	}
+
+	.timeline-item {
+		margin-left: 24px;
+		padding: 16px 14px;
+	}
+
+	.timeline-item::before {
+		left: -34px;
+		top: 18px;
+		width: 16px;
+		height: 16px;
+	}
+
+	.timeline-content p {
+		gap: 6px;
+	}
+
+	.timeline-content .badge {
+		max-width: 100%;
+		white-space: normal;
+		word-break: break-word;
+		line-height: 1.2;
+		padding: 6px 10px;
+	}
+
+	.timeline-item:hover {
+		transform: none;
+	}
+
+	.timeline-item:hover::before {
+		left: -34px;
+		top: 18px;
+		width: 16px;
+		height: 16px;
 	}
 }
