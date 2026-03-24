@@ -107,7 +107,7 @@ function injectCategoryStyles(categoryColors) {
       }
       #table tr.cat-${className} td.category-label {
         color: ${couleurs.categoryText};
-        border-left: 3px solid ${couleurs.border};
+        border-left: 2px solid ${couleurs.border};
       }
       #table tr.cat-${className} a.activity-link {
         color: ${couleurs.rowText};
