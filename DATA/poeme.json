@@ -1,0 +1,22 @@
+{
+	"auth": {
+		"title": "Page Poème protegée",
+		"message": "Cette page est verrouillée temporairement. Entre le mot de passe pour continuer.",
+		"button": "Debloquer",
+		"placeholder": "Mot de passe"
+	},
+	"poeme": {
+		"title": "Poème",
+		"lines": [
+			"\"La lune est belle n'est-ce pas ?\"",
+			"Comme le lys blanc que je veux t'offrir,",
+			"Peur et inquiétude me font souffrir,",
+			"Tristesse ou allégresse m'attendra.",
+			"",
+			"Par ces mots, vint la fin,",
+			"Un déclin arrivant bien trop tard, ",
+			"En attendant le prochain,",
+			"Profitons de ce nectar."
+		]
+	}
+}
