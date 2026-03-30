@@ -1,0 +1,352 @@
+main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 24px 16px 56px;
+}
+
+.poeme-auth,
+.poeme-content {
+	max-width: 560px;
+	margin: 28px auto;
+	padding: 24px;
+	border: 1px solid rgba(0, 255, 255, 0.42);
+	border-radius: 12px;
+	background: linear-gradient(145deg, rgba(26, 26, 26, 0.92), rgba(26, 10, 46, 0.78));
+	box-shadow:
+		0 0 28px rgba(0, 255, 255, 0.2),
+		0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.poeme-content {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	border-color: rgba(160, 210, 255, 0.5);
+	background:
+		radial-gradient(circle at 18% 18%, rgba(170, 220, 255, 0.16) 0%, rgba(170, 220, 255, 0) 34%),
+		radial-gradient(circle at 82% 24%, rgba(135, 180, 255, 0.12) 0%, rgba(135, 180, 255, 0) 30%),
+		radial-gradient(circle at 50% 115%, rgba(255, 160, 185, 0.1) 0%, rgba(255, 160, 185, 0) 40%),
+		linear-gradient(160deg, rgba(10, 18, 36, 0.94), rgba(19, 14, 36, 0.88));
+	box-shadow:
+		0 0 24px rgba(130, 195, 255, 0.22),
+		0 12px 28px rgba(0, 0, 0, 0.42);
+}
+
+.poeme-content::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background-image:
+		radial-gradient(circle at 12% 22%, rgba(235, 246, 255, 0.8) 0 1px, transparent 2px),
+		radial-gradient(circle at 70% 16%, rgba(220, 240, 255, 0.65) 0 1px, transparent 2px),
+		radial-gradient(circle at 84% 70%, rgba(230, 242, 255, 0.6) 0 1px, transparent 2px),
+		radial-gradient(circle at 26% 78%, rgba(255, 226, 235, 0.55) 0 1px, transparent 2px);
+	opacity: 0.55;
+}
+
+.poeme-decor {
+	position: absolute;
+	pointer-events: none;
+	user-select: none;
+	z-index: 0;
+	filter: drop-shadow(0 0 12px rgba(174, 214, 255, 0.28));
+}
+
+.poeme-moon {
+	top: 14px;
+	right: 14px;
+	width: 96px;
+	height: auto;
+	opacity: 0.44;
+	transform-origin: 60% 40%;
+	animation:
+		decorFadeIn 900ms ease-out 120ms both,
+		moonDrift 6.5s ease-in-out 1.05s infinite;
+}
+
+.poeme-lily {
+	bottom: 10px;
+	left: 12px;
+	width: 96px;
+	height: auto;
+	opacity: 0.42;
+	transform-origin: 40% 80%;
+	animation:
+		decorFadeIn 1000ms ease-out 280ms both,
+		lilyDrift 7.2s ease-in-out 1.2s infinite;
+	filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(174, 214, 255, 0.3));
+}
+
+.poeme-content article {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 18px 10px 4px;
+	border: 1px solid rgba(160, 210, 255, 0.32);
+	border-radius: 10px;
+	background: linear-gradient(160deg, rgba(10, 18, 36, 0.38), rgba(22, 18, 40, 0.34));
+}
+
+.poeme-auth h1,
+.poeme-content h1 {
+	position: relative;
+	z-index: 1;
+	margin: 0 0 12px;
+	color: #00ffff;
+}
+
+.poeme-auth p {
+	margin: 0 0 14px;
+	line-height: 1.45;
+	color: #dbffff;
+}
+
+.poeme-auth-form {
+	display: grid;
+	gap: 10px;
+}
+
+.poeme-auth-form label {
+	font-weight: 600;
+	color: #bffeff;
+}
+
+.poeme-auth-form input {
+	height: 44px;
+	padding: 0 12px;
+	border: 1px solid rgba(0, 255, 255, 0.5);
+	border-radius: 8px;
+	background: rgba(9, 18, 24, 0.9);
+	color: #e8ffff;
+	outline: none;
+}
+
+.poeme-auth-form input:focus {
+	border-color: #00ffff;
+	box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.18);
+}
+
+.poeme-auth-form button {
+	height: 44px;
+	border: 1px solid #00ffff;
+	border-radius: 8px;
+	background: linear-gradient(90deg, rgba(0, 255, 255, 0.16), rgba(255, 59, 95, 0.18));
+	color: #dbffff;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.poeme-auth-form button:hover {
+	filter: brightness(1.08);
+}
+
+.poeme-feedback {
+	min-height: 20px;
+	margin: 2px 0 0;
+	color: #9efbff;
+}
+
+.poeme-content article p {
+	position: relative;
+	margin: 0;
+	padding: 8px 0;
+	line-height: 1.6;
+	color: #d8ecff;
+	text-shadow: 0 0 8px rgba(140, 205, 255, 0.18);
+	max-width: 44ch;
+}
+
+.poeme-content article p + p::before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	width: 36px;
+	height: 1px;
+	transform: translateX(-50%);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(175, 218, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.is-hidden {
+	display: none;
+}
+
+@keyframes decorFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(8px) scale(0.9);
+	}
+	to {
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes moonDrift {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-4px) rotate(2deg);
+	}
+}
+
+@keyframes lilyDrift {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(3px) rotate(-2deg);
+	}
+}
+
+@media (max-width: 1024px) {
+	main {
+		padding: 20px 14px 46px;
+	}
+
+	.poeme-auth,
+	.poeme-content {
+		max-width: 620px;
+		margin: 22px auto;
+		padding: 20px;
+	}
+
+	.poeme-content article p {
+		max-width: 40ch;
+	}
+
+	.poeme-moon,
+	.poeme-lily {
+		width: 88px;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		padding: 16px 12px 38px;
+	}
+
+	.poeme-auth,
+	.poeme-content {
+		padding: 18px;
+		margin-top: 16px;
+		border-radius: 10px;
+	}
+
+	.poeme-auth h1,
+	.poeme-content h1 {
+		margin-bottom: 10px;
+	}
+
+	.poeme-auth-form {
+		gap: 8px;
+	}
+
+	.poeme-auth-form input,
+	.poeme-auth-form button {
+		height: 42px;
+	}
+
+	.poeme-content article {
+		padding: 14px 8px 2px;
+	}
+
+	.poeme-content article p {
+		padding: 7px 0;
+		max-width: 36ch;
+		line-height: 1.55;
+	}
+
+	.poeme-moon,
+	.poeme-lily {
+		width: 80px;
+	}
+}
+
+@media (max-width: 480px) {
+	main {
+		padding: 12px 10px 30px;
+	}
+
+	.poeme-auth,
+	.poeme-content {
+		padding: 14px;
+		margin: 12px auto;
+	}
+
+	.poeme-auth p,
+	.poeme-feedback {
+		font-size: 0.92rem;
+	}
+
+	.poeme-auth-form label {
+		font-size: 0.9rem;
+	}
+
+	.poeme-auth-form input,
+	.poeme-auth-form button {
+		height: 40px;
+		font-size: 0.95rem;
+	}
+
+	.poeme-content article {
+		padding: 12px 6px 0;
+	}
+
+	.poeme-content article p {
+		max-width: 32ch;
+		font-size: 0.94rem;
+		padding: 6px 0;
+	}
+
+	.poeme-moon,
+	.poeme-lily {
+		width: 64px;
+		opacity: 0.34;
+	}
+
+	.poeme-moon {
+		top: 10px;
+		right: 10px;
+	}
+
+	.poeme-lily {
+		bottom: 8px;
+		left: 8px;
+	}
+
+	.poeme-content article p + p::before {
+		width: 28px;
+	}
+}
+
+@media (max-width: 360px) {
+	.poeme-auth,
+	.poeme-content {
+		padding: 12px;
+		border-radius: 8px;
+	}
+
+	.poeme-content article p {
+		max-width: 28ch;
+		font-size: 0.9rem;
+	}
+
+	.poeme-moon,
+	.poeme-lily {
+		width: 56px;
+		opacity: 0.3;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.poeme-moon,
+	.poeme-lily {
+		animation: none;
+	}
+}

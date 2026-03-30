@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Poeme - Portfolio</title>
+		<link rel="stylesheet" href="CSS/header.css">
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="CSS/poeme.css">
+		<link rel="stylesheet" href="CSS/footer.css">
+		<script src="JS/header.js"></script>
+		<script src="JS/footer.js"></script>
+		<script src="JS/poeme.js"></script>
+	</head>
+	<body>
+		<main>
+			<section class="poeme-auth" id="poeme-auth" aria-labelledby="poeme-auth-title">
+				<h1 id="poeme-auth-title">Page Poeme protegee</h1>
+				<p id="poeme-auth-message">
+					Cette page est verrouillee temporairement. Entre le mot de passe pour continuer.
+				</p>
+				<form id="poeme-auth-form" class="poeme-auth-form" autocomplete="off">
+					<label for="poeme-password">Mot de passe</label>
+					<input
+						type="password"
+						id="poeme-password"
+						name="password"
+						required
+						placeholder="Mot de passe"
+					>
+					<button type="submit" id="poeme-submit">Debloquer</button>
+					<p id="poeme-feedback" class="poeme-feedback" aria-live="polite"></p>
+				</form>
+			</section>
+
+			<section class="poeme-content is-hidden" id="poeme-content" aria-labelledby="poeme-title">
+				<img src="IMG/decor/moon.svg" alt="" class="poeme-decor poeme-moon" aria-hidden="true">
+				<img src="IMG/decor/lily.svg" alt="" class="poeme-decor poeme-lily" aria-hidden="true">
+				<h1 id="poeme-title">Poeme</h1>
+				<article id="poeme-article">
+					<p>Dans le pixel froid d un soir d hiver,</p>
+					<p>Un souffle de code eclaire le desert.</p>
+					<p>Chaque ligne avance, calme et sincere,</p>
+					<p>Et mon portfolio prend doucement l air.</p>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
