@@ -76,6 +76,9 @@ main {
 		decorFadeIn 1000ms ease-out 280ms both,
 		lilyDrift 7.2s ease-in-out 1.2s infinite;
 	filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(174, 214, 255, 0.3));
+	-webkit-filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(174, 214, 255, 0.3));
+	mix-blend-mode: screen;
+	will-change: transform, opacity;
 }
 
 .poeme-content article {
@@ -259,7 +262,7 @@ main {
 	.poeme-content article p {
 		padding: 7px 0;
 		max-width: 36ch;
-		line-height: 1.55;
+		line-height: 1.68;
 	}
 
 	.poeme-moon,
@@ -301,7 +304,8 @@ main {
 	.poeme-content article p {
 		max-width: 32ch;
 		font-size: 0.94rem;
-		padding: 6px 0;
+		padding: 7px 0;
+		line-height: 1.72;
 	}
 
 	.poeme-moon,
@@ -318,6 +322,8 @@ main {
 	.poeme-lily {
 		bottom: 8px;
 		left: 8px;
+		filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(174, 214, 255, 0.24));
+		-webkit-filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(174, 214, 255, 0.24));
 	}
 
 	.poeme-content article p + p::before {
@@ -335,6 +341,7 @@ main {
 	.poeme-content article p {
 		max-width: 28ch;
 		font-size: 0.9rem;
+		line-height: 1.75;
 	}
 
 	.poeme-moon,
