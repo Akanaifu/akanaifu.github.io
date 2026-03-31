@@ -1,6 +1,7 @@
 [
 	{
-		"categorie": "Électronique digitale",
+		"cours": "Électronique digitale",
+		"catégorie": "Challenge",
 		"nom": "Hackathon 2024",
 		"date": "25-27 Octobre 2024",
 		"heures_prestees": "44h",
@@ -18,7 +19,8 @@
 		]
 	},
 	{
-		"categorie": "Électronique digitale",
+		"cours": "Électronique digitale",
+		"catégorie": "Challenge",
 		"nom": "Hackathon 2025",
 		"date": "24-26 Ocotbre 2025",
 		"heures_prestees": "44h",
@@ -40,7 +42,8 @@
 		]
 	},
 	{
-		"categorie": "Sécurité des réseaux",
+		"cours": "Sécurité des réseaux",
+		"catégorie": "Challenge",
 		"nom": "CSCB 2024",
 		"date": "8-9 Mars 2024",
 		"heures_prestees": "24h",
@@ -58,7 +61,8 @@
 		]
 	},
 	{
-		"categorie": "Sécurité des réseaux",
+		"cours": "Sécurité des réseaux",
+		"catégorie": "Challenge",
 		"nom": "CSCB 2025",
 		"date": "14-15 Mars 2025",
 		"heures_prestees": "24h",
@@ -72,12 +76,13 @@
 		]
 	},
 	{
-		"categorie": "Atelier réparation",
+		"cours": "Électronique digitale",
+		"catégorie": "Participation évènement",
 		"nom": "Let's fix it",
 		"date": "18 Mars 2024",
 		"heures_prestees": "2.5h",
 		"heures_valorisees": "2.5h",
-		"description": "Participation à la conférence Let's fix it sur la réutilisation d'anciens appareils électroniques.",
+		"description": "Participation à l'évènement' Let's fix it sur la réutilisation d'anciens appareils électroniques.",
 		"preuves": [
 			{
 				"lien": "letsFixIt.jpg",
@@ -86,7 +91,8 @@
 		]
 	},
 	{
-		"categorie": "Développement informatique",
+		"cours": "Développement informatique",
+		"catégorie": "Tutorat",
 		"nom": "Tutorat programmation",
 		"date": "2024-2025",
 		"heures_prestees": "47h",
@@ -100,7 +106,8 @@
 		]
 	},
 	{
-		"categorie": "Mathématique",
+		"cours": "Mathématique",
+		"catégorie": "Tutorat",
 		"nom": "Tutorat math",
 		"date": "2025",
 		"heures_prestees": "2h",
@@ -114,7 +121,8 @@
 		]
 	},
 	{
-		"categorie": "Administration des réseaux",
+		"cours": "Administration des réseaux",
+		"catégorie": "Organisation évènement",
 		"nom": "LAN EPHEC 2024",
 		"date": "27 Avril 2024",
 		"heures_prestees": "11h",
@@ -128,7 +136,8 @@
 		]
 	},
 	{
-		"categorie": "Administration des réseaux",
+		"cours": "Administration des réseaux",
+		"catégorie": "Organisation évènement",
 		"nom": "LAN EPHEC 2025",
 		"date": "26 Avril 2025",
 		"heures_prestees": "11h",
@@ -142,7 +151,8 @@
 		]
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "Ultimate Frisbee",
 		"date": "2023-",
 		"heures_prestees": "~400h",
@@ -172,7 +182,8 @@
 		]
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "Vélo",
 		"date": "2018-",
 		"heures_prestees": "~92h",
@@ -194,7 +205,8 @@
 		]
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "gymnastique",
 		"date": "2022-",
 		"heures_prestees": "~150h",
@@ -208,7 +220,8 @@
 		]
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "Job étudiant (moniteur gym)",
 		"date": "2022-",
 		"heures_prestees": "~150h",
@@ -226,7 +239,8 @@
 		]
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "Intendant scout",
 		"date": "2022-",
 		"heures_prestees": "~1200h",
@@ -240,7 +254,8 @@
 		]
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "Délégué Bac 2&3",
 		"date": "2024-2026",
 		"heures_prestees": "",
@@ -258,7 +273,8 @@
 		]
 	},
 	{
-		"categorie": "Sécurité des réseaux",
+		"cours": "Sécurité des réseaux",
+		"catégorie": "Challenge",
 		"nom": "CSCB 2026",
 		"date": "Mars 2026",
 		"heures_prestees": "36h",
@@ -272,11 +288,12 @@
 		]
 	},
 	{
-		"categorie": "Administration des réseaux",
+		"cours": "Administration des réseaux",
+		"catégorie": "Conférence",
 		"nom": "Cloud avec M365 et Azure Infrastructure",
 		"date": "3 Novembre 2025",
 		"heures_prestees": "2h",
-		"heures_valorisees": "0h",
+		"heures_valorisees": "2h",
 		"description": "Conférence sur l'utilisation d'outils microsoft",
 		"preuves": [
 			{
@@ -286,11 +303,12 @@
 		]
 	},
 	{
-		"categorie": "Développement informatique",
+		"cours": "Développement informatique",
+		"catégorie": "Site web",
 		"nom": "Easter egg IT 2025",
 		"date": "2 décembre 2025",
 		"heures_prestees": "5.5h",
-		"heures_valorisees": "2h",
+		"heures_valorisees": "5.5h",
 		"description": "amélioration site web easter egg (ajout backend)",
 		"preuves": [
 			{
@@ -304,7 +322,8 @@
 		]
 	},
 	{
-		"categorie": "Développement informatique",
+		"cours": "Développement informatique",
+		"catégorie": "Site web",
 		"nom": "Portfolio",
 		"date": "2025-2026",
 		"heures_prestees": "",
@@ -313,7 +332,8 @@
 		"preuves": []
 	},
 	{
-		"categorie": "Softskills",
+		"cours": "Autre",
+		"catégorie": "Softskills",
 		"nom": "Rock (danse)",
 		"date": "2025-2026",
 		"heures_prestees": "8h",
@@ -322,7 +342,8 @@
 		"preuves": []
 	},
 	{
-		"categorie": "Networking",
+		"cours": "Autre",
+		"catégorie": "Participation évènement",
 		"nom": "Digital Talent Night",
 		"date": "17/03/2026",
 		"heures_prestees": "5h",
