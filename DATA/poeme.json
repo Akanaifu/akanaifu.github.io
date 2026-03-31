@@ -1,12 +1,12 @@
 {
 	"auth": {
-		"title": "Page Poème protegée",
+		"title": "\"Lys au clair de lune\" protégé",
 		"message": "Cette page est verrouillée temporairement. Entre le mot de passe pour continuer.",
 		"button": "Debloquer",
 		"placeholder": "Mot de passe"
 	},
 	"poeme": {
-		"title": "Poème",
+		"title": "Lys au clair de lune",
 		"lines": [
 			"\"La lune est belle n'est-ce pas ?\"",
 			"Comme le lys blanc que je veux t'offrir,",
