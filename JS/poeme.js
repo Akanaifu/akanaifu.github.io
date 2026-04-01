@@ -1,13 +1,3 @@
-const POEM_LOCK_STORAGE_KEY = "poeme-unlocked";
-
-const POEM_LOCK_CONFIG = {
-  keyPhrase: "AKN_LOCK_KEY_2026_TEMP",
-  iterations: 120000,
-  saltB64: "0cK+K3i0zYE3ynSMsPobCg==",
-  ivB64: "GWxxA/D47KF/qRhT",
-  cipherB64: "nO3CggIOa0tpcPfJV593pKELSeUxew==",
-};
-
 async function fetchPoemData() {
   const response = await fetch("DATA/poeme.json");
   if (!response.ok) {
@@ -25,6 +15,16 @@ function fillText(id, text) {
   }
 }
 
+function b64ToBytes(base64) {
+  const binary = atob(base64);
+  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+}
+
+function decodeBytesToText(bytes) {
+  const decoder = new TextDecoder("utf-8", { fatal: false });
+  return decoder.decode(bytes);
+}
+
 function renderPoemLines(lines) {
   const article = document.getElementById("poeme-article");
   if (!article || !Array.isArray(lines) || lines.length === 0) {
@@ -39,14 +39,27 @@ function renderPoemLines(lines) {
   });
 }
 
-function applyPoemData(data) {
+function renderRawDecryptedText(text) {
+  const lines = String(text || "").split(/\r?\n/);
+  renderPoemLines(lines);
+}
+
+function setPoemVisibility(isVisible) {
+  const contentSection = document.getElementById("poeme-content");
+  if (!contentSection) {
+    return;
+  }
+
+  contentSection.classList.toggle("is-hidden", !isVisible);
+}
+
+function applyUiLabels(data) {
   if (!data || typeof data !== "object") {
     return;
   }
 
   fillText("poeme-auth-title", data.auth?.title);
   fillText("poeme-auth-message", data.auth?.message);
-  fillText("poeme-title", data.poeme?.title);
 
   const submitBtn = document.getElementById("poeme-submit");
   if (
@@ -57,34 +70,53 @@ function applyPoemData(data) {
     submitBtn.textContent = data.auth.button;
   }
 
-  const passwordInput = document.getElementById("poeme-password");
+  const keyInput = document.getElementById("poeme-password");
   if (
-    passwordInput &&
+    keyInput &&
     typeof data.auth?.placeholder === "string" &&
     data.auth.placeholder.trim()
   ) {
-    passwordInput.placeholder = data.auth.placeholder;
+    keyInput.placeholder = data.auth.placeholder;
   }
-
-  renderPoemLines(data.poeme?.lines);
 }
 
-function b64ToBytes(base64) {
-  const binary = atob(base64);
-  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+function safeJsonParse(text) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    return null;
+  }
 }
 
-async function decryptReferencePassword() {
+async function decryptPoemWithKey(keyText, encryptedConfig) {
   if (!window.crypto?.subtle) {
     throw new Error("Web Crypto API indisponible dans ce navigateur.");
   }
 
+  if (!encryptedConfig || typeof encryptedConfig !== "object") {
+    throw new Error("Configuration de chiffrement invalide.");
+  }
+
+  const iterations = Number(encryptedConfig.kdf?.iterations || 180000);
+  const counterLength = Number(encryptedConfig.cipher?.counterLength || 64);
+
+  if (!Number.isInteger(iterations) || iterations <= 0) {
+    throw new Error("Iterations PBKDF2 invalides.");
+  }
+
+  if (
+    !Number.isInteger(counterLength) ||
+    counterLength <= 0 ||
+    counterLength > 128
+  ) {
+    throw new Error("Longueur de compteur AES-CTR invalide.");
+  }
+
   const encoder = new TextEncoder();
-  const decoder = new TextDecoder();
 
   const keyMaterial = await window.crypto.subtle.importKey(
     "raw",
-    encoder.encode(POEM_LOCK_CONFIG.keyPhrase),
+    encoder.encode(String(keyText || "")),
     "PBKDF2",
     false,
     ["deriveKey"],
@@ -93,99 +125,101 @@ async function decryptReferencePassword() {
   const key = await window.crypto.subtle.deriveKey(
     {
       name: "PBKDF2",
-      salt: b64ToBytes(POEM_LOCK_CONFIG.saltB64),
-      iterations: POEM_LOCK_CONFIG.iterations,
-      hash: "SHA-256",
+      salt: b64ToBytes(encryptedConfig.kdf?.saltB64 || ""),
+      iterations,
+      hash: encryptedConfig.kdf?.hash || "SHA-256",
     },
     keyMaterial,
-    { name: "AES-GCM", length: 256 },
+    { name: "AES-CTR", length: 256 },
     false,
     ["decrypt"],
   );
 
   const decryptedBuffer = await window.crypto.subtle.decrypt(
-    { name: "AES-GCM", iv: b64ToBytes(POEM_LOCK_CONFIG.ivB64) },
+    {
+      name: "AES-CTR",
+      counter: b64ToBytes(encryptedConfig.cipher?.counterB64 || ""),
+      length: counterLength,
+    },
     key,
-    b64ToBytes(POEM_LOCK_CONFIG.cipherB64),
+    b64ToBytes(encryptedConfig.cipher?.cipherB64 || ""),
   );
 
-  return decoder.decode(decryptedBuffer);
+  return decodeBytesToText(new Uint8Array(decryptedBuffer));
 }
 
-function setPoemVisibility(isUnlocked) {
-  const authSection = document.getElementById("poeme-auth");
-  const contentSection = document.getElementById("poeme-content");
+function renderDecryptionResult(decryptedText) {
+  const parsed = safeJsonParse(decryptedText);
+  const hasStructuredPoem =
+    parsed && typeof parsed === "object" && Array.isArray(parsed.lines);
 
-  if (!authSection || !contentSection) {
+  if (hasStructuredPoem) {
+    fillText("poeme-title", parsed.title);
+    renderPoemLines(parsed.lines);
     return;
   }
 
-  authSection.style.display = isUnlocked ? "none" : "block";
-  contentSection.classList.toggle("is-hidden", !isUnlocked);
+  fillText("poeme-title", "Résultat du déchiffrement");
+  renderRawDecryptedText(decryptedText);
 }
 
-function relockPoemPage() {
-  sessionStorage.removeItem(POEM_LOCK_STORAGE_KEY);
-}
-
-function setupRelockOnExit() {
-  window.addEventListener("pagehide", relockPoemPage);
-  window.addEventListener("beforeunload", relockPoemPage);
-}
-
-async function setupPoemLock() {
+async function setupPoemPage() {
   const form = document.getElementById("poeme-auth-form");
-  const passwordInput = document.getElementById("poeme-password");
+  const keyInput = document.getElementById("poeme-password");
   const feedback = document.getElementById("poeme-feedback");
 
-  if (!form || !passwordInput || !feedback) {
-    return;
-  }
-
-  try {
-    const data = await fetchPoemData();
-    applyPoemData(data);
-  } catch (error) {
-    console.error(error);
-    feedback.textContent = "Contenu indisponible pour le moment.";
-  }
-
-  if (sessionStorage.getItem(POEM_LOCK_STORAGE_KEY) === "1") {
-    setPoemVisibility(true);
+  if (!form || !keyInput || !feedback) {
     return;
   }
 
   setPoemVisibility(false);
 
+  let data;
+
+  try {
+    data = await fetchPoemData();
+    applyUiLabels(data);
+  } catch (error) {
+    console.error(error);
+    feedback.textContent = "Contenu indisponible pour le moment.";
+    return;
+  }
+
+  const encryptedConfig = data?.poemeEncrypted;
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const attempt = String(passwordInput.value || "").trim();
-    if (!attempt) {
-      feedback.textContent = "Entre un mot de passe.";
+    const keyAttempt = String(keyInput.value || "");
+    if (!keyAttempt.trim()) {
+      feedback.textContent = "Entre une clé de déchiffrement.";
       return;
     }
 
-    feedback.textContent = "Verification en cours...";
+    feedback.textContent = "Déchiffrement en cours...";
 
     try {
-      const basePassword = await decryptReferencePassword();
-      if (attempt === basePassword) {
-        sessionStorage.setItem(POEM_LOCK_STORAGE_KEY, "1");
-        feedback.textContent = "Acces autorise.";
-        setPoemVisibility(true);
-        return;
-      }
+      const decryptedText = await decryptPoemWithKey(
+        keyAttempt,
+        encryptedConfig,
+      );
+      renderDecryptionResult(decryptedText);
+      setPoemVisibility(true);
 
-      feedback.textContent = "Mot de passe incorrect.";
+      const parsed = safeJsonParse(decryptedText);
+      if (parsed && typeof parsed === "object" && Array.isArray(parsed.lines)) {
+        feedback.textContent = "Poème déchiffré.";
+      } else {
+        feedback.textContent =
+          "Texte déchiffré affiché (clé probablement incorrecte).";
+      }
     } catch (error) {
       console.error(error);
-      feedback.textContent = "Verification impossible.";
+      feedback.textContent = "Déchiffrement impossible.";
     }
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  setupRelockOnExit();
-  setupPoemLock();
+  setupPoemPage();
 });

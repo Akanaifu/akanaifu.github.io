@@ -1,22 +1,23 @@
 {
 	"auth": {
-		"title": "\"Lys au clair de lune\" protégé",
-		"message": "Cette page est verrouillée temporairement. Entre le mot de passe pour continuer.",
-		"button": "Debloquer",
-		"placeholder": "Mot de passe"
+		"title": "\"Lys au clair de lune\" chiffré",
+		"message": "Entre une clé de déchiffrement pour tenter de lire le poème.",
+		"button": "Déchiffrer",
+		"placeholder": "Clé de déchiffrement"
 	},
-	"poeme": {
-		"title": "Lys au clair de lune",
-		"lines": [
-			"\"La lune est belle n'est-ce pas ?\"",
-			"Comme le lys blanc que je veux t'offrir,",
-			"Peur et inquiétude me font souffrir,",
-			"Tristesse ou allégresse m'attendra.",
-			"",
-			"Par ces mots, vint la fin,",
-			"Un déclin arrivant bien trop tard, ",
-			"En attendant le prochain,",
-			"Profitons de ce nectar."
-		]
+	"poemeEncrypted": {
+		"format": "json-title-lines-v1",
+		"kdf": {
+			"algorithm": "PBKDF2",
+			"hash": "SHA-256",
+			"iterations": 180000,
+			"saltB64": "06JEw9il1VklP4pmiCad/w=="
+		},
+		"cipher": {
+			"algorithm": "AES-CTR",
+			"counterB64": "PqYxY5EWfxIapMSKB1w6hw==",
+			"counterLength": 64,
+			"cipherB64": "1gkf0/ovuPKo/aPzuC41qZnBqTx1T+2XafWv+QXqs/lTGU370wGLd0jq9jgF4K76akSwVyyYYg63dLzPoc+nbwTHYuKs0/8ZFab1c41ynHAAO8WhLAdL25wXaJdxgRtuFVlDEvnT338sQ6VHMBy5oZ6b2jPomZeO3KTtkAnsCQxMmgFCXnPK+GFg+/GhvJhrtVy+rQvY1P6bWt/Pb/aqQUN5l67gIDEu0rj4zPVrv81O9FMZZDIV77QzlEgjeOBoG+9EZ52xfosM+kC9vmsPOwHp8Wu2MYG0CYsfGOF3i89/uSay2SCqSe9O5NlNexsqK/KvcIa2MwOho8WKk2gTdpZomrBr84fAl70c8NLDcVzJAZk5WY+ZKCL9iTHz2iTa45fh6RDhgxPv323MHYparCy6g2DepahvBGCg7++Gymas4h6jU8tjBw=="
+		}
 	}
 }
