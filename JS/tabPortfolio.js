@@ -24,7 +24,7 @@ function ensureTbody(table) {
 }
 
 function getCategory(item) {
-  return item["catégorie"] ?? item.categorie ?? "";
+  return item.catégorie ?? item.categorie ?? "";
 }
 
 function groupByCategory(data) {

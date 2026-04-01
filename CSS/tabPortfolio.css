@@ -261,10 +261,6 @@
 		word-break: break-word;
 	}
 
-	#table td:last-child {
-		border-bottom: none;
-	}
-
 	#table td::before {
 		content: attr(data-label);
 		font-weight: 600;

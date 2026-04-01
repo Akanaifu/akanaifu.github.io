@@ -367,5 +367,15 @@
 				"legende": "fin de l'event"
 			}
 		]
+	},
+	{
+		"cours": "Semaine internationale",
+		"catégorie": "Organisation évènement",
+		"nom": "SoftMakers",
+		"date": "30/03/2026 & 01/04/2026",
+		"heures_prestees": "4h",
+		"heures_valorisees": "0h",
+		"description": "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadré à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme",
+		"preuves": []
 	}
 ]
