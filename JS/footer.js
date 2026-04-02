@@ -32,7 +32,7 @@ function createFooter() {
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </a>
         </div>
-        <div class="footer-meta">&copy; <span id="footer-year"></span> Nathan Lemaire</div>
+        <div class="footer-meta"><span id="footer-poeme-trigger">&copy;</span> <span id="footer-year"></span> Nathan Lemaire</div>
         <a class="footer-source" href="https://github.com/akanaifu/akanaifu.github.io" target="_blank" rel="noopener noreferrer">Code source</a>
       </div>
     </div>
@@ -44,6 +44,17 @@ function createFooter() {
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
+
+  const poemeTriggerEl = footer.querySelector("#footer-poeme-trigger");
+  if (poemeTriggerEl) {
+    poemeTriggerEl.addEventListener("click", () =>
+      redirectPoeme(`${relativePath}poeme.html`),
+    );
+  }
+}
+
+function redirectPoeme(targetUrl) {
+  window.location.href = targetUrl;
 }
 
 document.addEventListener("DOMContentLoaded", createFooter);

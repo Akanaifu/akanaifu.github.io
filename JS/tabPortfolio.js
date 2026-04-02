@@ -24,7 +24,7 @@ function ensureTbody(table) {
 }
 
 function getCategory(item) {
-  return item["catégorie"] ?? item.categorie ?? "";
+  return item.catégorie ?? item.categorie ?? "";
 }
 
 function groupByCategory(data) {
@@ -44,7 +44,11 @@ function groupByCategory(data) {
   groups.sort((a, b) => a.categorie.localeCompare(b.categorie, "fr"));
 
   groups.forEach((group) => {
-    group.rows.sort((a, b) => String(a.nom).localeCompare(String(b.nom), "fr"));
+    group.rows.sort((a, b) => {
+      const byCours = String(a.cours).localeCompare(String(b.cours), "fr");
+      if (byCours !== 0) return byCours;
+      return String(a.nom).localeCompare(String(b.nom), "fr");
+    });
   });
 
   return groups;
