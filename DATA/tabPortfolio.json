@@ -151,7 +151,7 @@
 		]
 	},
 	{
-		"cours": "Autre",
+		"cours": "Sport",
 		"catégorie": "Softskills",
 		"nom": "Ultimate Frisbee",
 		"date": "2023-",
@@ -182,7 +182,7 @@
 		]
 	},
 	{
-		"cours": "Autre",
+		"cours": "Sport",
 		"catégorie": "Softskills",
 		"nom": "Vélo",
 		"date": "2018-",
@@ -205,7 +205,7 @@
 		]
 	},
 	{
-		"cours": "Autre",
+		"cours": "Sport",
 		"catégorie": "Softskills",
 		"nom": "gymnastique",
 		"date": "2022-",
@@ -220,9 +220,9 @@
 		]
 	},
 	{
-		"cours": "Autre",
+		"cours": "Job étudiant",
 		"catégorie": "Softskills",
-		"nom": "Job étudiant (moniteur gym)",
+		"nom": "Moniteur gym",
 		"date": "2022-",
 		"heures_prestees": "~150h",
 		"heures_valorisees": "0h",
@@ -332,7 +332,7 @@
 		"preuves": []
 	},
 	{
-		"cours": "Autre",
+		"cours": "Sport",
 		"catégorie": "Softskills",
 		"nom": "Rock (danse)",
 		"date": "2025-2026",
