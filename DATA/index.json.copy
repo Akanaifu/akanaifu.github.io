@@ -100,6 +100,21 @@
 					"description": "Participation à des hackathons, coordination et livrables techniques"
 				}
 			]
+		},
+		{
+			"type": "cards",
+			"className": "content-section skills",
+			"title": "Hobby",
+			"cards": [
+				{
+					"title": "Jeux Vidéo",
+					"description": "Super Smash Bros, Xenoblade Chronicles, Pokémon, The Legend of Zelda, R.E.P.O, Céleste, Bravely Default, Octopath Traveler, Clash of Clans, Hearstone Battleground"
+				},
+				{
+					"title": "Sport",
+					"description": "Vélo, Ultimate Frisbee, Gymnastique, Judo"
+				}
+			]
 		}
 	]
 }

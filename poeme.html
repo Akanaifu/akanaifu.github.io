@@ -15,20 +15,18 @@
 	<body>
 		<main>
 			<section class="poeme-auth" id="poeme-auth" aria-labelledby="poeme-auth-title">
-				<h1 id="poeme-auth-title">Page Poeme protegee</h1>
-				<p id="poeme-auth-message">
-					Cette page est verrouillee temporairement. Entre le mot de passe pour continuer.
-				</p>
+				<h1 id="poeme-auth-title">Page Poeme chiffree</h1>
+				<p id="poeme-auth-message">Entre une cle de dechiffrement pour tenter de lire le poeme.</p>
 				<form id="poeme-auth-form" class="poeme-auth-form" autocomplete="off">
-					<label for="poeme-password">Mot de passe</label>
+					<label for="poeme-password">Cle de dechiffrement</label>
 					<input
 						type="password"
 						id="poeme-password"
 						name="password"
 						required
-						placeholder="Mot de passe"
+						placeholder="Cle de dechiffrement"
 					>
-					<button type="submit" id="poeme-submit">Debloquer</button>
+					<button type="submit" id="poeme-submit">Dechiffrer</button>
 					<p id="poeme-feedback" class="poeme-feedback" aria-live="polite"></p>
 				</form>
 			</section>
@@ -37,12 +35,7 @@
 				<img src="IMG/decor/moon.svg" alt="" class="poeme-decor poeme-moon" aria-hidden="true">
 				<img src="IMG/decor/lily.svg" alt="" class="poeme-decor poeme-lily" aria-hidden="true">
 				<h1 id="poeme-title">Poeme</h1>
-				<article id="poeme-article">
-					<p>Dans le pixel froid d un soir d hiver,</p>
-					<p>Un souffle de code eclaire le desert.</p>
-					<p>Chaque ligne avance, calme et sincere,</p>
-					<p>Et mon portfolio prend doucement l air.</p>
-				</article>
+				<article id="poeme-article"></article>
 			</section>
 		</main>
 	</body>

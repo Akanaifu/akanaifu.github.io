@@ -44,7 +44,11 @@ function groupByCategory(data) {
   groups.sort((a, b) => a.categorie.localeCompare(b.categorie, "fr"));
 
   groups.forEach((group) => {
-    group.rows.sort((a, b) => String(a.nom).localeCompare(String(b.nom), "fr"));
+    group.rows.sort((a, b) => {
+      const byCours = String(a.cours).localeCompare(String(b.cours), "fr");
+      if (byCours !== 0) return byCours;
+      return String(a.nom).localeCompare(String(b.nom), "fr");
+    });
   });
 
   return groups;
@@ -186,16 +190,11 @@ async function createTab(idTab, file) {
   try {
     const data = await fetchJson(file);
 
-    if (window.updateVeloHours) {
-      const veloStats = await window.updateVeloHours();
-      if (veloStats) {
-        const veloEntry = data.find(
-          (item) => String(item.nom).toLowerCase() === "vélo",
-        );
-        if (veloEntry) {
-          veloEntry.heures_prestees = `~${veloStats.hours}h`;
-        }
-      }
+    if (window.StravaStats) {
+      const stravaStats = await window.StravaStats.fetchPortfolioStats(
+        "DATA/stravaStats.json",
+      );
+      window.StravaStats.applyVeloHours(data, stravaStats);
     }
 
     const groups = groupByCategory(data);
