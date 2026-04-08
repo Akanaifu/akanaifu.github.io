@@ -8,6 +8,16 @@ async function fetchJson(file) {
   return res.json();
 }
 
+async function fetchOptionalJson(file) {
+  try {
+    const res = await fetch(file);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
 function getTableHeaders(table) {
   return Array.from(table.querySelectorAll("thead th")).map((th) =>
     th.textContent.trim(),
@@ -186,21 +196,32 @@ function buildTotalRow(headers, totals) {
   `;
 }
 
+function applyStravaStats(data, stats) {
+  if (!stats || typeof stats.hours !== "number") {
+    return;
+  }
+
+  const veloEntry = data.find((item) => {
+    const name = String(item.nom || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    return name === "velo";
+  });
+
+  if (veloEntry) {
+    veloEntry.heures_prestees = `~${Math.round(stats.hours)}h`;
+  }
+}
+
 async function createTab(idTab, file) {
   try {
-    const data = await fetchJson(file);
+    const [data, stravaStats] = await Promise.all([
+      fetchJson(file),
+      fetchOptionalJson("DATA/stravaStats.json"),
+    ]);
 
-    if (window.updateVeloHours) {
-      const veloStats = await window.updateVeloHours();
-      if (veloStats) {
-        const veloEntry = data.find(
-          (item) => String(item.nom).toLowerCase() === "vélo",
-        );
-        if (veloEntry) {
-          veloEntry.heures_prestees = `~${veloStats.hours}h`;
-        }
-      }
-    }
+    applyStravaStats(data, stravaStats);
 
     const groups = groupByCategory(data);
     const categoryColors = generateThemeColors(groups.map((g) => g.categorie));
