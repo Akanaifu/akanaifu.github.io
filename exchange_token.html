@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Récupération du code Strava</title>
+		<link rel="stylesheet" href="CSS/header.css">
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="CSS/footer.css">
+		<script src="JS/header.js"></script>
+		<script src="JS/footer.js"></script>
+		<style>
+		.exchange-wrapper {
+			max-width: 860px;
+			margin: 4rem auto;
+			padding: 1.5rem;
+		}
+
+		.exchange-card {
+			border: 1px solid rgba(255, 255, 255, 0.16);
+			border-radius: 12px;
+			background: rgba(255, 255, 255, 0.04);
+			padding: 1.25rem;
+		}
+
+		.exchange-code {
+			font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+			font-size: 0.95rem;
+			white-space: pre-wrap;
+			word-break: break-word;
+			border-radius: 8px;
+			border: 1px solid rgba(255, 255, 255, 0.18);
+			padding: 0.8rem;
+			background: rgba(10, 14, 22, 0.6);
+			margin: 0.75rem 0 1rem;
+		}
+
+		.exchange-actions {
+			display: flex;
+			gap: 0.6rem;
+			flex-wrap: wrap;
+		}
+
+		.exchange-btn {
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			background: rgba(255, 255, 255, 0.08);
+			color: #fff;
+			border-radius: 8px;
+			padding: 0.6rem 0.9rem;
+			cursor: pointer;
+		}
+
+		.exchange-btn:hover {
+			background: rgba(255, 255, 255, 0.14);
+		}
+
+		.exchange-help {
+			margin-top: 0.9rem;
+			opacity: 0.9;
+		}
+		</style>
+	</head>
+	<body>
+		<main class="exchange-wrapper">
+			<section class="exchange-card">
+				<h1>Code OAuth Strava</h1>
+				<p id="status">Analyse des paramètres de l'URL...</p>
+				<div id="code" class="exchange-code" aria-live="polite"></div>
+				<div class="exchange-actions">
+					<button id="copyBtn" class="exchange-btn" type="button" disabled>Copier le code</button>
+				</div>
+				<p class="exchange-help">
+					Utilise ensuite ce code dans la commande d'échange token en terminal.
+				</p>
+			</section>
+		</main>
+
+		<script>
+		(function initExchangePage() {
+			const params = new URLSearchParams(window.location.search);
+			const statusEl = document.getElementById("status");
+			const codeEl = document.getElementById("code");
+			const copyBtn = document.getElementById("copyBtn");
+
+			const error = params.get("error");
+			const code = params.get("code");
+
+			if (error) {
+				statusEl.textContent = "Strava a retourné une erreur d'autorisation.";
+				codeEl.textContent = error;
+				return;
+			}
+
+			if (!code) {
+				statusEl.textContent =
+					"Aucun code détecté. Ouvre cette page via la redirection OAuth Strava.";
+				codeEl.textContent = "Paramètre manquant: code";
+				return;
+			}
+
+			statusEl.textContent = "Code détecté. Copie-le pour l'échange de token.";
+			codeEl.textContent = code;
+			copyBtn.disabled = false;
+
+			copyBtn.addEventListener("click", async () => {
+				try {
+					await navigator.clipboard.writeText(code);
+					copyBtn.textContent = "Code copié";
+				} catch {
+					copyBtn.textContent = "Copie impossible";
+				}
+			});
+		})();
+		</script>
+	</body>
+</html>
