@@ -186,7 +186,7 @@ function displayActivity(activity) {
     <div class="activity-detail">
     <a id="back-link" href="#" class="back-link">← Retour au tableau</a>
       <h1>${activity.nom}</h1>
-      <p class="category">Catégorie: ${activity.categorie}</p>
+      <p class="category">Catégorie: ${activity.catégorie}</p>
       ${activity.date ? `<p class="date">Date: ${activity.date}</p>` : ""}
       
       <div class="hours-info">
