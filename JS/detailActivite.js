@@ -10,6 +10,14 @@ async function loadActivityDetail() {
     const data = await fetch("../DATA/tabPortfolio.json").then((res) =>
       res.json(),
     );
+
+    if (window.StravaStats) {
+      const stravaStats = await window.StravaStats.fetchPortfolioStats(
+        "../DATA/stravaStats.json",
+      );
+      window.StravaStats.applyVeloHours(data, stravaStats);
+    }
+
     const activity = data.find((item) => slugify(item.nom) === activitySlug);
 
     if (!activity) {
