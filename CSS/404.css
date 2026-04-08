@@ -1,0 +1,51 @@
+.not-found {
+	min-height: 70vh;
+	display: grid;
+	place-items: center;
+	padding: 2rem 1rem;
+}
+
+.not-found-card {
+	width: min(680px, 100%);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.04);
+	padding: 2rem;
+	text-align: center;
+}
+
+.not-found-code {
+	font-size: clamp(2.5rem, 8vw, 5rem);
+	line-height: 1;
+	margin: 0 0 0.8rem;
+	letter-spacing: 0.04em;
+}
+
+.not-found-title {
+	margin: 0 0 0.6rem;
+}
+
+.not-found-text {
+	margin: 0 0 1.4rem;
+	opacity: 0.9;
+}
+
+.not-found-actions {
+	display: flex;
+	justify-content: center;
+	gap: 0.7rem;
+	flex-wrap: wrap;
+}
+
+.not-found-link {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+	padding: 0.55rem 0.95rem;
+	text-decoration: none;
+	color: inherit;
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.not-found-link:hover {
+	background: rgba(255, 255, 255, 0.16);
+}
