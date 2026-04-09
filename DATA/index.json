@@ -62,11 +62,13 @@
 			"cards": [
 				{
 					"title": "Programmation",
-					"description": "Développement web, backend et scripting en plusieurs langages"
+					"description": "Développement web, backend et scripting en plusieurs langages",
+					"detail": []
 				},
 				{
 					"title": "Électronique",
-					"description": "Conception de circuits et projets embarqués"
+					"description": "Conception de circuits et projets embarqués",
+					"detail": []
 				}
 			]
 		},
@@ -77,27 +79,60 @@
 			"cards": [
 				{
 					"title": "Développement Web",
-					"description": "HTML5, CSS3, JavaScript, responsive design, ..."
+					"description": "HTML5, CSS3, JavaScript, ...",
+					"detail": [
+						"react.js",
+						"mongoDB",
+						"firebase",
+						"NoSQL",
+						"MySQL",
+						"Typescript",
+						"C",
+						"Flask",
+						"fastapi",
+						"node.js",
+						"python",
+						"angularJS",
+						"react native",
+						"css",
+						"HTML",
+						"JS"
+					]
 				},
 				{
 					"title": "Programmation",
-					"description": "Algorithmes, résolution de problèmes, architecture logique"
+					"description": "Algorithmes, résolution de problèmes, architecture logique",
+					"detail": [
+						"panda",
+						"numpy"
+					]
 				},
 				{
 					"title": "Outils & Versioning",
-					"description": "Git, GitHub, organisation de projet et suivi des versions"
+					"description": "Git, GitHub, organisation de projet et suivi des versions",
+					"detail": [
+						"git",
+						"github"
+					]
 				},
 				{
 					"title": "Électronique",
-					"description": "Prototypage, fabrication numérique, gestion de machines de labo"
+					"description": "Prototypage, fabrication numérique, gestion de machines de labo",
+					"detail": [
+						"kiCad",
+						"LightBurn",
+						"micropython"
+					]
 				},
 				{
 					"title": "Soft Skills",
-					"description": "Travail en équipe, autonomie, communication, apprentissage continu"
+					"description": "Travail en équipe, autonomie, communication, apprentissage continu",
+					"detail": []
 				},
 				{
 					"title": "Gestion de Projet",
-					"description": "Participation à des hackathons, coordination et livrables techniques"
+					"description": "Participation à des hackathons, coordination et livrables techniques",
+					"detail": []
 				}
 			]
 		}

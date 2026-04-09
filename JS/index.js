@@ -1,4 +1,5 @@
 import content from "../DATA/index.json" with { type: "json" };
+import { initCardsPopup } from "./cardsPopup.js";
 
 function createElement(tagName, className) {
   const element = document.createElement(tagName);
@@ -77,9 +78,18 @@ function renderCards(main, sectionData) {
     const card = createElement("div", "skill-card");
     const cardTitle = createElement("h3");
     const cardDescription = createElement("p");
+    const rawDetail = cardData.detail ?? cardData["détail"] ?? [];
+    const cardDetail = Array.isArray(rawDetail)
+      ? rawDetail
+      : String(rawDetail)
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean);
 
     cardTitle.textContent = cardData.title;
     cardDescription.textContent = cardData.description;
+    card.dataset.popupDetail = JSON.stringify(cardDetail);
+    card.dataset.sectionTitle = sectionData.title || "";
     card.append(cardTitle, cardDescription);
     grid.appendChild(card);
   });
@@ -114,3 +124,4 @@ function renderIndex() {
 }
 
 renderIndex();
+initCardsPopup();
