@@ -201,15 +201,15 @@ function bindCard(card) {
   const openCardPopup = () => {
     const title = card.querySelector("h3")?.textContent?.trim() || "Détail";
     const rawDetail = card.dataset.popupDetail || "";
+    const fullDescription = card.dataset.popupDescription?.trim() || "";
     const sectionTitle = card.dataset.sectionTitle?.trim() || "";
     const detailList = parseDetailList(rawDetail);
     const isCompetencesSection =
       normalizeTechName(sectionTitle) === "competences" ||
       normalizeTechName(sectionTitle) === "compétences";
 
-    const description = detailList.join(", ")
-      ? ""
-      : card.querySelector("p")?.textContent?.trim();
+    const description =
+      fullDescription || card.querySelector("p")?.textContent?.trim() || "";
 
     openPopup(title, description, {
       showLogos: isCompetencesSection,
