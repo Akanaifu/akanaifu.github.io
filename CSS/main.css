@@ -280,7 +280,7 @@ a:hover {
 /* Skills Section */
 .skills-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 	gap: 24px;
 	margin-top: 24px;
 }
@@ -290,6 +290,8 @@ a:hover {
 	background: linear-gradient(135deg, rgba(255, 59, 95, 0.06) 0%, rgba(0, 255, 255, 0.05) 100%);
 	border: 2px solid rgba(0, 255, 255, 0.3);
 	border-radius: 10px;
+	box-sizing: border-box;
+	min-width: 0;
 	transition: all 0.3s ease;
 	cursor: pointer;
 	position: relative;
@@ -342,11 +344,13 @@ a:hover {
 	margin-top: 0;
 	margin-bottom: 12px;
 	color: #00ffff;
+	overflow-wrap: anywhere;
 }
 
 .skill-card p {
 	color: #c0c0c0;
 	font-size: 0.95rem;
+	overflow-wrap: anywhere;
 }
 
 .skill-card:focus-visible {
@@ -412,6 +416,10 @@ a:hover {
 	font-size: 0.9rem;
 	color: #d8fdfd;
 	min-height: 40px;
+}
+
+.tech-logo-item span::first-letter {
+	text-transform: capitalize;
 }
 
 .tech-logo-item.no-logo {
@@ -576,7 +584,7 @@ li {
 
 @media (max-width: 768px) {
 	body {
-		padding: 8px;
+		padding: 0;
 	}
 
 	main {
@@ -627,10 +635,7 @@ li {
 
 @media (max-width: 480px) {
 	body {
-		padding-top: calc(4px + env(safe-area-inset-top, 0px));
-		padding-right: calc(4px + env(safe-area-inset-right, 0px));
-		padding-bottom: calc(4px + env(safe-area-inset-bottom, 0px));
-		padding-left: calc(4px + env(safe-area-inset-left, 0px));
+		padding: 0;
 	}
 
 	main {
@@ -699,5 +704,14 @@ li {
 		top: 18px;
 		width: 16px;
 		height: 16px;
+	}
+
+	.skills-grid {
+		grid-template-columns: 1fr;
+		gap: 14px;
+	}
+
+	.skill-card {
+		padding: 16px 14px;
 	}
 }

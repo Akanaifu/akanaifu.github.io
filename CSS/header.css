@@ -3,15 +3,21 @@ header {
 	box-shadow: 0 2px 20px rgba(0, 255, 255, 0.3);
 	position: sticky;
 	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	box-sizing: border-box;
 	z-index: 1000;
 	border-bottom: 2px solid #00ffff;
 	padding-top: env(safe-area-inset-top, 0px);
 }
 
 .header-container {
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 16px 24px;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
