@@ -41,7 +41,20 @@ async function refreshAccessToken({ clientId, clientSecret, refreshToken }) {
     throw new Error(`Refresh token refusé (${response.status}): ${details}`);
   }
 
-  return payload.access_token;
+  return {
+    accessToken: payload.access_token,
+    refreshToken: payload.refresh_token,
+    athleteId: payload?.athlete?.id,
+  };
+}
+
+async function appendGithubOutput(name, value) {
+  const outputPath = process.env.GITHUB_OUTPUT;
+  if (!outputPath || !value) {
+    return;
+  }
+
+  await fs.appendFile(outputPath, `${name}=${value}\n`, "utf8");
 }
 
 async function getActivities(
@@ -129,14 +142,32 @@ async function main() {
   const clientId = requireEnv("STRAVA_CLIENT_ID");
   const clientSecret = requireEnv("STRAVA_CLIENT_SECRET");
   const refreshToken = requireEnv("STRAVA_REFRESH_TOKEN");
-  requireEnv("STRAVA_ATHLETE_ID");
+  const athleteIdExpected = requireEnv("STRAVA_ATHLETE_ID");
 
   const today = new Date().toISOString().slice(0, 10);
-  const accessToken = await refreshAccessToken({
+  const tokenPayload = await refreshAccessToken({
     clientId,
     clientSecret,
     refreshToken,
   });
+
+  const athleteIdActual = String(tokenPayload.athleteId || "");
+  if (athleteIdActual && athleteIdActual !== String(athleteIdExpected)) {
+    throw new Error(
+      `Compte Strava inattendu: athlete.id=${athleteIdActual}, attendu=${athleteIdExpected}`,
+    );
+  }
+
+  const accessToken = tokenPayload.accessToken;
+  if (!accessToken) {
+    throw new Error("Access token manquant dans la reponse Strava");
+  }
+
+  if (tokenPayload.refreshToken) {
+    // Mask token in GitHub logs then expose it as workflow output for optional secret rotation.
+    console.log(`::add-mask::${tokenPayload.refreshToken}`);
+    await appendGithubOutput("next_refresh_token", tokenPayload.refreshToken);
+  }
 
   const allActivities = await getAllActivities(accessToken, startDate, today);
   const stats = computeRideStats(allActivities);
