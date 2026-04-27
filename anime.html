@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Liste des animés</title>
+		<link rel="stylesheet" href="CSS/anime.css">
+		<link rel="stylesheet" href="../CSS/header.css">
+		<link rel="stylesheet" href="../CSS/footer.css">
+		<script src="JS/anime.js"></script>
+		<script src="../JS/header.js"></script>
+		<script src="../JS/footer.js"></script>
+	</head>
+	<body>
+		<main>
+			<section class="controls">
+				<label for="type-filter">Type :</label>
+				<select id="type-filter">
+					<option value="all">Tous</option>
+					<option value="series">Séries</option>
+					<option value="films">Films</option>
+					<option value="dropped">Dropped</option>
+				</select>
+
+				<label for="search-input">Recherche :</label>
+				<input type="text" id="search-input" placeholder="Nom de l'animé...">
+
+				<button id="sort-alpha">Trier A-Z</button>
+				<button id="sort-alpha-desc">Trier Z-A</button>
+				<button id="sort-fav">Trier par favoris</button>
+				<button id="add-entry">Ajouter</button>
+			</section>
+			<section>
+				<table id="anime-table">
+					<thead>
+						<tr>
+							<th>Nom</th>
+							<th>Favoris</th>
+							<th>Type</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Données JS -->
+					</tbody>
+				</table>
+			</section>
+			<section id="form-section" style="display:none;">
+				<form id="anime-form">
+					<input type="hidden" id="form-type" value="add">
+					<input type="hidden" id="form-original-type">
+					<label>
+						Nom : <input type="text" id="form-title" required>
+					</label>
+					<label>
+						Favoris : <input type="number" id="form-fav" min="0" max="5">
+					</label>
+					<label>
+						Type :
+						<select id="form-section-type">
+							<option value="series">Série</option>
+							<option value="films">Film</option>
+							<option value="dropped">Dropped</option>
+						</select>
+					</label>
+					<button type="submit">Valider</button>
+					<button type="button" id="form-cancel">Annuler</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

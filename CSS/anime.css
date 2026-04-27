@@ -1,0 +1,121 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #0d0d0d 0%, #1a0a2e 50%, #16213e 100%);
+	color: #e0e0e0;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background: #0d0d0d;
+	color: #00ffff;
+	box-shadow: 0 2px 20px rgba(0, 255, 255, 0.3);
+	border-bottom: 2px solid #00ffff;
+	text-align: center;
+	padding: 1rem 2rem;
+}
+main {
+	max-width: 1000px;
+	margin: 2rem auto;
+	background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 10, 46, 0.8) 100%);
+	border-radius: 8px;
+	box-shadow: 0 2px 8px #00ffff33;
+	padding: 2rem;
+	border: 1px solid #00ffff;
+	backdrop-filter: blur(10px);
+}
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+#anime-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 2rem;
+	background: transparent;
+}
+#anime-table th,
+#anime-table td {
+	border: 1px solid #00ffff44;
+	padding: 0.5rem 0.75rem;
+	text-align: left;
+}
+#anime-table th {
+	background: #16213e;
+	color: #00ffff;
+}
+#anime-table tr:nth-child(even) {
+	background: rgba(0, 255, 255, 0.03);
+}
+#anime-table tr:hover {
+	background: rgba(0, 255, 255, 0.08);
+}
+.fav {
+	color: #e67e22;
+	font-size: 1.2em;
+}
+.actions button {
+	margin-right: 0.5em;
+	background: #222b;
+	color: #00ffff;
+	border: 1px solid #00ffff99;
+	border-radius: 4px;
+	padding: 0.2em 0.7em;
+	cursor: pointer;
+	transition:
+		background 0.2s,
+		color 0.2s;
+}
+.actions button:hover {
+	background: #00ffff;
+	color: #0d0d0d;
+}
+#form-section {
+	background: #1a0a2e;
+	border: 1px solid #00ffff;
+	border-radius: 6px;
+	padding: 1em;
+	margin-top: 1em;
+	max-width: 400px;
+	color: #e0e0e0;
+}
+#anime-form label {
+	display: block;
+	margin-bottom: 0.7em;
+}
+#anime-form input,
+#anime-form select {
+	margin-left: 0.5em;
+	background: #0d0d0d;
+	color: #e0e0e0;
+	border: 1px solid #00ffff99;
+	border-radius: 3px;
+	padding: 0.2em 0.5em;
+}
+#anime-form button {
+	margin-right: 0.5em;
+	background: #00ffff;
+	color: #0d0d0d;
+	border: none;
+	border-radius: 4px;
+	padding: 0.3em 1em;
+	cursor: pointer;
+	transition:
+		background 0.2s,
+		color 0.2s;
+}
+#anime-form button:hover {
+	background: #0d0d0d;
+	color: #00ffff;
+	border: 1px solid #00ffff;
+}
+#type-filter,
+#search-input {
+	background: #0d0d0d;
+	color: #e0e0e0;
+	border: 1px solid #00ffff99;
+	border-radius: 3px;
+	padding: 0.2em 0.5em;
+}
