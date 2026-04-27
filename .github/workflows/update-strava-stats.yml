@@ -25,12 +25,28 @@ jobs:
           node-version: "22"
 
       - name: Generate Strava stats
+        id: generate
         env:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
           STRAVA_ATHLETE_ID: ${{ secrets.STRAVA_ATHLETE_ID }}
         run: node scripts/update-strava-stats.mjs
+
+      - name: Rotate STRAVA_REFRESH_TOKEN secret (optional)
+        if: ${{ steps.generate.outputs.next_refresh_token != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.STRAVA_SECRETS_WRITE_TOKEN }}
+          NEXT_REFRESH_TOKEN: ${{ steps.generate.outputs.next_refresh_token }}
+        run: |
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "Secret STRAVA_SECRETS_WRITE_TOKEN absent: rotation auto ignoree"
+            exit 0
+          fi
+
+          gh secret set STRAVA_REFRESH_TOKEN \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "$NEXT_REFRESH_TOKEN"
 
       - name: Commit and push if changed
         run: |

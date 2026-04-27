@@ -151,6 +151,21 @@
 		]
 	},
 	{
+		"cours": "Administration des réseaux",
+		"catégorie": "Organisation évènement",
+		"nom": "LAN EPHEC 2026",
+		"date": "25 Avril 2026",
+		"heures_prestees": "~20h",
+		"heures_valorisees": "0h",
+		"description": "Organisation et participation à la LAN party de l'EPHEC 2025.",
+		"preuves": [
+			{
+				"lien": "admin_serveur_lan.png",
+				"legende": "Serveur discord lan 2026"
+			}
+		]
+	},
+	{
 		"cours": "Sport",
 		"catégorie": "Softskills",
 		"nom": "Ultimate Frisbee",
@@ -376,6 +391,6 @@
 		"heures_prestees": "4h",
 		"heures_valorisees": "0h",
 		"description": "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme",
-		"preuves": []
+		"preuves": [{ "lien": "Ephec_SoftMakers_LLN-7.jpg", "legende": "intro semaine inter" }]
 	}
 ]

@@ -9,6 +9,28 @@ function createElement(tagName, className) {
   return element;
 }
 
+function truncateDescription(value, maxLength) {
+  const text = String(value ?? "").trim();
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  const candidate = text.slice(0, maxLength + 1).trimEnd();
+  const words = candidate.split(/\s+/);
+
+  if (words.length > 1) {
+    words.pop();
+    return `${words.join(" ")} ...`;
+  }
+
+  const nextSpace = text.indexOf(" ", maxLength);
+  if (nextSpace === -1) {
+    return text;
+  }
+
+  return `${text.slice(0, nextSpace)}...`;
+}
+
 function renderHero(main, hero) {
   if (!hero) {
     return;
@@ -78,7 +100,8 @@ function renderCards(main, sectionData) {
     const card = createElement("div", "skill-card");
     const cardTitle = createElement("h3");
     const cardDescription = createElement("p");
-    const rawDetail = cardData.detail ?? cardData["détail"] ?? [];
+    const fullDescription = String(cardData.description ?? "").trim();
+    const rawDetail = cardData.detail ?? [];
     const cardDetail = Array.isArray(rawDetail)
       ? rawDetail
       : String(rawDetail)
@@ -87,8 +110,9 @@ function renderCards(main, sectionData) {
           .filter(Boolean);
 
     cardTitle.textContent = cardData.title;
-    cardDescription.textContent = cardData.description;
+    cardDescription.textContent = truncateDescription(fullDescription, 30);
     card.dataset.popupDetail = JSON.stringify(cardDetail);
+    card.dataset.popupDescription = fullDescription;
     card.dataset.sectionTitle = sectionData.title || "";
     card.append(cardTitle, cardDescription);
     grid.appendChild(card);

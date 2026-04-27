@@ -4,7 +4,28 @@ function redirectToProfileEasterEgg() {
   window.open(targetUrl, "_blank", "noopener,noreferrer");
 }
 
-function createHeader() {
+async function countProfilePhotos(relativePath, maxPhotos = 50) {
+  let count = 0;
+
+  // Count contiguous NathanX.jpg files (Nathan1, Nathan2, ...)
+  for (let i = 1; i <= maxPhotos; i += 1) {
+    const testPath = `${relativePath}IMG/photo_profil/Nathan${i}.jpg`;
+
+    const exists = await new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve(true);
+      img.onerror = () => resolve(false);
+      img.src = testPath;
+    });
+
+    if (!exists) break;
+    count += 1;
+  }
+
+  return count;
+}
+
+async function createHeader() {
   const pathname = window.location.pathname;
   const segments = pathname.split("/").filter(Boolean);
 
@@ -12,13 +33,17 @@ function createHeader() {
     segments.length > 0 && segments[segments.length - 1].includes(".");
   const depth = isFile ? segments.length - 1 : segments.length;
   const relativePath = depth > 0 ? "../".repeat(depth) : "";
+  const profilePhotoCount = await countProfilePhotos(relativePath, 3);
+  const safePhotoCount = profilePhotoCount > 0 ? profilePhotoCount : 1;
+  const randomPhotoIndex = Math.floor(Math.random() * safePhotoCount) + 1;
+  const profilePhotoSrc = `${relativePath}IMG/photo_profil/Nathan${randomPhotoIndex}.jpg`;
 
   const header = document.createElement("header");
   header.innerHTML = `
     <div class="header-container">
       <div class="header-left">
       <button type="button" class="header-profile-link" aria-label="Ouvrir le lien profil">
-        <img src="${relativePath}IMG/photo_profil/Nathan1.jpg" alt="Nathan Lemaire" class="header-profile-img" />
+        <img src="${profilePhotoSrc}" alt="Nathan Lemaire" class="header-profile-img" />
       </button>
       <a href="${relativePath}index.html" class="header-logo">Nathan Lemaire</a>
       </div>
