@@ -33,7 +33,7 @@ async function createHeader() {
     segments.length > 0 && segments[segments.length - 1].includes(".");
   const depth = isFile ? segments.length - 1 : segments.length;
   const relativePath = depth > 0 ? "../".repeat(depth) : "";
-  const profilePhotoCount = await countProfilePhotos(relativePath);
+  const profilePhotoCount = await countProfilePhotos(relativePath, 3);
   const safePhotoCount = profilePhotoCount > 0 ? profilePhotoCount : 1;
   const randomPhotoIndex = Math.floor(Math.random() * safePhotoCount) + 1;
   const profilePhotoSrc = `${relativePath}IMG/photo_profil/Nathan${randomPhotoIndex}.jpg`;

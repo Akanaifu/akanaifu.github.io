@@ -13,30 +13,50 @@
 	</head>
 	<body>
 		<main>
-			<section class="controls">
-				<label for="type-filter">Type :</label>
-				<select id="type-filter">
-					<option value="all">Tous</option>
-					<option value="series">Séries</option>
-					<option value="films">Films</option>
-					<option value="dropped">Dropped</option>
-				</select>
+			<!-- ── TOPBAR ─────────────────────────────────────────────── -->
+			<div class="topbar">
+				<div class="topbar-filters">
+					<div class="filter-group">
+						<label for="type-filter">Type</label>
+						<select id="type-filter">
+							<option value="all">Tous</option>
+							<option value="series">Séries</option>
+							<option value="films">Films</option>
+							<option value="dropped">Dropped</option>
+						</select>
+					</div>
+					<div class="filter-group">
+						<label for="fav-filter">Favoris</label>
+						<select id="fav-filter">
+							<option value="all">Tous</option>
+							<option value="fav">Avec favoris</option>
+							<option value="nofav">Sans favoris</option>
+						</select>
+					</div>
+					<div class="filter-group search-group">
+						<label for="search-input">Recherche</label>
+						<input type="text" id="search-input" placeholder="Nom de l'animé...">
+					</div>
+					<span id="anime-count" class="count-badge"></span>
+					<span id="data-source-badge" class="source-badge loading">⏳ Chargement...</span>
+				</div>
+				<button id="toggle-view-btn" class="btn-primary">+ Ajouter un animé</button>
+			</div>
 
-				<label for="search-input">Recherche :</label>
-				<input type="text" id="search-input" placeholder="Nom de l'animé...">
-
-				<button id="sort-alpha">Trier A-Z</button>
-				<button id="sort-alpha-desc">Trier Z-A</button>
-				<button id="sort-fav">Trier par favoris</button>
-				<button id="add-entry">Ajouter</button>
-			</section>
-			<section>
+			<!-- ── TABLE VIEW ─────────────────────────────────────────── -->
+			<section id="table-view">
 				<table id="anime-table">
 					<thead>
 						<tr>
-							<th>Nom</th>
-							<th>Favoris</th>
-							<th>Type</th>
+							<th id="th-alpha" class="sortable">
+								Nom <span class="sort-arrow"></span>
+							</th>
+							<th id="th-fav" class="sortable">
+								Favoris <span class="sort-arrow"></span>
+							</th>
+							<th id="th-type" class="sortable">
+								Type <span class="sort-arrow"></span>
+							</th>
 							<th>Actions</th>
 						</tr>
 					</thead>
@@ -45,28 +65,106 @@
 					</tbody>
 				</table>
 			</section>
-			<section id="form-section" style="display:none;">
-				<form id="anime-form">
-					<input type="hidden" id="form-type" value="add">
-					<input type="hidden" id="form-original-type">
-					<label>
-						Nom : <input type="text" id="form-title" required>
-					</label>
-					<label>
-						Favoris : <input type="number" id="form-fav" min="0" max="5">
-					</label>
-					<label>
-						Type :
-						<select id="form-section-type">
+
+			<!-- ── FORM VIEW ──────────────────────────────────────────── -->
+			<section id="form-view" style="display:none;">
+				<div class="form-card">
+					<h2 class="form-title">Ajouter un animé</h2>
+					<form id="anime-form">
+						<input type="hidden" id="form-type" value="add">
+						<input type="hidden" id="form-original-type">
+						<input type="hidden" id="form-original-title">
+
+						<div class="form-field">
+							<label for="form-title">Nom</label>
+							<input type="text" id="form-title" placeholder="Titre de l'animé" required>
+						</div>
+
+						<div class="form-field">
+							<label for="form-fav">
+								Favoris <span id="star-preview" class="star-preview">☆☆☆☆☆</span>
+							</label>
+							<input type="range" id="form-fav" min="0" max="5" value="0">
+						</div>
+
+						<div class="form-field">
+							<label for="form-section-type">Type</label>
+							<select id="form-section-type">
+								<option value="series">Série</option>
+								<option value="films">Film</option>
+								<option value="dropped">Dropped</option>
+							</select>
+						</div>
+
+						<div class="form-actions">
+							<button type="submit" class="btn-primary">✓ Valider</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!-- ── EDIT MODAL ─────────────────────────────────────────────── -->
+		<div id="modal-overlay" class="modal-overlay">
+			<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+				<div class="modal-header">
+					<h3 id="modal-title-text">Modifier l'animé</h3>
+					<button id="modal-close-btn" class="modal-close" aria-label="Fermer">✕</button>
+				</div>
+				<form id="modal-form">
+					<input type="hidden" id="modal-form-type" value="edit">
+					<input type="hidden" id="modal-form-original-type">
+					<input type="hidden" id="modal-form-original-title">
+
+					<div class="form-field">
+						<label for="modal-form-title">Nom</label>
+						<input type="text" id="modal-form-title" required>
+					</div>
+
+					<div class="form-field">
+						<label for="modal-form-fav">
+							Favoris <span id="modal-star-preview" class="star-preview">☆☆☆☆☆</span>
+						</label>
+						<input type="range" id="modal-form-fav" min="0" max="5" value="0">
+					</div>
+
+					<div class="form-field">
+						<label for="modal-form-section-type">Type</label>
+						<select id="modal-form-section-type">
 							<option value="series">Série</option>
 							<option value="films">Film</option>
 							<option value="dropped">Dropped</option>
 						</select>
-					</label>
-					<button type="submit">Valider</button>
-					<button type="button" id="form-cancel">Annuler</button>
+					</div>
+
+					<div class="form-actions">
+						<button type="submit" class="btn-primary">✓ Enregistrer</button>
+						<button type="button" id="modal-cancel-btn" class="btn-secondary">Annuler</button>
+					</div>
 				</form>
-			</section>
-		</main>
+			</div>
+		</div>
+
+		<!-- ── DELETE MODAL ───────────────────────────────────────────── -->
+		<div id="delete-modal-overlay" class="modal-overlay">
+			<div class="modal modal-delete" role="dialog" aria-modal="true">
+				<div class="modal-header">
+					<h3>Confirmer la suppression</h3>
+					<button id="delete-cancel-btn" class="modal-close" aria-label="Fermer">✕</button>
+				</div>
+				<div class="delete-body">
+					<p>
+						Supprimer <strong id="delete-modal-name"></strong>?
+					</p>
+					<p class="delete-warning">Cette action est irréversible.</p>
+				</div>
+				<div class="form-actions">
+					<button id="delete-confirm-btn" class="btn-danger">🗑️ Supprimer</button>
+					<button id="delete-cancel-btn2" class="btn-secondary" onclick="closeDeleteModal()">
+						Annuler
+					</button>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
