@@ -501,17 +501,6 @@ select:focus {
 	background: rgba(255, 255, 255, 0.08);
 }
 
-/* ── DELETE MODAL ─────────────────────────────────────────────────────────── */
-.modal-delete .delete-body {
-	margin-bottom: 1rem;
-}
-.modal-delete .delete-body p {
-	margin: 0 0 0.4rem;
-}
-.modal-delete .delete-body strong {
-	color: #00ffff;
-}
-.delete-warning {
-	font-size: 0.82rem;
-	color: #e74c3c;
+.capitalize {
+	text-transform: capitalize;
 }

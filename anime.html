@@ -3,61 +3,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Liste des animés</title>
-		<link rel="stylesheet" href="CSS/anime.css">
+		<title>Animés (JSON local)</title>
+		<link rel="stylesheet" href="../CSS/anime.css">
 		<link rel="stylesheet" href="../CSS/header.css">
 		<link rel="stylesheet" href="../CSS/footer.css">
-		<script src="JS/anime.js"></script>
 		<script src="../JS/header.js"></script>
 		<script src="../JS/footer.js"></script>
+		<script src="../JS/anime.js"></script>
 	</head>
 	<body>
 		<main>
-			<!-- ── TOPBAR ─────────────────────────────────────────────── -->
 			<div class="topbar">
 				<div class="topbar-filters">
-					<div class="filter-group">
-						<label for="type-filter">Catégorie</label>
-						<select id="type-filter">
-							<option value="all">Toutes</option>
-							<option value="series">Séries</option>
-							<option value="films">Films</option>
-							<option value="dropped">Dropped</option>
-						</select>
-					</div>
-					<div class="filter-group">
-						<label for="status-filter">Statut</label>
-						<select id="status-filter">
-							<option value="all">Tous</option>
-							<!-- Options remplies dynamiquement par JS -->
-						</select>
-					</div>
-					<div class="filter-group">
-						<label for="format-filter">Format</label>
-						<select id="format-filter">
-							<option value="all">Tous</option>
-							<!-- Options remplies dynamiquement par JS -->
-						</select>
-					</div>
-					<div class="filter-group">
-						<label for="fav-filter">Favoris</label>
-						<select id="fav-filter">
-							<option value="all">Tous</option>
-							<option value="fav">Avec note</option>
-							<option value="nofav">Sans note</option>
-						</select>
-					</div>
 					<div class="filter-group search-group">
 						<label for="search-input">Recherche</label>
 						<input type="text" id="search-input" placeholder="Nom de l'animé...">
 					</div>
 					<span id="anime-count" class="count-badge"></span>
-					<span id="data-source-badge" class="source-badge loading">⏳ Chargement...</span>
+					<span id="data-source-badge" class="source-badge offline">⏳ Chargement...</span>
 				</div>
-				<button id="toggle-view-btn" class="btn-primary">+ Ajouter un animé</button>
 			</div>
-
-			<!-- ── TABLE VIEW ─────────────────────────────────────────── -->
 			<section id="table-view">
 				<table id="anime-table">
 					<thead>
@@ -71,187 +36,11 @@
 							<th id="th-type" class="sortable">
 								Catégorie <span class="sort-arrow"></span>
 							</th>
-							<th id="th-status" class="sortable">
-								Statut <span class="sort-arrow"></span>
-							</th>
-							<th id="th-format" class="sortable">
-								Format <span class="sort-arrow"></span>
-							</th>
-							<th id="th-score" class="sortable">
-								Score <span class="sort-arrow"></span>
-							</th>
-							<th>Actions</th>
 						</tr>
 					</thead>
-					<tbody>
-						<!-- Données JS -->
-					</tbody>
+					<tbody></tbody>
 				</table>
 			</section>
-
-			<!-- ── FORM VIEW ──────────────────────────────────────────── -->
-			<section id="form-view" style="display:none;">
-				<div class="form-card">
-					<h2 class="form-title">Ajouter un animé</h2>
-					<form id="anime-form">
-						<input type="hidden" id="form-type" value="add">
-						<input type="hidden" id="form-original-type">
-						<input type="hidden" id="form-original-title">
-
-						<div class="form-grid">
-							<div class="form-field form-field-full">
-								<label for="form-title">Nom</label>
-								<input type="text" id="form-title" placeholder="Titre de l'animé" required>
-							</div>
-
-							<div class="form-field">
-								<label for="form-section-type">Catégorie</label>
-								<select id="form-section-type">
-									<option value="series">Série</option>
-									<option value="films">Film</option>
-									<option value="dropped">Dropped</option>
-								</select>
-							</div>
-
-							<div class="form-field">
-								<label for="form-status">Statut AniList</label>
-								<select id="form-status">
-									<option value="COMPLETED">Completed</option>
-									<option value="CURRENT">En cours</option>
-									<option value="DROPPED">Dropped</option>
-									<option value="PAUSED">En pause</option>
-									<option value="REPEATING">Revisionnage</option>
-								</select>
-							</div>
-
-							<div class="form-field">
-								<label for="form-format">Format</label>
-								<select id="form-format">
-									<option value="TV">TV</option>
-									<option value="TV_SHORT">TV Court</option>
-									<option value="MOVIE">Film</option>
-									<option value="OVA">OVA</option>
-									<option value="ONA">ONA</option>
-									<option value="SPECIAL">Spécial</option>
-									<option value="MUSIC">Clip</option>
-								</select>
-							</div>
-
-							<div class="form-field">
-								<label for="form-fav">
-									Favoris <span id="star-preview" class="star-preview">☆☆☆☆☆</span>
-								</label>
-								<input type="range" id="form-fav" min="0" max="5" value="0">
-							</div>
-
-							<div class="form-field">
-								<label for="form-score">
-									Score AniList <span id="score-preview" class="score-preview">0/100</span>
-								</label>
-								<input type="range" id="form-score" min="0" max="100" step="5" value="0">
-							</div>
-						</div>
-
-						<div class="form-actions">
-							<button type="submit" class="btn-primary">✓ Valider</button>
-						</div>
-					</form>
-				</div>
-			</section>
 		</main>
-
-		<!-- ── EDIT MODAL ─────────────────────────────────────────────── -->
-		<div id="modal-overlay" class="modal-overlay">
-			<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
-				<div class="modal-header">
-					<h3 id="modal-title-text">Modifier l'animé</h3>
-					<button id="modal-close-btn" class="modal-close" aria-label="Fermer">✕</button>
-				</div>
-				<form id="modal-form">
-					<input type="hidden" id="modal-form-type" value="edit">
-					<input type="hidden" id="modal-form-original-type">
-					<input type="hidden" id="modal-form-original-title">
-
-					<div class="form-field form-field-full">
-						<label for="modal-form-title">Nom</label>
-						<input type="text" id="modal-form-title" required>
-					</div>
-
-					<div class="form-grid">
-						<div class="form-field">
-							<label for="modal-form-section-type">Catégorie</label>
-							<select id="modal-form-section-type">
-								<option value="series">Série</option>
-								<option value="films">Film</option>
-								<option value="dropped">Dropped</option>
-							</select>
-						</div>
-
-						<div class="form-field">
-							<label for="modal-form-status">Statut AniList</label>
-							<select id="modal-form-status">
-								<option value="COMPLETED">Completed</option>
-								<option value="CURRENT">En cours</option>
-								<option value="DROPPED">Dropped</option>
-								<option value="PAUSED">En pause</option>
-								<option value="REPEATING">Revisionnage</option>
-							</select>
-						</div>
-
-						<div class="form-field">
-							<label for="modal-form-format">Format</label>
-							<select id="modal-form-format">
-								<option value="TV">TV</option>
-								<option value="TV_SHORT">TV Court</option>
-								<option value="MOVIE">Film</option>
-								<option value="OVA">OVA</option>
-								<option value="ONA">ONA</option>
-								<option value="SPECIAL">Spécial</option>
-								<option value="MUSIC">Clip</option>
-							</select>
-						</div>
-
-						<div class="form-field">
-							<label for="modal-form-fav">
-								Favoris <span id="modal-star-preview" class="star-preview">☆☆☆☆☆</span>
-							</label>
-							<input type="range" id="modal-form-fav" min="0" max="5" value="0">
-						</div>
-
-						<div class="form-field">
-							<label for="modal-form-score">
-								Score AniList <span id="modal-score-preview" class="score-preview">0/100</span>
-							</label>
-							<input type="range" id="modal-form-score" min="0" max="100" step="5" value="0">
-						</div>
-					</div>
-
-					<div class="form-actions">
-						<button type="submit" class="btn-primary">✓ Enregistrer</button>
-						<button type="button" id="modal-cancel-btn" class="btn-secondary">Annuler</button>
-					</div>
-				</form>
-			</div>
-		</div>
-
-		<!-- ── DELETE MODAL ───────────────────────────────────────────── -->
-		<div id="delete-modal-overlay" class="modal-overlay">
-			<div class="modal modal-delete" role="dialog" aria-modal="true">
-				<div class="modal-header">
-					<h3>Confirmer la suppression</h3>
-					<button id="delete-cancel-btn" class="modal-close" aria-label="Fermer">✕</button>
-				</div>
-				<div class="delete-body">
-					<p>
-						Supprimer <strong id="delete-modal-name"></strong>?
-					</p>
-					<p class="delete-warning">Cette action est irréversible.</p>
-				</div>
-				<div class="form-actions">
-					<button id="delete-confirm-btn" class="btn-danger">🗑️ Supprimer</button>
-					<button class="btn-secondary" onclick="closeDeleteModal()">Annuler</button>
-				</div>
-			</div>
-		</div>
 	</body>
 </html>
