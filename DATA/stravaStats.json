@@ -1,9 +1,9 @@
 {
-  "hours": 98,
-  "distanceKm": 2259.67,
-  "activities": 93,
+  "hours": 102,
+  "distanceKm": 2346.58,
+  "activities": 99,
   "startDate": "2023-09-15",
-  "endDate": "2026-04-09",
-  "updatedAt": "2026-04-09T07:14:24.267Z",
+  "endDate": "2026-04-30",
+  "updatedAt": "2026-04-30T09:45:54.700Z",
   "source": "strava-actions"
 }
