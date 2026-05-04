@@ -1,0 +1,23 @@
+{
+	"hero": {
+		"title": "Mon projet",
+		"subtitle": "Projection après l’EPHEC et orientations professionnelles"
+	},
+	"sections": [
+		{
+			"type": "about",
+			"className": "content-section about",
+			"title": "Vue d'ensemble",
+			"paragraphs": [
+				"Après l'Ephec, je ne pense pas tout de suite faire un master. Je me dis que l'expérience en entreprise est essentiel et que donc, ça peut remplacer 2-3 ans d'études en plus (passerelle + master en 60 ou 120 crédits). ",
+				"Le domaine dans lequel je me vois est plus dans le développement web vu qu'il s'agit de la partie qui m'a le plus intéressée lors de mes 3 ans d'études. Sinon, un travaille en lien avec ce que j'ai fait durant mon stage me convient aussi. La manipulation de machine de prototypages est une compétence utile dans sa globalité. Ca nécessite d'être curieux pour apprendre à bien maitriser la machine et il y a un côté physique qui, je trouve, est moins marquant dans les autres cours du cursus"
+			]
+		},
+		{
+			"type": "about",
+			"className": "content-section about",
+			"title": "Forces et Faiblesses ",
+			"paragraphs": ["", ""]
+		}
+	]
+}

@@ -4,12 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Animés (JSON local)</title>
+		<link rel="stylesheet" href="../CSS/main.css">
 		<link rel="stylesheet" href="../CSS/anime.css">
 		<link rel="stylesheet" href="../CSS/header.css">
 		<link rel="stylesheet" href="../CSS/footer.css">
+		<script src="../JS/anime.js"></script>
 		<script src="../JS/header.js"></script>
 		<script src="../JS/footer.js"></script>
-		<script src="../JS/anime.js"></script>
 	</head>
 	<body>
 		<main>
@@ -23,24 +24,25 @@
 					<span id="data-source-badge" class="source-badge offline">⏳ Chargement...</span>
 				</div>
 			</div>
-			<section id="table-view">
-				<table id="anime-table">
-					<thead>
-						<tr>
-							<th id="th-alpha" class="sortable">
-								Nom <span class="sort-arrow"></span>
-							</th>
-							<th id="th-fav" class="sortable">
-								Favoris <span class="sort-arrow"></span>
-							</th>
-							<th id="th-type" class="sortable">
-								Catégorie <span class="sort-arrow"></span>
-							</th>
-						</tr>
-					</thead>
-					<tbody></tbody>
-				</table>
-			</section>
+			   <section id="table-view">
+				   <table id="anime-table">
+					   <thead>
+						   <tr>
+							   <th id="th-alpha" class="sortable">
+								   Nom <span class="sort-arrow"></span>
+							   </th>
+							   <th id="th-fav" class="sortable">
+								   Favoris <span class="sort-arrow"></span>
+							   </th>
+							   <th id="th-type" class="sortable">
+								   Catégorie <span class="sort-arrow"></span>
+							   </th>
+						   </tr>
+					   </thead>
+					   <tbody></tbody>
+				   </table>
+				   <div id="pagination" class="pagination"></div>
+			   </section>
 		</main>
 	</body>
 </html>

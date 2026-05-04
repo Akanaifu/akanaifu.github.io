@@ -1,3 +1,5 @@
+import { renderHero } from "./index.js";
+
 function capitalizeFirstLetter(val) {
   return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 }
@@ -213,6 +215,17 @@ async function createTab(idTab, file) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  const container = document.getElementById("tab-portfolio-content");
+  
+  try {
+    // Load and display hero
+    const configData = await fetchJson("DATA/tabPortfolio-config.json");
+    renderHero(container, configData.hero);
+  } catch (error) {
+    console.error("Error loading hero:", error);
+  }
+  
+  // Create table as usual
   createTab("table", "DATA/tabPortfolio.json");
 });

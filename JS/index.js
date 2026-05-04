@@ -122,15 +122,15 @@ function renderCards(main, sectionData) {
   main.appendChild(section);
 }
 
-function renderIndex() {
-  const main = document.getElementById("index-content");
+function renderIndex(section, contenu) {
+  const main = document.getElementById(section);
   if (!main) {
     return;
   }
 
-  renderHero(main, content.hero);
+  renderHero(main, contenu.hero);
 
-  content.sections.forEach((sectionData) => {
+  contenu.sections.forEach((sectionData) => {
     if (sectionData.type === "about") {
       renderAbout(main, sectionData);
       return;
@@ -147,5 +147,6 @@ function renderIndex() {
   });
 }
 
-renderIndex();
+renderIndex("index-content", content);
 initCardsPopup();
+export { renderHero, createElement, renderIndex };
