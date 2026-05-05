@@ -392,5 +392,20 @@
 		"heures_valorisees": "0h",
 		"description": "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme",
 		"preuves": [{ "lien": "Ephec_SoftMakers_LLN-7.jpg", "legende": "intro semaine inter" }]
+	},
+	{
+		"cours": "Développement informatique",
+		"catégorie": "site web",
+		"nom": "yugioh card tracker",
+		"date": "05/05/2026",
+		"heures_prestees": "2.5h",
+		"heures_valorisees": "2.5h",
+		"description": "Je m'occupais de trier un peu ma collection de cartes et de checker mon excel en lien. Vu qu'il n'était pas très optimisé, j'ai refais l'inventaire en python avec un fichier json comme DB et un affichage graphique avec TKinter",
+		"preuves": [
+			{ "lien": "https://github.com/Akanaifu/yugioh_card_tracker", "legende": "github projet" },
+			{ "lien": "clockify_ygo.png", "legende": "clockify mini projet" },
+			{ "lien": "interface_ygo.png", "legende": "interface graphique" },
+			{ "lien": "excel_ygo.png", "legende": "version excel très basique" }
+		]
 	}
 ]

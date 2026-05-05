@@ -33,7 +33,7 @@ function groupByCategory(data) {
   const map = new Map();
 
   data.forEach((item) => {
-    const key = getCategory(item);
+    const key = getCategory(item).toLowerCase();
     if (!map.has(key)) map.set(key, []);
     map.get(key).push(item);
   });
@@ -217,7 +217,7 @@ async function createTab(idTab, file) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const container = document.getElementById("tab-portfolio-content");
-  
+
   try {
     // Load and display hero
     const configData = await fetchJson("DATA/tabPortfolio-config.json");
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (error) {
     console.error("Error loading hero:", error);
   }
-  
+
   // Create table as usual
   createTab("table", "DATA/tabPortfolio.json");
 });
