@@ -1,4 +1,4 @@
-[
+﻿[
 	{
 		"cours": "Électronique digitale",
 		"catégorie": "Challenge",
@@ -6,7 +6,14 @@
 		"date": "25-27 Octobre 2024",
 		"heures_prestees": "44h",
 		"heures_valorisees": "10h",
-		"description": "Participation au hackathon annuel de l'EPHEC 2024. Le but de ce hackathon est d'utiliser du vieux matériel plus utilisé, de lui ajouter un peu d'électronique pour lui trouver une nouvelle utilisation. Avec mon groupe, nous avons amélioré un baby foot pour pouvoir compter le score automatiquement grâce à des capteurs dans les goals. Je n'ai pas fait le hackathon de l'année précédente car je trouvais que je n'avais pas les skills nécessaire à faire un projet à hauteur d'un hackathon. En 2e, j'avais déjà plus les outils, ce qui m'a permis de bien travailler sur le projet ainsi que d'aider les autres membres de mon groupe. Je me dis que j'aurais quand même pu participer à l'édition 2023 malgré mon manque de connaissance car ça permet d'avoir un aperçu de à quoi je vais être formé et déjà un peu à apprendre. Concernant le projet en lui même, j'ai plus travaillé sur la partie électronique pour détecter un goal et afficher le score. Un autre de mon groupe s'est occupé de la page web pour pour pouvoir planifier/organiser des matchs. Vu que le hackathon se déroule au Q1, le principe de stack n'avait pas encore été vu, ni tout ce qui était réellement un backend, frontend. J'aurais pu lui demander de m'expliquer rapidement les bases pour essayer de l'aider. A la place, j'ai expliqué rapidement ce que je savais en électronique et en dev à l'étudiant en 1ère de notre groupe.",
+		"description": [
+			[
+				"J'ai participé au hackathon annuel de l'EPHEC 2024. Je n'avais pas fait l'édition précédente car je trouvais que je n'avais pas les compétences nécessaires pour faire un projet comme un hackathon. Mais en 2e, j'avais déjà plus les outils."
+			],
+			[
+				"Le hackathon proposait de prendre du vieux matériel inutilisé et de lui ajouter de l'électronique pour lui trouver une nouvelle utilisation. Avec mon groupe, nous avons amélioré un baby foot pour pouvoir compter le score automatiquement grâce à des capteurs dans les goals. Comme le hackathon se déroulait au Q1, le principe de stack n'avait pas encore été vu, ni tout ce qui était réellement un backend ou frontend.J'ai plus travaillé sur la partie électronique pour détecter un goal et afficher le score. Un autre de mon groupe s'est occupé de la page web. J'ai expliqué rapidement ce que je savais en électronique et en dev à l'étudiant en 1ère de notre groupe. Cela m'a permis de bien travailler sur le projet et d'aider les autres membres du groupe."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "https://github.com/Nini1551/Hackaton2024",
@@ -14,7 +21,7 @@
 			},
 			{
 				"lien": "https://www.instagram.com/p/DCR-yQkMZ1s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-				"legende": "Post Instagram de l'événement"
+				"legende": "Post Instagram de l'évènement"
 			}
 		]
 	},
@@ -25,7 +32,17 @@
 		"date": "24-26 Ocotbre 2025",
 		"heures_prestees": "44h",
 		"heures_valorisees": "10h",
-		"description": "Participation au hackathon annuel de l'EPHEC 2025. Même idée de projet de challenge que l'édition précédente : Prendre du matériel plus utilisé et le mettre à jour grâce à de l'électronique. Cette année, à partir d'un petit piano mécanique trouvé dans une brocante, avec mon groupe, nous avons rajouté une partie électronique afin de le transformer en piano 'fantôme'/automatique. Lors de cette édition, j'ai remarqué l'écart avec l'année précédente. Pour l'édition 2024, je savais faire ce qu'on me demandait mais je n'avais pas une bonne vision des différentes tâches à faire et l'ordre des étapes pour y arriver. Grâce aux différents projets et cours de bac 2 et du début de bac 3, avec mon groupe, nous avons pu bien décomposer le projet et se répartir les tâches. Nous avons pas fait de site web car nous trouvions que ça n'ajoutait pas de plus value au projet initiale. Nous avons perdu du temps à la réflexion du projet. Au début, il était question d'utiliser des cerveaux-moteurs pour que les marteaux du piano tape sur les barres métaliques pour joueur le son mais au vu de la puissance des cerveaux-moteurs, l'idée a été mise de côté. Une autre idée était de ne pas utiliser la partie métallique qui permet de jouer les notes mais de faire comme un synthé. Faire en sorte de détecter quelle touche du clavier est tapé et jouer avec un buzzer la note correspondante. En discutant avec les profs, des meilleurs pistons nous ont été fournis, ce qui nous a permis de nous lancer sur la piste de la première idée. Je me suis occupé de trouver le moyen de faire fonctionner les pistons. J'ai perdu du temps à trouver un schéma fonctionnel pour le modèle des pistons et encore plus de temps perdu pour les faire fonctionner. Mais là ou j'ai perdu le plus de temps, c'est que le raspberry qu'on avait, avait certaines pins ne fonctionnant plus. Pendant plusieurs heures, j'ai cherché au niveau de mon câblage. Après avoir compris le problème, avec le groupe, nous avons rassemblé chaques tâches qu'on s'était réparties. Certains s'étaient occupé de la confection d'un support pour le piano pour cacher l'électronique, d'autres au scripts python pour jouer la musique.",
+		"description": [
+			[
+				"J'ai participé au hackathon annuel de l'EPHEC 2025. Comme l'édition précédente, le concept était de prendre du matériel inutilisé et le mettre à jour grâce à de l'électronique. Cette année, à partir d'un petit piano mécanique trouvé dans une brocante, avec mon groupe, nous avons rajouté une partie électronique pour le transformer en piano fantôme/automatique."
+			],
+			[
+				"J'ai remarqué l'écart avec l'année précédente. En 2024, je savais faire ce qu'on me demandait mais je n'avais pas une bonne vision des différentes tâches et de l'ordre des étapes. Grâce aux projets et cours de bac 2 et du début de bac 3, nous avons pu bien décomposer le projet et nous répartir les tâches. Nous avons perdu du temps à la réflexion du projet."
+			],
+			[
+				" Au début, l'idée était d'utiliser des cerveaux-moteurs pour que les marteaux frappent les barres métalliques, mais ils n'étaient pas assez puissant. On a envisagé un synthé en détectant les touches et jouant les notes avec un buzzer. Finalement, en discutant avec les profs, nous avons reçu de meilleurs pistons qui nous ont permis de revenir à la première idée.Je me suis occupé de faire fonctionner les pistons. J'ai perdu du temps à trouver le schéma fonctionnel et à les faire marcher. Le gros problème, c'est que le Raspberry avait des pins qui ne fonctionnaient plus. J'ai cherché longtemps au niveau du câblage avant de comprendre. Après, avec le groupe, nous avons rassemblé les tâches : support pour le piano pour cacher l'électronique, scripts Python pour la musique. Il a fallut quelques essaies pour que tu s'imbriques mais ce fut la partie la plus simple."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "https://github.com/Akanaifu/RizzBee",
@@ -48,7 +65,17 @@
 		"date": "8-9 Mars 2024",
 		"heures_prestees": "24h",
 		"heures_valorisees": "0h",
-		"description": "Le CSCB est une compétition de cybersécurité nationale proposée aux étudiants en informatique pour tester leurs compétences sur différentes problématique liés à la cybersécurité (programmation, crypto, web, reverse engineering, etc.). Lors de ma première participation, je l'ai fait en duo avec un étudiant de ma classe mais on était chacun chez soi. Nous avons réussi à trouver quelques flags parmis les niveaux faciles mais les niveaux moyens nous semblait plus que moyen. Nous nous sommes un peu découragé mais pour ma part, ça m'a donnée envie de retester l'année suivante pour voir si j'allais faire mieux. Je savais de base que je n'allais pas trouver beacoup de flag mais j'y ai quand même participée pour ne pas faire comme au hackathon juste parce que je n'ai pas le niveau. Même si la cybersécurité et le réseau ne sont pas mes matières favorites, tester ses compétences et juste essayer de trouver les flags restent fun à faire de temps à autre.",
+		"description": [
+			[
+				"Le CSCB est une compétition de cybersécurité nationale proposée aux étudiants en informatique pour tester leurs compétences sur différentes problématiques liées à la cybersécurité : programmation, crypto, web, reverse engineering, etc."
+			],
+			[
+				"Lors de ma première participation, j'y ai participé en duo avec un étudiant de ma classe mais nous étions chacun chez soi. Nous avons réussi à trouver quelques flags parmi les niveaux faciles mais les niveaux moyens nous semblaient déjà durs, ce qui nous a un peu découragés."
+			],
+			[
+				" Mais pour ma part, ça m'a donné envie de retester l'année suivante pour voir si j'allais faire mieux.Je savais de base que je n'allais pas trouver beaucoup de flags mais j'y ai quand même participé. Je voulais tester mes compétences et juste essayer de trouver les flags. Même si la cybersécurité et le réseau ne sont pas mes matières favorites, c'est fun à faire de temps à autre."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "cscb2024.png",
@@ -67,7 +94,7 @@
 		"date": "14-15 Mars 2025",
 		"heures_prestees": "24h",
 		"heures_valorisees": "5h",
-		"description": "Compétition de cybersécurité nationale 2025.",
+		"description": ["Compétition de cybersécurité nationale 2025."],
 		"preuves": [
 			{
 				"lien": "https://www.instagram.com/p/DIjic3RM8Iz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
@@ -79,10 +106,20 @@
 		"cours": "Électronique digitale",
 		"catégorie": "Participation évènement",
 		"nom": "Let's fix it",
-		"date": "18 Mars 2024",
+		"date": "18 Mars 2025",
 		"heures_prestees": "2.5h",
 		"heures_valorisees": "2.5h",
-		"description": "Le Let's fix It est une soirée sur le thème de l'électronique. Plusieurs stands sont présent pour expliquer la vie d'un objet électronique, d'autres proposent de réparer différents objets tel que des fairphones ou d'autres modèles de smartphone. Le Louvain-Li-Nux, un kap de Louvain-la-Neuve était invité pour expliquer ce qu'était linux, comment ça marche et comment le mettre sur sa machine. Pour ma part, j'ai vagabondé de stand en stand pour voir ce que chacun proposait. Ce qui m'a le plus interpellé, c'est le cycle de vie d'un appareil électronique (l'exemple utilisé était l'assistance voval Alexia d'Amazon). Ce qui est surprenant, c'est la quantité de ressources primaires nécessaires à la confection d'un appareil, quasi tout le tableau de Mendélev. J'ai aussi regardé rapidement l'atelier fairphone par curiosité pour voir l'intérieur du téléphone. L'année suivante, il y a eu la 2e édition de l'évènement. Je ne l'a mets pas dans mon portfolio vu que c'est une activé qui rentre dans mon stage mais je me dis qu'en parler est aussi intéressant. Pour cette 2 édition, je tenais un stand sur la répartibilité de différents composants électroniques utilisés en cours. Il fallait souder des potentiomètres, remplacer le fusible d'un multi-mètre ou crafter un câble RJ-45. Les étudiants de 2e et les quelques 3e n'ont pas eu trop de soucis avec ces ateliers. C'est plus les 1ère à qui j'ai du plus expliquer comment fonctionnait le potentiomètre ou comment ne pas faire sauter le fusible du multimètre. Il n'y a pas eu que des étudiants de TI. Il y avait aussi des enfants qui ont pu essayer de souder ou de faire leur propre câble. D'autres participants ont été surpris que parfois, juste en re-soudant un câble, il était possible d'éviter de racheter du matériel.",
+		"description": [
+			[
+				"Le Let's fix It est une soirée sur le thème de l'électronique. Plusieurs stands expliquent la vie d'un appareil électronique, d'autres proposent de réparer des objets comme des Fairphones. Le Louvain-Li-Nux, un kap (kot à projet) de Louvain-la-Neuve, expliquait ce qu'était Linux et comment le mettre sur sa machine."
+			],
+			[
+				"Je me suis baladé de stand en stand pour voir ce que chacun proposait. Ce qui m'a le plus interpellé, c'est le cycle de vie d'un appareil électronique. La quantité de ressources primaires nécessaires à la confection d'un appareil est surprenante, quasi tout le tableau de Mendélev. J'ai aussi regardé rapidement l'atelier Fairphone par curiosité pour voir l'intérieur du téléphone."
+			],
+			[
+				"L'année suivante, je tenais un stand sur la réparabilité de différents composants électroniques utilisés en cours. Il s'agissait d'une de mes tâches de stagiaire, c'est pourquoi il n'y a une activité lets Fit It 2026 dans le portfolio. Mais je trouve qu'en parler est important. A mon stand, il fallait souder des potentiomètres, remplacer le fusible d'un multimètre ou crafter un câble RJ-45. Les étudiants de 2e et les quelques 3e n'ont pas eu trop de soucis. Les 1ère ont eu besoin de plus d'explications sur le potentiomètre ou comment ne pas faire sauter le fusible. Il y avait aussi des enfants qui ont pu essayer de souder ou faire leur propre câble. D'autres participants ont été surpris que parfois, juste en re-soudant un câble, il était possible d'éviter de racheter du matériel."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "letsFixIt.jpg",
@@ -97,7 +134,17 @@
 		"date": "2024-2025",
 		"heures_prestees": "47h",
 		"heures_valorisees": "8h",
-		"description": "L'Ephec propose pour les premières un service d'aide à la réussite (SAR). Des étudiants de bac 2 ou 3 peuvent se proposer pour expliquer des cours que les premières ont du mal à comprendre. J'ai donné principalement tutorat pour le cours de programmation de BAC 1 Q1. Pour certains étudiants, ce fut compliqué car ils avaient loupé beaucoup de cours. J'ai donc repris le cours du professeur et expliqué chaque concept avec des exemples soit tirés du cours soit que je faisis devant eux sur mon pc avant de leur demandé de faire 2-3 exercices des TPs pour voir s'ils avaient compris. D'autres étudiants m'ont demandé de l'aide pour un petit point qu'ils comprenaient moins. A chaque fois que j'avais un nouvel étudiant, je le contactais pour savoir sur quelle partie du cours il avait besoin d'aide pour me préparer en amont. Je ne faisais pas une grosse prépa mais je regardais rapidement comment le professeur voyait ce point dans le cours et essayer de comprendre comment l'expliquer différemment à l'étudiant. Être tuteur est un bon exercice pour soi même car ça demande de comprendre ce qu'on doit expliquer à autrui et parfois, ça m'a permis de me rappeler ou d'apprendre des exceptions ou d'autres moyens de résoudre certains problèmes pendant mes explications. Il ne s'agit pas de juste redire ce que le professeur a expliqué en cours mais de comprendre et le dire d'une autre manière et de s'adapter à l'étudiant en face de soi. Le professeur peut moins se permettre cette adaptation car il explique à tous les étudiants mais le tuteur l'a et doit en profiter. ",
+		"description": [
+			[
+				"L'Ephec propose pour les premières un service d'aide à la réussite (SAR). Des étudiants de bac 2 ou 3 peuvent se proposer pour expliquer des cours que les premières ont du mal à comprendre."
+			],
+			[
+				"J'ai donné principalement du tutorat pour le cours de programmation de BAC 1 Q1.Certains étudiants avaient loupé beaucoup de cours, donc j'ai repris le cours du professeur et expliqué chaque conce devant eux sur mon PC. D'autres avaient juste des questions sur un point spécifique. À chaque fopt avec des exemples soit tirés du cours soit que je faisaisis que j'avais un nouvel étudiant, je le contactais pour savoir sur quelle partie il avait besoin d'aide pour me préparer en amont. Je regardais rapidement comment le professeur abordait ce point et j'essayais de le comprendre pour l'expliquer différemment. Après chaque explication, je leur demandais de faire 2-3 exercices des TPs pour voir s'ils avaient compris."
+			],
+			[
+				"Être tuteur est un bon exercice pour soi-même. Ça demande de vraiment comprendre ce qu'on doit expliquer. Parfois, ça m'a permis de me rappeler ou d'apprendre des exceptions ou d'autres moyens de résoudre certains problèmes. Il ne s'agit pas de juste redire ce que le professeur a expliqué en cours mais de le dire d'une autre manière et de s'adapter à l'étudiant en face de soi. Le professeur peut moins se permettre cette adaptation car il explique à tous les étudiants."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "Attestation_24-25_Lemaire-Nathan.pdf",
@@ -112,7 +159,14 @@
 		"date": "2025",
 		"heures_prestees": "2h",
 		"heures_valorisees": "2h",
-		"description": "Comme expliqué dans la section Tutorat programmation, il s'agit du tutorat en math proposé aux premières. J'ai pu donner mon tutorat malgé le fait que je n'ai pas eu min 14/20 l'année passée car l'Ephec me l'avait crédité suite à ma demande puisque j'avais réussi des cours d'algèbre et d'analyse en ingénieur civil. Officiellement, je n'ai donné qu'un fois tutotat dans cette matière mais parfois, j'assistais aux tutorats d'amis pour ce cours et donc je donnais parfois mon avis. Comme pour la programmation, certains étudiants demandent un tuteur pour qu'il explique tout le cours car ils n'y sont pas allé pour x ou y raisons. Lors de mes explications, j'essaie de ne pas être trop rigide. Je fais parfois des allusions un peu loufoques ou hors sujets pour montrer qu'il ne faut pas voir les maths juste avec des chiffres et des nombres et que ça ne sert pas dans la vie de tous les jours. Alors oui, certains concepts ne vont pas servir pour tout le monde mais dans notre domaine, il y a une raison pour que ces concepts soient vus. Il faut juste le montrer.",
+		"description": [
+			[
+				"Comme expliqué dans la section Tutorat programmation, il s'agit du tutorat en math proposé aux premières. J'ai pu donner mon tutorat malgré le fait que je n'ai pas eu min 14/20 l'année passée car l'Ephec me l'avait crédité suite à ma demande, puisque j'avais réussi des cours d'algèbre et d'analyse en ingénieur civil."
+			],
+			[
+				"Officiellement, je n'ai donné qu'une fois tutorat dans cette matière mais parfois j'assistais aux tutorats d'amis pour ce cours et donnais mon avis. Comme pour la programmation, certains étudiants demandent un tuteur pour qu'il explique tout le cours car ils n'y sont pas allés pour différentes raisons. Lors de mes explications, j'essaie de ne pas être trop rigide. Je fais parfois des allusions un peu loufoques ou hors sujet pour montrer qu'il ne faut pas voir les maths juste avec des chiffres et des nombres. Oui, certains concepts ne vont pas servir pour tout le monde, mais dans notre domaine, il y a une raison pour que ces concepts soient vus. Il faut juste le montrer."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "Prestation_tutorat_math.png",
@@ -127,7 +181,7 @@
 		"date": "27 Avril 2024",
 		"heures_prestees": "11h",
 		"heures_valorisees": "5h",
-		"description": "Organisation et participation à la LAN party de l'EPHEC 2024.",
+		"description": ["Organisation et participation à la LAN party de l'EPHEC 2024."],
 		"preuves": [
 			{
 				"lien": "LAN_Party_2024.pdf",
@@ -142,7 +196,7 @@
 		"date": "26 Avril 2025",
 		"heures_prestees": "11h",
 		"heures_valorisees": "5h",
-		"description": "Organisation et participation à la LAN party de l'EPHEC 2025.",
+		"description": ["Organisation et participation à la LAN party de l'EPHEC 2025."],
 		"preuves": [
 			{
 				"lien": "LAN_Party_2025.pdf",
@@ -157,7 +211,17 @@
 		"date": "25 Avril 2026",
 		"heures_prestees": "~20h",
 		"heures_valorisees": "0h",
-		"description": "Cette année, M. Noël m'a demandé de prendre en main l'organisation de la LAN: former la team pour l'organisation et coordonner l'évènement. Au début, je comptais faire comme les deux autres années avec le choix de tournois principal et mettre d'autres jeux sur le côté. Après discussion avec un première en TI qui a l'habitude de LAN et de tournois, l'organisation a pris plus d'ampleur. L'étudiant en question a contacté différentes organisations étudiantes pour emprunter des moniteurs et PCs pour le tournoi principal. Nous avons également contacté Ephec sport pour financer la nourriture proposé le jour J. Pour cette édition, je me suis principalement occupé que chaque tâche était réalisée et j'ai délégué chaques tâches aux autres membres en fonction de ce qu'il savait faire (configuration du serveur pour les jeux Pc, installation des softwares sur les Pcs, vérifier que tout tourne correctement, etc.). J'ai beaucoup communiqué avec M. Noël pour savoir ce qu'on pouvait et ne pouvait pas faire vu que cette édition différait un peu des 2 autres. Outre les tâches déléguées, je me suis occupé de la partie Nintendo Switch de la LAN secondaire: Mario Kart World et Super Smash Bros Ultimate. Vu que j'ai plus l'habitude de ce type de jeux et supports, préparer ces deux tournois ne m'a pas pris trop de temps et j'ai aussi pu y participer. Ce qui m'a réellement pris le plus d'énergie, c'était de cadrer les autres organisateurs pour garder un évènement étudiant et fun. Beaucoups de bonnes idées ont été proposées mais pas pour la LAN Ephec. Très clairement, ce qui a été différent des autres années, c'est d'être l'organisateur principal et gérer l'équipe. Les autres années, je pouvais juste me concentrer sur ma partie et vite fait me renseigner sur l'organisation en générale. Cette fois-ci, je devais me concentrer sur tout pour éviter un maximum de problèmes le jour à régler. La réaction des participants à la fin du tournoi me fait dire qu'on a bien organisé les tournois. Cette manière d'organisation va être utile pour d'autres projets, professionnels ou pas. La LAN n'est pas le premier ni le dernier évènement que j'organise mais ça me permet de trouver un équilibre dans ce qui marche, marche pas et de m'adapter à chaque fois à de nouvelles situations.",
+		"description": [
+			[
+				"M. Noël m'a demandé de prendre en main l'organisation de la LAN de cette année: former la team pour l'organisation et coordonner l'évènement. C'était différent des deux années précédentes où je participais mais sans être responsable global. Au début, je comptais faire comme les deux autres années avec un tournoi principal et mettre d'autres jeux sur le côté."
+			],
+			[
+				"Après discussion avec un première en TI qui a l'habitude de LAN et de tournois, l'organisation a pris plus d'ampleur. Il a contacté différentes organisations étudiantes pour emprunter des moniteurs et PCs pour le tournoi principal. Nous avons aussi contacté Ephec sport pour financer la nourriture du jour J. Pour cette édition, je me suis principalement occupé que chaque tâche était réalisée et j'ai délégué les tâches aux autres en fonction de ce qu'ils savaient faire : configuration du serveur, installation des softwares, vérification que tout fonctionne, etc. J'ai beaucoup communiqué avec M. Noël pour savoir ce qu'on pouvait et ne pouvait pas faire vu que cette édition différait des deux autres.Outre les tâches déléguées, je me suis occupé de la partie Nintendo Switch : Mario Kart et Super Smash Bros Ultimate. Vu que j'ai plus l'habitude de ce type de jeux, préparer ces deux tournois ne m'a pas pris trop de temps et j'ai aussi pu y participer."
+			],
+			[
+				" Ce qui m'a vraiment pris le plus d'énergie, c'était de cadrer les autres membres de la équipe organisatrice pour garder un évènement étudiant et fun. Beaucoup d'idées ont été proposées mais pas toutes adaptées à la LAN Ephec. Ce qui a été différent des autres années, c'est d'être l'organisateur principal et gérer l'équipe. Les autres années, je pouvais juste me concentrer sur ma partie. Cette fois-ci, je devais me concentrer sur tout pour éviter un maximum de problèmes le jour J. La réaction des participants à la fin m'a montré qu'on avait bien organisé les tournois. Cette manière d'organisation va être utile pour d'autres projets, professionnels ou pas."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "admin_serveur_lan.png",
@@ -172,7 +236,20 @@
 		"date": "2023-",
 		"heures_prestees": "~400h",
 		"heures_valorisees": "10h",
-		"description": "Au début du second quadrimestre de ma première, M. Noël m'a proposé de rejoindre l'équipe universitaire d'ultimate Frisbee de l'Ephec. Mon année se passait bien et je faisais moins de sport qu'avant, donc j'ai décidé de tester. En rentrant dans l'équipe, je ne connaissais quasiment personne puisque c'était principalement des Bacs 2 en TI. J'ai vite accroché au sport.Avant de rejoindre, je savais déjà comment lancer un frisbee grâce à mes expériences en scout, mais l'ultimate c'est bien plus que lancer d'un point A à un point B. Il y a une vraie dimension tactique et physique à maîtriser. Jusqu'à ce moment, je faisais surtout des sports solo (judo, gym, vélo). Même avec ma base en lancer et mes compétences physiques, il m'a fallu lancer beaucoup plus de frisbee et apprendre à me placer sur le terrain. Je travaille encore sur ce positionnement deux ans après avoir commencé. Ce que j'ai appris : l'ultimate m'a demandé d'apprendre à connaître mes forces et mes faiblesses, et comment jouer en fonction de mes coéquipiers. Je me repose souvent sur mes expériences passées quand je commence quelque chose de nouveau. Pour l'ultimate, je me suis basé sur mes réflexes du judo pour analyser et prendre une décision rapide lors des matchs, la physique que m'a apportée la gym et l'endurance du vélo. Mais ce n'est pas suffisament. Ca m'a aidé au début pour avoir un repert. Plus je prograissais dans ce sport, moins je liais mes expériences d'autres sports avec mes directement ce que j'ai vécu à l'ultimate. Lors de la deuxième année, avec l'arrivée de nouveaux joueurs, j'ai dû leurs apprendre les bases à mon tour. En les aidant, j'ai pu consolider mes bases et avancer en tant que joueur. Comme les autres sports, l'ultimate frisbee m'a appris des choses utiles hors du terrain : s'adapter à chacun (coéquipier comme adversaires), prises de décisions sous pression, gérer la pression, transmettre un savoir à d'autres. ",
+		"description": [
+			[
+				"Au début du second quadrimestre de ma première, le coach de l'équipe universitaire d'ultimate Frisbee de l'Ephec m'a proposé de rejoindre son équipe. J'ai vite accroché au sport pour plusieurs raisons expliquées par après. Avant de rejoindre, je savais déjà comment lancer un frisbee grâce à mes expériences en scout, mais l'ultimate c'est bien plus que lancer d'un point A à un point B."
+			],
+			[
+				"Il y a une vraie dimension tactique et physique à maîtriser. Jusqu'à ce moment, je faisais surtout des sports solo (judo, gym, vélo). Même avec ma base en lancer et mes compétences physiques, il m'a fallu lancer beaucoup plus de frisbee et apprendre à me placer sur le terrain. Je travaille encore sur ce positionnement deux ans après avoir commencé. "
+			],
+			[
+				"Ce que j'ai de l'ultimate : apprendre à connaître mes forces et mes faiblesses (sportives ou non), comment jouer en fonction de mes coéquipiers, s'adapter à différentes stratégies, etc. Je me repose souvent sur mes expériences passées quand je commence quelque chose de nouveau. Pour l'ultimate, je me suis basé sur mes réflexes du judo pour analyser et prendre une décision rapide lors des matchs, la physique que m'a apportée la gym et l'endurance du vélo. Mais ce n'est pas suffisament. Ca m'a aidé au début pour avoir un repert. Plus je progressais dans ce sport, moins je liais mes expériences d'autres sports avec mais directement ce que j'ai vécu lors de matchs ou entrainements. Lors de la deuxième année, avec l'arrivée de nouveaux joueurs, j'ai dû leurs apprendre les bases à mon tour. En les aidant, j'ai pu consolider mes bases et avancer en tant que joueur."
+			],
+			[
+				"Comme les autres sports, l'ultimate frisbee m'a appris des choses utiles hors du terrain : s'adapter à chacun (coéquipier comme adversaires), prises de décisions sous pression, gérer la pression, transmettre un savoir à d'autres, apprendre à connaitres de nouvelles personnes"
+			]
+		],
 		"preuves": [
 			{
 				"lien": "openDeTouraine.jpg",
@@ -200,10 +277,23 @@
 		"cours": "Sport",
 		"catégorie": "Softskills",
 		"nom": "Vélo",
-		"date": "2018-",
+		"date": "2020-",
 		"heures_prestees": "~92h",
 		"heures_valorisees": "0h",
-		"description": "Pratique régulière du cyclisme avec profil Strava en lien. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
+		"description": [
+			[
+				"J'ai commencé le vélo en 2020 pour rouler avec des amis. Les heures affichées sont comptées au moment où j'ai commencé l'Ephec."
+			],
+			[
+				"Même si j'en fais moins maintenant, ce sport m'a apporté plus d'un bienfait (et surtout des blessures). Contrairement à l'ultimate qui est un sport collectif ou le judo qui demande à adversaire, le vélo, c'est toi et ton vélo. Je fais aussi des balades à plusieurs mais même dans ce cas, tu ne peux compter que sur tes propres jambes (je ne prends pas en compte les clubs de cyclisme et les compétitions qu'ils font). Ca demande donc une connaissance de soi-même plus importante."
+			],
+			[
+				"En plus d'avoir un impact physique, je trouve que le vélo a aussi un effet psycholique: j'arrive à ne plus penser à certains problèmes, ce qui a un côté relaxant. En tout cas, ça bloque une partie de ces idées néfastes. Mettre ses problèmes de côtés le temps d'une sortie, ça permet de réfléchir à d'autres idées et plus tard, repenser à ces problèmes avec un autre point de vue ou à tête reposée."
+			],
+			[
+				"Le vélo m'a aussi permis d'avoir une meilleure gestion de mon effort. Pour les longues sorties ou des courses, il faut réfléchir aux moments où il faut accélérer et quand profiter d'un \"repos\". Une possibilité est de regarder le profil de la sortie pour gérer l'effort à la place d'y aller à l'aveugle. Cette gestion d'effort et cette prépa sont aussi importantes lorsque je travaille. Bien décomposer un projet avant de s'y attaquer permet de gagner du temps et donc de l'énergie. Ce n'est pas ma partie préférée, je le sais. Je suis plus du genre à sauter du trampoline puis à regarder où j'atteris. Mais se lancer dans un projet tête baissée, c'est le meilleur moyen d'ajouter des fonctions qui n'étaient pas cruciales ou juste inutiles."
+			]
+		],
 		"preuves": [
 			{
 				"lien": "https://strava.com/athletes/51027626",
@@ -226,7 +316,9 @@
 		"date": "2022-",
 		"heures_prestees": "~150h",
 		"heures_valorisees": "0h",
-		"description": "Pratique hebdomadaire de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
+		"description": [
+			"Pratique hebdomadaire de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023"
+		],
 		"preuves": [
 			{
 				"lien": "https://www.instagram.com/reel/DOjFjYCiVx4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
@@ -241,7 +333,9 @@
 		"date": "2022-",
 		"heures_prestees": "~150h",
 		"heures_valorisees": "0h",
-		"description": "Travail comme moniteur de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
+		"description": [
+			"Travail comme moniteur de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023"
+		],
 		"preuves": [
 			{
 				"lien": "contrat_travail.pdf",
@@ -260,11 +354,23 @@
 		"date": "2022-",
 		"heures_prestees": "~1200h",
 		"heures_valorisees": "0h",
-		"description": "Intendant scout dans la section Baladin des Marolles. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
+		"description": [
+			[
+				"Cela fait depuis mes 6 ans que je fais du scoutisme. Depuis mon arrivé à l'Ephec, je ne suis plus ni animé ni chef mais je continue à aider des amis chefs en tant qu'intendant. Le rôle d'un intendant scout, c'est d'aider principalement de faire la nourriture pour tout le monde lors du grand camp en été mais il peut aussi aider aux activités et s'occuper des animés. J'aide principalement dans une section de pour les 6-7 ans. Ce que j'ai appris de mes intendances, c'est qu'il faut savoir s'adapter à chaque enfant car chacun réagit différemment et prévoir un maximum de scénario qui pourrait arriver."
+			],
+			[
+				"La question de l'organisation est moins dominante vu que ce sont les chefs qui s'en occupent mais donc, en tant qu'intendant, il faut respecter un horaire donné. Ca fait légèrement pensé à un employé dans une entreprise mais c'est beaucoup plus fun que d'être employé. Dans le cas précis de la section où j'aide depuis 4 ans, les chefs se reposent un peu plus sur les intendants que d'autres sections. En plus d'aider aux tâches citées ci-dessus, j'ai un champ d'actions plus larges : parfois, les chefs, pour se reposer, vont me demander (ainsi qu'aux autres intendants) de s'occuper des enfants. C'est bête à dire mais s'occuper de nombreux d'enfants aussi jeunes est très vite fatiguant. Comme pour l'organisation des LAN Ephec, être intendant, c'est savoir communiquer et coopérer avec d'autres personnes, parfois au début des inconnus pour proposer des activités. "
+			],
+			[]
+		],
 		"preuves": [
 			{
 				"lien": "scout.jpg",
 				"legende": "Photo du camp scout"
+			},
+			{
+				"lien": "scout2.jpeg",
+				"legende": "En train de tenir le stand de bouffe d'une soirée casino"
 			}
 		]
 	},
@@ -275,7 +381,21 @@
 		"date": "2024-2026",
 		"heures_prestees": "",
 		"heures_valorisees": "0h",
-		"description": "Représentant des étudiants de Bac 2 et 3 du secteur TI de l'EPHEC.",
+		"description": [
+			["Représentant des étudiants de Bac 2 puis Bac 3 du secteur TI de l'EPHEC."],
+			[
+				"Pourquoi je me suis proposé délégué en bac 2, je me pose encore la question. Est-ce que je regrette ? Non"
+			],
+			[
+				"En 2e, mon rôle de délégué n'a pas vraiment eu d'impact sur mon année, à partir particper à quelques réunions avec les autres délégués ou participer à des réunions de départements avec les professeurs TI. Cependant, d'un point de vue personnel, ça m'a \"forcé\" à m'intéresser à ce qui m'entourait pour savoir si des étudiants avaient des plaintes ou des informations à transmettre aux professeurs. Je ne suis pas le plus doué pour m'intéresser à ce qui m'entoure donc être délégué fut un bon exercice"
+			],
+			[
+				"C'est en 3e que mon rôle a été plus important. Le délégué 3e est aussi un peu le représenant des délégués de 1ère et 2e. Donc, je ne devais plus m'intéresser à une année mais à beaucoup plus. Comme mon prédecesseur, j'ai essayé d'organiser des réunions entre délégués chaque mois pour que chacun sache un peu ce qui se passe dans les autres années. J'ai mis un plus gros focus sur la première car il y avait eu plusieurs changements par rapport à quand j'étais en première. 2 professeurs du secteur TI ont aussi mis en place des réunions entre elles et les délégués afin d'intégrer aux mieux les retours étudiants. En plus de cette organisation en plus, certains étudiants sont encore venus me voir pour me demander de parler de certains problèmes aux professeurs"
+			],
+			[
+				"Etre délégué, ce n'est pas juste avoir une étiquette en plus, c'est un rôle qui demande un sérieux et du temps. Mais c'est un très bon exercice pour plus tard car parler avec des personnes plus haut dans la hiéarchie, ça va arriver et donc, adapter son vocabulaire et sa manière de parler est cruciale. C'est aussi un bon exercice pour scinder vie personnel et travail car les informations remontées aux professeurs, elles concernent son année, pas que lui. L'une des premières choses que le délégué 3e m'a dite quand j'étais délégué 2e et que j'ai moi-même dite un an après, c'est de ne pas parler en \"je\" ou de donner son ressenti personnel mais de parler au nom des étudiants"
+			]
+		],
 		"preuves": [
 			{
 				"lien": "teamsDelegueB3.png",
@@ -294,7 +414,7 @@
 		"date": "Mars 2026",
 		"heures_prestees": "36h",
 		"heures_valorisees": "5h",
-		"description": "Compétition de cybersécurité nationale 2026.",
+		"description": ["Compétition de cybersécurité nationale 2026."],
 		"preuves": [
 			{
 				"lien": "cscb2026.png",
@@ -309,7 +429,7 @@
 		"date": "3 Novembre 2025",
 		"heures_prestees": "2h",
 		"heures_valorisees": "2h",
-		"description": "Conférence sur l'utilisation d'outils microsoft",
+		"description": ["Conférence sur l'utilisation d'outils microsoft"],
 		"preuves": [
 			{
 				"lien": "conference_azure.png",
@@ -324,7 +444,7 @@
 		"date": "2 décembre 2025",
 		"heures_prestees": "5.5h",
 		"heures_valorisees": "5.5h",
-		"description": "amélioration site web easter egg (ajout backend)",
+		"description": ["amélioration site web easter egg (ajout backend)"],
 		"preuves": [
 			{
 				"lien": "https://github.com/linadu2/easter-egg-ephec",
@@ -343,7 +463,7 @@
 		"date": "2025-2026",
 		"heures_prestees": "",
 		"heures_valorisees": "",
-		"description": "création de ce portfolio",
+		"description": ["création de ce portfolio"],
 		"preuves": []
 	},
 	{
@@ -353,7 +473,7 @@
 		"date": "2025-2026",
 		"heures_prestees": "8h",
 		"heures_valorisees": "0h",
-		"description": "Danse le rock à l'évèmenent Rock Fever organisé à Sainte-Barbe",
+		"description": ["Danse le rock à l'évèmenent Rock Fever organisé dans le hall Sainte-Barbe"],
 		"preuves": []
 	},
 	{
@@ -363,7 +483,7 @@
 		"date": "17/03/2026",
 		"heures_prestees": "5h",
 		"heures_valorisees": "5h",
-		"description": "Soirée de networking avec des entreprises pour trouver un futur traavail",
+		"description": ["Soirée de networking avec des entreprises pour trouver un futur traavail"],
 		"preuves": [
 			{
 				"lien": "talentNight1.jpg",
@@ -390,7 +510,9 @@
 		"date": "30/03/2026 & 01/04/2026",
 		"heures_prestees": "4h",
 		"heures_valorisees": "0h",
-		"description": "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme",
+		"description": [
+			"Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme"
+		],
 		"preuves": [{ "lien": "Ephec_SoftMakers_LLN-7.jpg", "legende": "intro semaine inter" }]
 	},
 	{
@@ -400,7 +522,9 @@
 		"date": "05/05/2026",
 		"heures_prestees": "2.5h",
 		"heures_valorisees": "2.5h",
-		"description": "Je m'occupais de trier un peu ma collection de cartes et de checker mon excel en lien. Vu qu'il n'était pas très optimisé, j'ai refais l'inventaire en python avec un fichier json comme DB et un affichage graphique avec TKinter",
+		"description": [
+			"Je m'occupais de trier un peu ma collection de cartes et de checker mon excel en lien. Vu qu'il n'était pas très optimisé, j'ai refais l'inventaire en python avec un fichier json comme DB et un affichage graphique avec TKinter"
+		],
 		"preuves": [
 			{ "lien": "https://github.com/Akanaifu/yugioh_card_tracker", "legende": "github projet" },
 			{ "lien": "clockify_ygo.png", "legende": "clockify mini projet" },
