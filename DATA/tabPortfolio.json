@@ -49,11 +49,11 @@
         "legende": "Repository GitHub RizzBee"
       },
       {
-        "lien": "photo_equipe2025.jpg",
+        "lien": "hackhaton/photo_equipe2025.jpg",
         "legende": "Photo de l'équipe"
       },
       {
-        "lien": "play_piano.mp4",
+        "lien": "hackhaton/play_piano.mp4",
         "legende": "Vidéo du piano interactif"
       }
     ]
@@ -78,11 +78,11 @@
     ],
     "preuves": [
       {
-        "lien": "cscb2024.png",
+        "lien": "cscb/cscb2024.png",
         "legende": "Nombre de point obtenu"
       },
       {
-        "lien": "cscb2024_mailParticipation.png",
+        "lien": "cscb/cscb2024_mailParticipation.png",
         "legende": "mail de remerciment de participation"
       }
     ]
@@ -147,7 +147,7 @@
     ],
     "preuves": [
       {
-        "lien": "Attestation_24-25_Lemaire-Nathan.pdf",
+        "lien": "tutorat/Attestation_24-25_Lemaire-Nathan.pdf",
         "legende": "Attestation de tutorat"
       }
     ]
@@ -169,7 +169,7 @@
     ],
     "preuves": [
       {
-        "lien": "Prestation_tutorat_math.png",
+        "lien": "tutorat/Prestation_tutorat_math.png",
         "legende": "Preuve tutorat math 2025"
       }
     ]
@@ -186,7 +186,7 @@
     ],
     "preuves": [
       {
-        "lien": "LAN_Party_2024.pdf",
+        "lien": "LAN/LAN_Party_2024.pdf",
         "legende": "Attestation de participation LAN EPHEC 2024"
       }
     ]
@@ -203,7 +203,7 @@
     ],
     "preuves": [
       {
-        "lien": "LAN_Party_2025.pdf",
+        "lien": "LAN/LAN_Party_2025.pdf",
         "legende": "Attestation de participation LAN EPHEC 2025"
       }
     ]
@@ -228,7 +228,7 @@
     ],
     "preuves": [
       {
-        "lien": "admin_serveur_lan.png",
+        "lien": "LAN/admin_serveur_lan.png",
         "legende": "Serveur discord lan 2026"
       }
     ]
@@ -256,11 +256,15 @@
     ],
     "preuves": [
       {
-        "lien": "openDeTouraine.jpg",
+        "lien": "frisbee/new_team_ephec.jpg",
+        "legende": "Equipe Ephec 2025-2026"
+      },
+      {
+        "lien": "frisbee/openDeTouraine.jpg",
         "legende": "Open de Touraine (2024)"
       },
       {
-        "lien": "preuveParticipationEntrainementUCL.png",
+        "lien": "frisbee/preuveParticipationEntrainementUCL.png",
         "legende": "preuve de participation à un entrainement de l'UCL"
       },
       {
@@ -304,11 +308,11 @@
         "legende": "Profil Strava"
       },
       {
-        "lien": "velo_col.jpg",
+        "lien": "velo/velo_col.jpg",
         "legende": "Sortie en montagne"
       },
       {
-        "lien": "velo_hiver.jpg",
+        "lien": "velo/velo_hiver.jpg",
         "legende": "Vélo en hiver"
       }
     ]
@@ -369,11 +373,11 @@
     ],
     "preuves": [
       {
-        "lien": "scout.jpg",
+        "lien": "scout/scout.jpg",
         "legende": "Photo du camp scout"
       },
       {
-        "lien": "scout2.jpeg",
+        "lien": "scout/scout2.jpeg",
         "legende": "En train de tenir le stand de bouffe d'une soirée casino"
       }
     ]
@@ -404,11 +408,11 @@
     ],
     "preuves": [
       {
-        "lien": "teamsDelegueB3.png",
+        "lien": "delegue/teamsDelegueB3.png",
         "legende": "Message Teams délégué Bac 3"
       },
       {
-        "lien": "mailDelegueB2.png",
+        "lien": "delegue/mailDelegueB2.png",
         "legende": "Email délégué Bac 2"
       }
     ]
@@ -423,7 +427,7 @@
     "description": ["Compétition de cybersécurité nationale 2026."],
     "preuves": [
       {
-        "lien": "cscb2026.png",
+        "lien": "cscb/cscb2026.png",
         "legende": "Classement CSCB 2026"
       }
     ]
@@ -538,19 +542,19 @@
     ],
     "preuves": [
       {
-        "lien": "talentNight1.jpg",
+        "lien": "talentNight/talentNight1.jpg",
         "legende": "début de l'event"
       },
       {
-        "lien": "talentNight2.jpg",
+        "lien": "talentNight/talentNight2.jpg",
         "legende": "suite de l'apéro de l'event"
       },
       {
-        "lien": "talentNight4.jpg",
+        "lien": "talentNight/talentNight4.jpg",
         "legende": "Intérieur du bâtiment The Pod"
       },
       {
-        "lien": "talentNight3.jpg",
+        "lien": "talentNight/talentNight3.jpg",
         "legende": "fin de l'event"
       }
     ]
@@ -572,11 +576,11 @@
     ],
     "preuves": [
       {
-        "lien": "Ephec_SoftMakers_LLN-7.jpg",
+        "lien": "softMaker/Ephec_SoftMakers_LLN-7.jpg",
         "legende": "Intro semaine inter"
       },
       {
-        "lien": "Ephec_SoftMakers_LLN_2_-24.jpg",
+        "lien": "softMaker/Ephec_SoftMakers_LLN_2_-24.jpg",
         "legende": "Jury semaine inter"
       }
     ]
@@ -596,9 +600,9 @@
         "lien": "https://github.com/Akanaifu/yugioh_card_tracker",
         "legende": "github projet"
       },
-      { "lien": "clockify_ygo.png", "legende": "clockify mini projet" },
-      { "lien": "interface_ygo.png", "legende": "interface graphique" },
-      { "lien": "excel_ygo.png", "legende": "version excel très basique" }
+      { "lien": "ygo/clockify_ygo.png", "legende": "clockify mini projet" },
+      { "lien": "ygo/interface_ygo.png", "legende": "interface graphique" },
+      { "lien": "ygo/excel_ygo.png", "legende": "version excel très basique" }
     ]
   }
 ]
