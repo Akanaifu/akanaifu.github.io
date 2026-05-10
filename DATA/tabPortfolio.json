@@ -563,10 +563,22 @@
     "heures_prestees": "4h",
     "heures_valorisees": "0h",
     "description": [
-      "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme"
+      [
+        "M. Noël m'a demandé d'aider à la semaine internationale qu'il encadrait à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme. Ils devaient concevoir une application répondant à au moins une des problématiques mentionnées. En plus de les aider lors de leurs réflexions, j'ai participé au jury de fin de projet. Pour cette partie, avec d'autres \"experts\", nous avons regardé à la démonstration de chaque projet, posé des questions et avons attribué une note aux groupes."
+      ],
+      [
+        "C'est la première fois que je faisais partie d'un jury pour un projet, ce qui peut être impressionnant. A la place de trop réfléchir à comment me comporter, j'ai juste écouté ce que les étudiants avaient à présenter puis posé des questions sur les différents points que je trouvais vague."
+      ]
     ],
     "preuves": [
-      { "lien": "Ephec_SoftMakers_LLN-7.jpg", "legende": "intro semaine inter" }
+      {
+        "lien": "Ephec_SoftMakers_LLN-7.jpg",
+        "legende": "Intro semaine inter"
+      },
+      {
+        "lien": "Ephec_SoftMakers_LLN_2_-24.jpg",
+        "legende": "Jury semaine inter"
+      }
     ]
   },
   {
@@ -577,7 +589,7 @@
     "heures_prestees": "2.5h",
     "heures_valorisees": "2.5h",
     "description": [
-      "Je m'occupais de trier un peu ma collection de cartes et de checker mon excel en lien. Vu qu'il n'était pas très optimisé, j'ai refais l'inventaire en python avec un fichier json comme DB et un affichage graphique avec TKinter"
+      "Je m'occupais de trier un peu ma collection de cartes et de checker mon excel (photo ci-dessous). Vu qu'il n'était pas très optimisé, j'ai refais l'inventaire en python avec un fichier json comme DB et un affichage graphique avec TKinter. Ca reste une interface très basique sans réel stack définie mais refaire un mini projet chill comme ça de temps à autre, ça permet d'un peu se reposé."
     ],
     "preuves": [
       {
