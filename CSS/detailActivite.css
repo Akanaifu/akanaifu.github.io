@@ -70,11 +70,8 @@
 	border-image: linear-gradient(90deg, #00ffff, #ff3b5f) 1;
 }
 
-.description-text {
-	margin: 0;
+.description-content {
 	padding: 18px 20px;
-	line-height: 1.82;
-	letter-spacing: 0.2px;
 	border-radius: 10px;
 	border: 1px solid rgba(0, 255, 255, 0.42);
 	border-left: 4px solid #ff3b5f;
@@ -82,7 +79,17 @@
 	box-shadow: 0 0 20px rgba(0, 255, 255, 0.12);
 }
 
-.description-text::first-letter {
+.description-text {
+	margin: 0;
+	line-height: 1.82;
+	letter-spacing: 0.2px;
+}
+
+.description-text + .description-text {
+	margin-top: 1rem;
+}
+
+.description-text:first-child::first-letter {
 	font-size: 1.35em;
 	font-weight: 700;
 	color: #8ffbff;

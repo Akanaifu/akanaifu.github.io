@@ -85,6 +85,48 @@ function parseFacebookEmbedConfig(rawUrl) {
   return defaults;
 }
 
+function createElement(tagName, className) {
+  const element = document.createElement(tagName);
+  if (className) {
+    element.className = className;
+  }
+  return element;
+}
+
+function normalizeDescriptionBlocks(description) {
+  if (Array.isArray(description)) {
+    return description
+      .map((block) => String(block || "").trim())
+      .filter(Boolean);
+  }
+
+  const text = String(description || "").trim();
+  if (!text) {
+    return [];
+  }
+
+  return text
+    .split(/\n\s*\n+/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+}
+
+function renderDescription(main, description) {
+  const section = createElement("div", "description");
+  const title = createElement("h2");
+  title.textContent = "Description";
+
+  const content = createElement("div", "description-content");
+  normalizeDescriptionBlocks(description).forEach((paragraphText) => {
+    const paragraph = createElement("p", "description-text");
+    paragraph.textContent = paragraphText;
+    content.appendChild(paragraph);
+  });
+
+  section.append(title, content);
+  main.appendChild(section);
+}
+
 function displayActivity(activity) {
   const container = document.getElementById("detail-container");
 
@@ -193,11 +235,7 @@ function displayActivity(activity) {
         <p><strong>Heures prestées:</strong> ${activity.heures_prestees || "Non spécifié"}</p>
         <p><strong>Heures valorisées:</strong> ${activity.heures_valorisees}</p>
       </div>    
-      <div 
-      class="description">
-        <h2>Description</h2>
-        <p class="description-text">${activity.description}</p>
-      </div>
+      <div id="description-mount"></div>
       
       <div class="preuves">
         <h2>Preuves</h2>
@@ -225,6 +263,11 @@ function displayActivity(activity) {
 
   if (activity.preuves.some((p) => p.lien?.includes("instagram.com"))) {
     loadInstagramEmbed();
+  }
+
+  const descriptionMount = document.getElementById("description-mount");
+  if (descriptionMount) {
+    renderDescription(descriptionMount, activity.description);
   }
 
   initImageZoom();

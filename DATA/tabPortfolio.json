@@ -1,396 +1,592 @@
-[
-	{
-		"cours": "Électronique digitale",
-		"catégorie": "Challenge",
-		"nom": "Hackathon 2024",
-		"date": "25-27 Octobre 2024",
-		"heures_prestees": "44h",
-		"heures_valorisees": "10h",
-		"description": "Participation au hackathon annuel de l'EPHEC 2024. Remise à niveau d'un baby foot pour pouvoir compter le score automatiquement grâce à des capteurs dans les goals. Je n'ai pas fait le hackathon de l'année précédente car je trouvais que je n'avais pas les skills nécessaire à faire un projet à hauteur d'un hackathon. En 2e, j'avais déjà plus les outils, ce qui m'a permis de bien travailler sur le projet ainsi que d'aider les autres membres de mon groupe. Je me dis que j'aurais quand même pu participer à l'édition 2023 malgré mon manque de connaissance car ça permet d'avoir un aperçu de à quoi je vais être formé et déjà un peu à apprendre",
-		"preuves": [
-			{
-				"lien": "https://github.com/Nini1551/Hackaton2024",
-				"legende": "Repository GitHub du projet"
-			},
-			{
-				"lien": "https://www.instagram.com/p/DCR-yQkMZ1s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-				"legende": "Post Instagram de l'événement"
-			}
-		]
-	},
-	{
-		"cours": "Électronique digitale",
-		"catégorie": "Challenge",
-		"nom": "Hackathon 2025",
-		"date": "24-26 Ocotbre 2025",
-		"heures_prestees": "44h",
-		"heures_valorisees": "10h",
-		"description": "Participation au hackathon annuel de l'EPHEC 2025. A partir d'un petit piano mécanique trouvé dans une brocante, nous avons rajouté une partie électronique afin de le transformer en piano 'fantôme'. Lors de cette édition, j'ai remarqué l'écart avec l'année précédente. Pour l'édition 2024, je savais faire ce qu'on me demandait mais je n'avais pas une bonne vision des différentes tâches à faire et l'ordre des étapes pour y arriver. Grâce aux différents projets et cours de bac 2 et du début de bac 3, avec mon groupe, nous avons pu bien décomposer le projet et se répartir les tâches.",
-		"preuves": [
-			{
-				"lien": "https://github.com/Akanaifu/RizzBee",
-				"legende": "Repository GitHub RizzBee"
-			},
-			{
-				"lien": "photo_equipe2025.jpg",
-				"legende": "Photo de l'équipe"
-			},
-			{
-				"lien": "play_piano.mp4",
-				"legende": "Vidéo du piano interactif"
-			}
-		]
-	},
-	{
-		"cours": "Sécurité des réseaux",
-		"catégorie": "Challenge",
-		"nom": "CSCB 2024",
-		"date": "8-9 Mars 2024",
-		"heures_prestees": "24h",
-		"heures_valorisees": "0h",
-		"description": "Compétition de cybersécurité nationale 2024.",
-		"preuves": [
-			{
-				"lien": "cscb2024.png",
-				"legende": "Nombre de point obtenu"
-			},
-			{
-				"lien": "cscb2024_mailParticipation.png",
-				"legende": "mail de remerciment de participation"
-			}
-		]
-	},
-	{
-		"cours": "Sécurité des réseaux",
-		"catégorie": "Challenge",
-		"nom": "CSCB 2025",
-		"date": "14-15 Mars 2025",
-		"heures_prestees": "24h",
-		"heures_valorisees": "5h",
-		"description": "Compétition de cybersécurité nationale 2025.",
-		"preuves": [
-			{
-				"lien": "https://www.instagram.com/p/DIjic3RM8Iz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-				"legende": "Post Instagram CSCB 2025"
-			}
-		]
-	},
-	{
-		"cours": "Électronique digitale",
-		"catégorie": "Participation évènement",
-		"nom": "Let's fix it",
-		"date": "18 Mars 2024",
-		"heures_prestees": "2.5h",
-		"heures_valorisees": "2.5h",
-		"description": "Participation à l'évènement' Let's fix it sur la réutilisation d'anciens appareils électroniques.",
-		"preuves": [
-			{
-				"lien": "letsFixIt.jpg",
-				"legende": "Attestation de présence"
-			}
-		]
-	},
-	{
-		"cours": "Développement informatique",
-		"catégorie": "Tutorat",
-		"nom": "Tutorat programmation",
-		"date": "2024-2025",
-		"heures_prestees": "47h",
-		"heures_valorisees": "8h",
-		"description": "Séances de tutorat en programmation pour étudiants de première année.",
-		"preuves": [
-			{
-				"lien": "Attestation_24-25_Lemaire-Nathan.pdf",
-				"legende": "Attestation de tutorat"
-			}
-		]
-	},
-	{
-		"cours": "Mathématique",
-		"catégorie": "Tutorat",
-		"nom": "Tutorat math",
-		"date": "2025",
-		"heures_prestees": "2h",
-		"heures_valorisees": "2h",
-		"description": "Séances de tutorat en math pour étudiants de première année.",
-		"preuves": [
-			{
-				"lien": "Prestation_tutorat_math.png",
-				"legende": "Preuve tutorat math 2025"
-			}
-		]
-	},
-	{
-		"cours": "Administration des réseaux",
-		"catégorie": "Organisation évènement",
-		"nom": "LAN EPHEC 2024",
-		"date": "27 Avril 2024",
-		"heures_prestees": "11h",
-		"heures_valorisees": "5h",
-		"description": "Organisation et participation à la LAN party de l'EPHEC 2024.",
-		"preuves": [
-			{
-				"lien": "LAN_Party_2024.pdf",
-				"legende": "Attestation de participation LAN EPHEC 2024"
-			}
-		]
-	},
-	{
-		"cours": "Administration des réseaux",
-		"catégorie": "Organisation évènement",
-		"nom": "LAN EPHEC 2025",
-		"date": "26 Avril 2025",
-		"heures_prestees": "11h",
-		"heures_valorisees": "5h",
-		"description": "Organisation et participation à la LAN party de l'EPHEC 2025.",
-		"preuves": [
-			{
-				"lien": "LAN_Party_2025.pdf",
-				"legende": "Attestation de participation LAN EPHEC 2025"
-			}
-		]
-	},
-	{
-		"cours": "Administration des réseaux",
-		"catégorie": "Organisation évènement",
-		"nom": "LAN EPHEC 2026",
-		"date": "25 Avril 2026",
-		"heures_prestees": "~20h",
-		"heures_valorisees": "0h",
-		"description": "Organisation et participation à la LAN party de l'EPHEC 2025.",
-		"preuves": [
-			{
-				"lien": "admin_serveur_lan.png",
-				"legende": "Serveur discord lan 2026"
-			}
-		]
-	},
-	{
-		"cours": "Sport",
-		"catégorie": "Softskills",
-		"nom": "Ultimate Frisbee",
-		"date": "2023-",
-		"heures_prestees": "~400h",
-		"heures_valorisees": "10h",
-		"description": "Equipe universitaire d'ultimate Frisbee de l'ephec -> 2h/semaine + 2h/semaine avec l'équipe Wolf de l'UCL",
-		"preuves": [
-			{
-				"lien": "openDeTouraine.jpg",
-				"legende": "Open de Touraine (2024)"
-			},
-			{
-				"lien": "preuveParticipationEntrainementUCL.png",
-				"legende": "preuve de participation à un entrainement de l'UCL"
-			},
-			{
-				"lien": "https://www.instagram.com/p/C5oUqtEIRa6/",
-				"legende": "Post Instagram de l'équipe"
-			},
-			{
-				"lien": "https://www.facebook.com/aseusinfo/posts/pfbid0Ht2cfUxBTgEVBjbhxBgupjo4dhsCBCRDcqhCMfARHqn9GHs3aRqU8RNExpLdYXHil?fb_width=500&fb_height=700",
-				"legende": "Tournoi ASEUS indoor 2024"
-			},
-			{
-				"lien": "https://www.facebook.com/aseusinfo/posts/pfbid0r4KVydygXRiiTgAqTDeNE3UTviPVeMRikeTiy7KzhRHNqU2NKWESP5EehaegKTR6l?fb_width=500&fb_height=800",
-				"legende": "Tournoi ASEUS indoor 2025"
-			}
-		]
-	},
-	{
-		"cours": "Sport",
-		"catégorie": "Softskills",
-		"nom": "Vélo",
-		"date": "2018-",
-		"heures_prestees": "~92h",
-		"heures_valorisees": "0h",
-		"description": "Pratique régulière du cyclisme avec profil Strava en lien. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
-		"preuves": [
-			{
-				"lien": "https://strava.com/athletes/51027626",
-				"legende": "Profil Strava"
-			},
-			{
-				"lien": "velo_col.jpg",
-				"legende": "Sortie en montagne"
-			},
-			{
-				"lien": "velo_hiver.jpg",
-				"legende": "Vélo en hiver"
-			}
-		]
-	},
-	{
-		"cours": "Sport",
-		"catégorie": "Softskills",
-		"nom": "gymnastique",
-		"date": "2022-",
-		"heures_prestees": "~150h",
-		"heures_valorisees": "0h",
-		"description": "Pratique hebdomadaire de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
-		"preuves": [
-			{
-				"lien": "https://www.instagram.com/reel/DOjFjYCiVx4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-				"legende": "Démonstration de gymnastique"
-			}
-		]
-	},
-	{
-		"cours": "Job étudiant",
-		"catégorie": "Softskills",
-		"nom": "Moniteur gym",
-		"date": "2022-",
-		"heures_prestees": "~150h",
-		"heures_valorisees": "0h",
-		"description": "Travail comme moniteur de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
-		"preuves": [
-			{
-				"lien": "contrat_travail.pdf",
-				"legende": "Contrat de travail"
-			},
-			{
-				"lien": "attestation_employeur.pdf",
-				"legende": "Attestation de l'employeur"
-			}
-		]
-	},
-	{
-		"cours": "Autre",
-		"catégorie": "Softskills",
-		"nom": "Intendant scout",
-		"date": "2022-",
-		"heures_prestees": "~1200h",
-		"heures_valorisees": "0h",
-		"description": "Intendant scout dans la section Baladin des Marolles. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023",
-		"preuves": [
-			{
-				"lien": "scout.jpg",
-				"legende": "Photo du camp scout"
-			}
-		]
-	},
-	{
-		"cours": "Autre",
-		"catégorie": "Softskills",
-		"nom": "Délégué Bac 2&3",
-		"date": "2024-2026",
-		"heures_prestees": "",
-		"heures_valorisees": "0h",
-		"description": "Représentant des étudiants de Bac 2 et 3 du secteur TI de l'EPHEC.",
-		"preuves": [
-			{
-				"lien": "teamsDelegueB3.png",
-				"legende": "Message Teams délégué Bac 3"
-			},
-			{
-				"lien": "mailDelegueB2.png",
-				"legende": "Email délégué Bac 2"
-			}
-		]
-	},
-	{
-		"cours": "Sécurité des réseaux",
-		"catégorie": "Challenge",
-		"nom": "CSCB 2026",
-		"date": "Mars 2026",
-		"heures_prestees": "36h",
-		"heures_valorisees": "5h",
-		"description": "Compétition de cybersécurité nationale 2026.",
-		"preuves": [
-			{
-				"lien": "cscb2026.png",
-				"legende": "Classement CSCB 2026"
-			}
-		]
-	},
-	{
-		"cours": "Administration des réseaux",
-		"catégorie": "Conférence",
-		"nom": "Cloud avec M365 et Azure Infrastructure",
-		"date": "3 Novembre 2025",
-		"heures_prestees": "2h",
-		"heures_valorisees": "2h",
-		"description": "Conférence sur l'utilisation d'outils microsoft",
-		"preuves": [
-			{
-				"lien": "conference_azure.png",
-				"legende": "preuve de participation à la conférence"
-			}
-		]
-	},
-	{
-		"cours": "Développement informatique",
-		"catégorie": "Site web",
-		"nom": "Easter egg IT 2025",
-		"date": "2 décembre 2025",
-		"heures_prestees": "5.5h",
-		"heures_valorisees": "5.5h",
-		"description": "amélioration site web easter egg (ajout backend)",
-		"preuves": [
-			{
-				"lien": "https://github.com/linadu2/easter-egg-ephec",
-				"legende": "Repository GitHub des easter eggs"
-			},
-			{
-				"lien": "recreationEasterEggApp.png",
-				"legende": "appel discord avec Pierre-Alexandre Hausman"
-			}
-		]
-	},
-	{
-		"cours": "Développement informatique",
-		"catégorie": "Site web",
-		"nom": "Portfolio",
-		"date": "2025-2026",
-		"heures_prestees": "",
-		"heures_valorisees": "",
-		"description": "création de ce portfolio",
-		"preuves": []
-	},
-	{
-		"cours": "Sport",
-		"catégorie": "Softskills",
-		"nom": "Rock (danse)",
-		"date": "2025-2026",
-		"heures_prestees": "8h",
-		"heures_valorisees": "0h",
-		"description": "Danse le rock à l'évèmenent Rock Fever organisé à Sainte-Barbe",
-		"preuves": []
-	},
-	{
-		"cours": "Autre",
-		"catégorie": "Participation évènement",
-		"nom": "Digital Talent Night",
-		"date": "17/03/2026",
-		"heures_prestees": "5h",
-		"heures_valorisees": "5h",
-		"description": "Soirée de networking avec des entreprises pour trouver un futur traavail",
-		"preuves": [
-			{
-				"lien": "talentNight1.jpg",
-				"legende": "début de l'event"
-			},
-			{
-				"lien": "talentNight2.jpg",
-				"legende": "suite de l'apéro de l'event"
-			},
-			{
-				"lien": "talentNight4.jpg",
-				"legende": "Intérieur du bâtiment The Pod"
-			},
-			{
-				"lien": "talentNight3.jpg",
-				"legende": "fin de l'event"
-			}
-		]
-	},
-	{
-		"cours": "Semaine internationale",
-		"catégorie": "Organisation évènement",
-		"nom": "SoftMakers",
-		"date": "30/03/2026 & 01/04/2026",
-		"heures_prestees": "4h",
-		"heures_valorisees": "0h",
-		"description": "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme",
-		"preuves": [{ "lien": "Ephec_SoftMakers_LLN-7.jpg", "legende": "intro semaine inter" }]
-	}
+﻿[
+  {
+    "cours": "Électronique digitale",
+    "catégorie": "Challenge",
+    "nom": "Hackathon 2024",
+    "date": "25-27 Octobre 2024",
+    "heures_prestees": "44h",
+    "heures_valorisees": "10h",
+    "description": [
+      [
+        "J'ai participé au hackathon annuel de l'EPHEC 2024. Je n'avais pas fait l'édition précédente car je trouvais que je n'avais pas les compétences nécessaires pour faire un projet comme un hackathon. Mais en 2e, j'avais déjà plus les outils."
+      ],
+      [
+        "Le hackathon proposait de prendre du vieux matériel inutilisé et de lui ajouter de l'électronique pour lui trouver une nouvelle utilisation. Avec mon groupe, nous avons amélioré un baby foot pour pouvoir compter le score automatiquement grâce à des capteurs dans les goals. Comme le hackathon se déroulait au Q1, le principe de stack n'avait pas encore été vu, ni tout ce qui était réellement un backend ou frontend.J'ai plus travaillé sur la partie électronique pour détecter un goal et afficher le score. Un autre de mon groupe s'est occupé de la page web. J'ai expliqué rapidement ce que je savais en électronique et en dev à l'étudiant en 1ère de notre groupe. Cela m'a permis de bien travailler sur le projet et d'aider les autres membres du groupe."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "https://github.com/Nini1551/Hackaton2024",
+        "legende": "Repository GitHub du projet"
+      },
+      {
+        "lien": "https://www.instagram.com/p/DCR-yQkMZ1s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        "legende": "Post Instagram de l'évènement"
+      }
+    ]
+  },
+  {
+    "cours": "Électronique digitale",
+    "catégorie": "Challenge",
+    "nom": "Hackathon 2025",
+    "date": "24-26 Ocotbre 2025",
+    "heures_prestees": "44h",
+    "heures_valorisees": "10h",
+    "description": [
+      [
+        "J'ai participé au hackathon annuel de l'EPHEC 2025. Comme l'édition précédente, le concept était de prendre du matériel inutilisé et le mettre à jour grâce à de l'électronique. Cette année, à partir d'un petit piano mécanique trouvé dans une brocante, avec mon groupe, nous avons rajouté une partie électronique pour le transformer en piano fantôme/automatique."
+      ],
+      [
+        "J'ai remarqué l'écart avec l'année précédente. En 2024, je savais faire ce qu'on me demandait mais je n'avais pas une bonne vision des différentes tâches et de l'ordre des étapes. Grâce aux projets et cours de bac 2 et du début de bac 3, nous avons pu bien décomposer le projet et nous répartir les tâches. Nous avons perdu du temps à la réflexion du projet."
+      ],
+      [
+        " Au début, l'idée était d'utiliser des cerveaux-moteurs pour que les marteaux frappent les barres métalliques, mais ils n'étaient pas assez puissant. On a envisagé un synthé en détectant les touches et jouant les notes avec un buzzer. Finalement, en discutant avec les profs, nous avons reçu de meilleurs pistons qui nous ont permis de revenir à la première idée.Je me suis occupé de faire fonctionner les pistons. J'ai perdu du temps à trouver le schéma fonctionnel et à les faire marcher. Le gros problème, c'est que le Raspberry avait des pins qui ne fonctionnaient plus. J'ai cherché longtemps au niveau du câblage avant de comprendre. Après, avec le groupe, nous avons rassemblé les tâches : support pour le piano pour cacher l'électronique, scripts Python pour la musique. Il a fallut quelques essaies pour que tu s'imbriques mais ce fut la partie la plus simple."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "https://github.com/Akanaifu/RizzBee",
+        "legende": "Repository GitHub RizzBee"
+      },
+      {
+        "lien": "photo_equipe2025.jpg",
+        "legende": "Photo de l'équipe"
+      },
+      {
+        "lien": "play_piano.mp4",
+        "legende": "Vidéo du piano interactif"
+      }
+    ]
+  },
+  {
+    "cours": "Sécurité des réseaux",
+    "catégorie": "Challenge",
+    "nom": "CSCB 2024",
+    "date": "8-9 Mars 2024",
+    "heures_prestees": "24h",
+    "heures_valorisees": "0h",
+    "description": [
+      [
+        "Le CSCB est une compétition de cybersécurité nationale proposée aux étudiants en informatique pour tester leurs compétences sur différentes problématiques liées à la cybersécurité : programmation, crypto, web, reverse engineering, etc."
+      ],
+      [
+        "Lors de ma première participation, j'y ai participé en duo avec un étudiant de ma classe mais nous étions chacun chez soi. Nous avons réussi à trouver quelques flags parmi les niveaux faciles mais les niveaux moyens nous semblaient déjà durs, ce qui nous a un peu découragés."
+      ],
+      [
+        " Mais pour ma part, ça m'a donné envie de retester l'année suivante pour voir si j'allais faire mieux.Je savais de base que je n'allais pas trouver beaucoup de flags mais j'y ai quand même participé. Je voulais tester mes compétences et juste essayer de trouver les flags. Même si la cybersécurité et le réseau ne sont pas mes matières favorites, c'est fun à faire de temps à autre."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "cscb2024.png",
+        "legende": "Nombre de point obtenu"
+      },
+      {
+        "lien": "cscb2024_mailParticipation.png",
+        "legende": "mail de remerciment de participation"
+      }
+    ]
+  },
+  {
+    "cours": "Sécurité des réseaux",
+    "catégorie": "Challenge",
+    "nom": "CSCB 2025",
+    "date": "14-15 Mars 2025",
+    "heures_prestees": "24h",
+    "heures_valorisees": "5h",
+    "description": ["Compétition de cybersécurité nationale 2025."],
+    "preuves": [
+      {
+        "lien": "https://www.instagram.com/p/DIjic3RM8Iz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        "legende": "Post Instagram CSCB 2025"
+      }
+    ]
+  },
+  {
+    "cours": "Électronique digitale",
+    "catégorie": "Participation évènement",
+    "nom": "Let's fix it",
+    "date": "18 Mars 2025",
+    "heures_prestees": "2.5h",
+    "heures_valorisees": "2.5h",
+    "description": [
+      [
+        "Le Let's fix It est une soirée sur le thème de l'électronique. Plusieurs stands expliquent la vie d'un appareil électronique, d'autres proposent de réparer des objets comme des Fairphones. Le Louvain-Li-Nux, un kap (kot à projet) de Louvain-la-Neuve, expliquait ce qu'était Linux et comment le mettre sur sa machine."
+      ],
+      [
+        "Je me suis baladé de stand en stand pour voir ce que chacun proposait. Ce qui m'a le plus interpellé, c'est le cycle de vie d'un appareil électronique. La quantité de ressources primaires nécessaires à la confection d'un appareil est surprenante, quasi tout le tableau de Mendélev. J'ai aussi regardé rapidement l'atelier Fairphone par curiosité pour voir l'intérieur du téléphone."
+      ],
+      [
+        "L'année suivante, je tenais un stand sur la réparabilité de différents composants électroniques utilisés en cours. Il s'agissait d'une de mes tâches de stagiaire, c'est pourquoi il n'y a une activité lets Fit It 2026 dans le portfolio. Mais je trouve qu'en parler est important. A mon stand, il fallait souder des potentiomètres, remplacer le fusible d'un multimètre ou crafter un câble RJ-45. Les étudiants de 2e et les quelques 3e n'ont pas eu trop de soucis. Les 1ère ont eu besoin de plus d'explications sur le potentiomètre ou comment ne pas faire sauter le fusible. Il y avait aussi des enfants qui ont pu essayer de souder ou faire leur propre câble. D'autres participants ont été surpris que parfois, juste en re-soudant un câble, il était possible d'éviter de racheter du matériel."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "letsFixIt.jpg",
+        "legende": "Attestation de présence"
+      }
+    ]
+  },
+  {
+    "cours": "Développement informatique",
+    "catégorie": "Tutorat",
+    "nom": "Tutorat programmation",
+    "date": "2024-2025",
+    "heures_prestees": "47h",
+    "heures_valorisees": "8h",
+    "description": [
+      [
+        "L'Ephec propose pour les premières un service d'aide à la réussite (SAR). Des étudiants de bac 2 ou 3 peuvent se proposer pour expliquer des cours que les premières ont du mal à comprendre."
+      ],
+      [
+        "J'ai donné principalement du tutorat pour le cours de programmation de BAC 1 Q1.Certains étudiants avaient loupé beaucoup de cours, donc j'ai repris le cours du professeur et expliqué chaque conce devant eux sur mon PC. D'autres avaient juste des questions sur un point spécifique. À chaque fopt avec des exemples soit tirés du cours soit que je faisaisis que j'avais un nouvel étudiant, je le contactais pour savoir sur quelle partie il avait besoin d'aide pour me préparer en amont. Je regardais rapidement comment le professeur abordait ce point et j'essayais de le comprendre pour l'expliquer différemment. Après chaque explication, je leur demandais de faire 2-3 exercices des TPs pour voir s'ils avaient compris."
+      ],
+      [
+        "Être tuteur est un bon exercice pour soi-même. Ça demande de vraiment comprendre ce qu'on doit expliquer. Parfois, ça m'a permis de me rappeler ou d'apprendre des exceptions ou d'autres moyens de résoudre certains problèmes. Il ne s'agit pas de juste redire ce que le professeur a expliqué en cours mais de le dire d'une autre manière et de s'adapter à l'étudiant en face de soi. Le professeur peut moins se permettre cette adaptation car il explique à tous les étudiants."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "Attestation_24-25_Lemaire-Nathan.pdf",
+        "legende": "Attestation de tutorat"
+      }
+    ]
+  },
+  {
+    "cours": "Mathématique",
+    "catégorie": "Tutorat",
+    "nom": "Tutorat math",
+    "date": "2025",
+    "heures_prestees": "2h",
+    "heures_valorisees": "2h",
+    "description": [
+      [
+        "Comme expliqué dans la section Tutorat programmation, il s'agit du tutorat en math proposé aux premières. J'ai pu donner mon tutorat malgré le fait que je n'ai pas eu min 14/20 l'année passée car l'Ephec me l'avait crédité suite à ma demande, puisque j'avais réussi des cours d'algèbre et d'analyse en ingénieur civil."
+      ],
+      [
+        "Officiellement, je n'ai donné qu'une fois tutorat dans cette matière mais parfois j'assistais aux tutorats d'amis pour ce cours et donnais mon avis. Comme pour la programmation, certains étudiants demandent un tuteur pour qu'il explique tout le cours car ils n'y sont pas allés pour différentes raisons. Lors de mes explications, j'essaie de ne pas être trop rigide. Je fais parfois des allusions un peu loufoques ou hors sujet pour montrer qu'il ne faut pas voir les maths juste avec des chiffres et des nombres. Oui, certains concepts ne vont pas servir pour tout le monde, mais dans notre domaine, il y a une raison pour que ces concepts soient vus. Il faut juste le montrer."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "Prestation_tutorat_math.png",
+        "legende": "Preuve tutorat math 2025"
+      }
+    ]
+  },
+  {
+    "cours": "Administration des réseaux",
+    "catégorie": "Organisation évènement",
+    "nom": "LAN EPHEC 2024",
+    "date": "27 Avril 2024",
+    "heures_prestees": "11h",
+    "heures_valorisees": "5h",
+    "description": [
+      "Organisation et participation à la LAN party de l'EPHEC 2024."
+    ],
+    "preuves": [
+      {
+        "lien": "LAN_Party_2024.pdf",
+        "legende": "Attestation de participation LAN EPHEC 2024"
+      }
+    ]
+  },
+  {
+    "cours": "Administration des réseaux",
+    "catégorie": "Organisation évènement",
+    "nom": "LAN EPHEC 2025",
+    "date": "26 Avril 2025",
+    "heures_prestees": "11h",
+    "heures_valorisees": "5h",
+    "description": [
+      "Organisation et participation à la LAN party de l'EPHEC 2025."
+    ],
+    "preuves": [
+      {
+        "lien": "LAN_Party_2025.pdf",
+        "legende": "Attestation de participation LAN EPHEC 2025"
+      }
+    ]
+  },
+  {
+    "cours": "Administration des réseaux",
+    "catégorie": "Organisation évènement",
+    "nom": "LAN EPHEC 2026",
+    "date": "25 Avril 2026",
+    "heures_prestees": "~20h",
+    "heures_valorisees": "0h",
+    "description": [
+      [
+        "M. Noël m'a demandé de prendre en main l'organisation de la LAN de cette année: former la team pour l'organisation et coordonner l'évènement. C'était différent des deux années précédentes où je participais mais sans être responsable global. Au début, je comptais faire comme les deux autres années avec un tournoi principal et mettre d'autres jeux sur le côté."
+      ],
+      [
+        "Après discussion avec un première en TI qui a l'habitude de LAN et de tournois, l'organisation a pris plus d'ampleur. Il a contacté différentes organisations étudiantes pour emprunter des moniteurs et PCs pour le tournoi principal. Nous avons aussi contacté Ephec sport pour financer la nourriture du jour J. Pour cette édition, je me suis principalement occupé que chaque tâche était réalisée et j'ai délégué les tâches aux autres en fonction de ce qu'ils savaient faire : configuration du serveur, installation des softwares, vérification que tout fonctionne, etc. J'ai beaucoup communiqué avec M. Noël pour savoir ce qu'on pouvait et ne pouvait pas faire vu que cette édition différait des deux autres.Outre les tâches déléguées, je me suis occupé de la partie Nintendo Switch : Mario Kart et Super Smash Bros Ultimate. Vu que j'ai plus l'habitude de ce type de jeux, préparer ces deux tournois ne m'a pas pris trop de temps et j'ai aussi pu y participer."
+      ],
+      [
+        " Ce qui m'a vraiment pris le plus d'énergie, c'était de cadrer les autres membres de la équipe organisatrice pour garder un évènement étudiant et fun. Beaucoup d'idées ont été proposées mais pas toutes adaptées à la LAN Ephec. Ce qui a été différent des autres années, c'est d'être l'organisateur principal et gérer l'équipe. Les autres années, je pouvais juste me concentrer sur ma partie. Cette fois-ci, je devais me concentrer sur tout pour éviter un maximum de problèmes le jour J. La réaction des participants à la fin m'a montré qu'on avait bien organisé les tournois. Cette manière d'organisation va être utile pour d'autres projets, professionnels ou pas."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "admin_serveur_lan.png",
+        "legende": "Serveur discord lan 2026"
+      }
+    ]
+  },
+  {
+    "cours": "Sport",
+    "catégorie": "Softskills",
+    "nom": "Ultimate Frisbee",
+    "date": "2023-",
+    "heures_prestees": "~400h",
+    "heures_valorisees": "10h",
+    "description": [
+      [
+        "Au début du second quadrimestre de ma première, le coach de l'équipe universitaire d'ultimate Frisbee de l'Ephec m'a proposé de rejoindre son équipe. J'ai vite accroché au sport pour plusieurs raisons expliquées par après. Avant de rejoindre, je savais déjà comment lancer un frisbee grâce à mes expériences en scout, mais l'ultimate c'est bien plus que lancer d'un point A à un point B."
+      ],
+      [
+        "Il y a une vraie dimension tactique et physique à maîtriser. Jusqu'à ce moment, je faisais surtout des sports solo (judo, gym, vélo). Même avec ma base en lancer et mes compétences physiques, il m'a fallu lancer beaucoup plus de frisbee et apprendre à me placer sur le terrain. Je travaille encore sur ce positionnement deux ans après avoir commencé. "
+      ],
+      [
+        "Ce que j'ai de l'ultimate : apprendre à connaître mes forces et mes faiblesses (sportives ou non), comment jouer en fonction de mes coéquipiers, s'adapter à différentes stratégies, etc. Je me repose souvent sur mes expériences passées quand je commence quelque chose de nouveau. Pour l'ultimate, je me suis basé sur mes réflexes du judo pour analyser et prendre une décision rapide lors des matchs, la physique que m'a apportée la gym et l'endurance du vélo. Mais ce n'est pas suffisament. Ca m'a aidé au début pour avoir un repert. Plus je progressais dans ce sport, moins je liais mes expériences d'autres sports avec mais directement ce que j'ai vécu lors de matchs ou entrainements. Lors de la deuxième année, avec l'arrivée de nouveaux joueurs, j'ai dû leurs apprendre les bases à mon tour. En les aidant, j'ai pu consolider mes bases et avancer en tant que joueur."
+      ],
+      [
+        "Comme les autres sports, l'ultimate frisbee m'a appris des choses utiles hors du terrain : s'adapter à chacun (coéquipier comme adversaires), prises de décisions sous pression, gérer la pression, transmettre un savoir à d'autres, apprendre à connaitres de nouvelles personnes"
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "openDeTouraine.jpg",
+        "legende": "Open de Touraine (2024)"
+      },
+      {
+        "lien": "preuveParticipationEntrainementUCL.png",
+        "legende": "preuve de participation à un entrainement de l'UCL"
+      },
+      {
+        "lien": "https://www.instagram.com/p/C5oUqtEIRa6/",
+        "legende": "Post Instagram de l'équipe"
+      },
+      {
+        "lien": "https://www.facebook.com/aseusinfo/posts/pfbid0Ht2cfUxBTgEVBjbhxBgupjo4dhsCBCRDcqhCMfARHqn9GHs3aRqU8RNExpLdYXHil?fb_width=500&fb_height=700",
+        "legende": "Tournoi ASEUS indoor 2024"
+      },
+      {
+        "lien": "https://www.facebook.com/aseusinfo/posts/pfbid0r4KVydygXRiiTgAqTDeNE3UTviPVeMRikeTiy7KzhRHNqU2NKWESP5EehaegKTR6l?fb_width=500&fb_height=800",
+        "legende": "Tournoi ASEUS indoor 2025"
+      }
+    ]
+  },
+  {
+    "cours": "Sport",
+    "catégorie": "Softskills",
+    "nom": "Vélo",
+    "date": "2020-",
+    "heures_prestees": "~92h",
+    "heures_valorisees": "0h",
+    "description": [
+      [
+        "J'ai commencé le vélo en 2020 pour rouler avec des amis. Les heures affichées sont comptées au moment où j'ai commencé l'Ephec."
+      ],
+      [
+        "Même si j'en fais moins maintenant, ce sport m'a apporté plus d'un bienfait (et surtout des blessures). Contrairement à l'ultimate qui est un sport collectif ou le judo qui demande à adversaire, le vélo, c'est toi et ton vélo. Je fais aussi des balades à plusieurs mais même dans ce cas, tu ne peux compter que sur tes propres jambes (je ne prends pas en compte les clubs de cyclisme et les compétitions qu'ils font). Ca demande donc une connaissance de soi-même plus importante."
+      ],
+      [
+        "En plus d'avoir un impact physique, je trouve que le vélo a aussi un effet psycholique: j'arrive à ne plus penser à certains problèmes, ce qui a un côté relaxant. En tout cas, ça bloque une partie de ces idées néfastes. Mettre ses problèmes de côtés le temps d'une sortie, ça permet de réfléchir à d'autres idées et plus tard, repenser à ces problèmes avec un autre point de vue ou à tête reposée."
+      ],
+      [
+        "Le vélo m'a aussi permis d'avoir une meilleure gestion de mon effort. Pour les longues sorties ou des courses, il faut réfléchir aux moments où il faut accélérer et quand profiter d'un \"repos\". Une possibilité est de regarder le profil de la sortie pour gérer l'effort à la place d'y aller à l'aveugle. Cette gestion d'effort et cette prépa sont aussi importantes lorsque je travaille. Bien décomposer un projet avant de s'y attaquer permet de gagner du temps et donc de l'énergie. Ce n'est pas ma partie préférée, je le sais. Je suis plus du genre à sauter du trampoline puis à regarder où j'atteris. Mais se lancer dans un projet tête baissée, c'est le meilleur moyen d'ajouter des fonctions qui n'étaient pas cruciales ou juste inutiles."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "https://strava.com/athletes/51027626",
+        "legende": "Profil Strava"
+      },
+      {
+        "lien": "velo_col.jpg",
+        "legende": "Sortie en montagne"
+      },
+      {
+        "lien": "velo_hiver.jpg",
+        "legende": "Vélo en hiver"
+      }
+    ]
+  },
+  {
+    "cours": "Sport",
+    "catégorie": "Softskills",
+    "nom": "gymnastique",
+    "date": "2022-",
+    "heures_prestees": "~150h",
+    "heures_valorisees": "0h",
+    "description": [
+      "Pratique hebdomadaire de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023"
+    ],
+    "preuves": [
+      {
+        "lien": "https://www.instagram.com/reel/DOjFjYCiVx4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        "legende": "Démonstration de gymnastique"
+      }
+    ]
+  },
+  {
+    "cours": "Job étudiant",
+    "catégorie": "Softskills",
+    "nom": "Moniteur gym",
+    "date": "2022-",
+    "heures_prestees": "~150h",
+    "heures_valorisees": "0h",
+    "description": [
+      "Travail comme moniteur de gymnastique. Les heures prestées sont comptés depuis la rentrée à l'EPHEC en Septembre 2023"
+    ],
+    "preuves": [
+      {
+        "lien": "contrat_travail.pdf",
+        "legende": "Contrat de travail"
+      },
+      {
+        "lien": "attestation_employeur.pdf",
+        "legende": "Attestation de l'employeur"
+      }
+    ]
+  },
+  {
+    "cours": "Autre",
+    "catégorie": "Softskills",
+    "nom": "Intendant scout",
+    "date": "2022-",
+    "heures_prestees": "~1200h",
+    "heures_valorisees": "0h",
+    "description": [
+      [
+        "Cela fait depuis mes 6 ans que je fais du scoutisme. Depuis mon arrivé à l'Ephec, je ne suis plus ni animé ni chef mais je continue à aider des amis chefs en tant qu'intendant. Le rôle d'un intendant scout, c'est d'aider principalement de faire la nourriture pour tout le monde lors du grand camp en été mais il peut aussi aider aux activités et s'occuper des animés. J'aide principalement dans une section de pour les 6-7 ans. Ce que j'ai appris de mes intendances, c'est qu'il faut savoir s'adapter à chaque enfant car chacun réagit différemment et prévoir un maximum de scénario qui pourrait arriver."
+      ],
+      [
+        "La question de l'organisation est moins dominante vu que ce sont les chefs qui s'en occupent mais donc, en tant qu'intendant, il faut respecter un horaire donné. Ca fait légèrement pensé à un employé dans une entreprise mais c'est beaucoup plus fun que d'être employé. Dans le cas précis de la section où j'aide depuis 4 ans, les chefs se reposent un peu plus sur les intendants que d'autres sections. En plus d'aider aux tâches citées ci-dessus, j'ai un champ d'actions plus larges : parfois, les chefs, pour se reposer, vont me demander (ainsi qu'aux autres intendants) de s'occuper des enfants. C'est bête à dire mais s'occuper de nombreux d'enfants aussi jeunes est très vite fatiguant. Comme pour l'organisation des LAN Ephec, être intendant, c'est savoir communiquer et coopérer avec d'autres personnes, parfois au début des inconnus pour proposer des activités. "
+      ],
+      []
+    ],
+    "preuves": [
+      {
+        "lien": "scout.jpg",
+        "legende": "Photo du camp scout"
+      },
+      {
+        "lien": "scout2.jpeg",
+        "legende": "En train de tenir le stand de bouffe d'une soirée casino"
+      }
+    ]
+  },
+  {
+    "cours": "Autre",
+    "catégorie": "Softskills",
+    "nom": "Délégué Bac 2&3",
+    "date": "2024-2026",
+    "heures_prestees": "",
+    "heures_valorisees": "",
+    "description": [
+      [
+        "Représentant des étudiants de Bac 2 puis Bac 3 du secteur TI de l'EPHEC."
+      ],
+      [
+        "Pourquoi je me suis proposé délégué en bac 2, je me pose encore la question. Est-ce que je regrette ? Non"
+      ],
+      [
+        "En 2e, mon rôle de délégué n'a pas vraiment eu d'impact sur mon année, à partir particper à quelques réunions avec les autres délégués ou participer à des réunions de départements avec les professeurs TI. Cependant, d'un point de vue personnel, ça m'a \"forcé\" à m'intéresser à ce qui m'entourait pour savoir si des étudiants avaient des plaintes ou des informations à transmettre aux professeurs. Je ne suis pas le plus doué pour m'intéresser à ce qui m'entoure donc être délégué fut un bon exercice"
+      ],
+      [
+        "C'est en 3e que mon rôle a été plus important. Le délégué 3e est aussi un peu le représenant des délégués de 1ère et 2e. Donc, je ne devais plus m'intéresser à une année mais à beaucoup plus. Comme mon prédecesseur, j'ai essayé d'organiser des réunions entre délégués chaque mois pour que chacun sache un peu ce qui se passe dans les autres années. J'ai mis un plus gros focus sur la première car il y avait eu plusieurs changements par rapport à quand j'étais en première. 2 professeurs du secteur TI ont aussi mis en place des réunions entre elles et les délégués afin d'intégrer aux mieux les retours étudiants. En plus de cette organisation en plus, certains étudiants sont encore venus me voir pour me demander de parler de certains problèmes aux professeurs"
+      ],
+      [
+        "Etre délégué, ce n'est pas juste avoir une étiquette en plus, c'est un rôle qui demande un sérieux et du temps. Mais c'est un très bon exercice pour plus tard car parler avec des personnes plus haut dans la hiéarchie, ça va arriver et donc, adapter son vocabulaire et sa manière de parler est cruciale. C'est aussi un bon exercice pour scinder vie personnel et travail car les informations remontées aux professeurs, elles concernent son année, pas que lui. L'une des premières choses que le délégué 3e m'a dite quand j'étais délégué 2e et que j'ai moi-même dite un an après, c'est de ne pas parler en \"je\" ou de donner son ressenti personnel mais de parler au nom des étudiants"
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "teamsDelegueB3.png",
+        "legende": "Message Teams délégué Bac 3"
+      },
+      {
+        "lien": "mailDelegueB2.png",
+        "legende": "Email délégué Bac 2"
+      }
+    ]
+  },
+  {
+    "cours": "Sécurité des réseaux",
+    "catégorie": "Challenge",
+    "nom": "CSCB 2026",
+    "date": "Mars 2026",
+    "heures_prestees": "36h",
+    "heures_valorisees": "5h",
+    "description": ["Compétition de cybersécurité nationale 2026."],
+    "preuves": [
+      {
+        "lien": "cscb2026.png",
+        "legende": "Classement CSCB 2026"
+      }
+    ]
+  },
+  {
+    "cours": "Administration des réseaux",
+    "catégorie": "Conférence",
+    "nom": "Cloud avec M365 et Azure Infrastructure",
+    "date": "3 Novembre 2025",
+    "heures_prestees": "2h",
+    "heures_valorisees": "2h",
+    "description": ["Conférence sur l'utilisation d'outils microsoft"],
+    "preuves": [
+      {
+        "lien": "conference_azure.png",
+        "legende": "preuve de participation à la conférence"
+      }
+    ]
+  },
+  {
+    "cours": "Développement informatique",
+    "catégorie": "Site web",
+    "nom": "Easter egg IT 2025",
+    "date": "2 décembre 2025",
+    "heures_prestees": "5.5h",
+    "heures_valorisees": "5.5h",
+    "description": [
+      [
+        "Pour les easters eggs proposé de cette année, les professeurs du secteur TI avaient demandé à des étudiants de faire un site web pour l'enregistement des codes coté étudiant et une page pour que les profs ajoute de nouveaux codes. Cependant, vu qu'ils avaient fait qu'une page statique, la page d'accès des profs a très vite été trouvée ainsi que les credentials de la DB firebase. Avec d'autres 3e, nous avons contacté les étudiants pour indiquer toutes les failles qu'il y avait et avons refait un site avec la même interface mais en ajoutant le backend ainsi qu'en respectant les règles de sécurités telle que ne pas mettre les credentials de la DB en clair dans le code du frontend ni les push sur github."
+      ],
+      [
+        "Même si ce n'était pas le but, cet easter egg nous a permis de mettre en action ce qu'on a vu en cours de développement et sécurité (même si trouver le mot de passe en clair d'un input et les credentials en clair reste basique)."
+      ],
+      [
+        "Concernant le site en lui même, je me suis principalement occupé du frontend et des routes du backend. Vu que les étudiants ont mis le code sur github et que nous avons réussi à le retrouver, j'ai pu fork le projet pour refaire le frontend. De cette manière, j'ai eu qu'à refactor le code et garder le même aspect visuel. Pendant que je m'occupais des routes pour le backend, Pierre-Alexandre s'occupait de la DB et de la mise en production."
+      ],
+      [
+        "En discutant le lendemain avec les professeurs, même si nous avions prévenus les étudiants de leurs erreurs, nous aurions du les aider directement à refaire correctement le site à la place de le faire de notre côté"
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "https://github.com/linadu2/easter-egg-ephec",
+        "legende": "Repository GitHub des easter eggs"
+      },
+      {
+        "lien": "recreationEasterEggApp.png",
+        "legende": "appel discord avec Pierre-Alexandre Hausman"
+      }
+    ]
+  },
+  {
+    "cours": "Développement informatique",
+    "catégorie": "Site web",
+    "nom": "Portfolio",
+    "date": "2025-2026",
+    "heures_prestees": "",
+    "heures_valorisees": "",
+    "description": [
+      ["Création de ce portfolio"],
+      [
+        "Pour la stack (si on peut réellement parler de stack), c'est juste du HTML/JS/CSS et j'utilise github Pages pour le déploiement. J'ai décidé de faire simple pour mon portfolio et ne pas m'embêter avec du full stack. L'un des inconvénients est le rajout d'activités dans le portfolio. Il faut forcément que je pull le main, que j'ajoute manuellement l'activité et que je push par après."
+      ],
+      [
+        "Concernant les heures de la section softkills, elles sont approximées à la grosse louche, surtout la partie Intendant scout, c'est pourquoi je ne le valorise pas. Je valorise cependant l'ultimate frisbee même si c'est aussi une approximation car je suis sûr d'avoir fait au minimum 10h d'entrainements. Concernant les heures de vélo, elles sont fiable car elles proviennent directement de Strava. J'ai réussi à intégrer l'api de ce dernier car github pages propose une section pour mettre les credentials."
+      ],
+      [
+        "Concernat mon rôle de délégué et le portfolio, je ne compte pas les heures prestées.. Pour le premier, c'est trop compliqué de calculer chaque fois que j'ai porté ma casquette de délégué et pour le second, je ne vois pas l'intérêt de compter mes heures et encore moins les valoriser alors qu'il s'agit du site en lui même (pourtant, j'avais commencé à lancer clockify au début)"
+      ],
+      [
+        "La raison pour laquelle l'activité \"LAN EPHEC 2026\" est approximée à plus d'heure est parce que vu que j'étais l'organisateur principale, toute la préparation en amont à pris du temps : appel avec les autres organisateurs, discussion avec M. Noêl, tester le matos, etc."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "https://github.com/Akanaifu/akanaifu.github.io",
+        "legende": "Code source du site"
+      }
+    ]
+  },
+  {
+    "cours": "Sport",
+    "catégorie": "Softskills",
+    "nom": "Rock (danse)",
+    "date": "2025-2026",
+    "heures_prestees": "8h",
+    "heures_valorisees": "0h",
+    "description": [
+      "Des amis m'ont proposé de venir danser au Rock Fever, un évènement de danse, et je me suis dit pourquoi pas essayer. J'y suis allé à 4 reprises (=> 4*2h). J'ai appris quelques passes sur le moment et j'ai dansé avec d'autres personnes. Je n'ai rien appris en soi mais vu que c'est une danse en binôme, parfois, il fallait prendre son courage à deux mains et demander à une inconnue si elle voulait bien danser. Je ne suis pas le meilleur danseur ni très sociable donc danser avec une inconnue, ce fut une certaine épreuve de courage. Ce qu'il faut se dire dans ces moments, c'est que c'est juste une danse de quelques minutes puis que je ne verrais plus la personne donc il ne faut pas avoir peur de paraitre ridicule et que de toute façon, c'est normal d'avoir du mal au début."
+    ],
+    "preuves": [
+      {
+        "lien": "https://rockfever.be",
+        "legende": "site web de l'évènement (ce n'est pas une preuve de ma participation mais pour les curieux qui veulent se renseigner)"
+      }
+    ]
+  },
+  {
+    "cours": "Autre",
+    "catégorie": "Participation évènement",
+    "nom": "Digital Talent Night",
+    "date": "17/03/2026",
+    "heures_prestees": "5h",
+    "heures_valorisees": "5h",
+    "description": [
+      [
+        "Le mail de l'évènement nous, étudiants, a été transféré par nos professeurs. Au vu de la fin de mon bachelier et de ma décision de ne pas faire de master, je me suis dit qu'une soirée pour rencontrer des entreprises, même si ça ne mènerait à rien, restait une bonne expérience pour le futur. L'évènement se déroulait sous forme de speed dating entre l'entreprise et le participant. J'ai parlé avec 3 entreprises. La première ne prenait pas de junior mais salué mon initiative de venir parler. La 2e discussion s'est bien passé et la personne avec qui j'ai parlé avait l'air curieux et m'a dit ne pas hésiter d'envoyer mon cv en mentionnant cette discussion. La dernière discussion s'est aussi bien déroulé et les employés ont terminé la discussion en disant me recontacter que le message soit positif ou non. Malheureusement, je n'ai pas de nouvelles depuis."
+      ],
+      [
+        "Donc, même si la soirée n'a rien donné, ce fut une expérience comme une autre. Même si l'évènement se voulait plus relax que de vrais entretiens, j'avais tout de même ce petit stress lors des discussions. Pour moi, il fallait tout de même faire attention à sa posture, manière de parler et comment se mettre correctement en valeur. Avant l'évènement, il était possible de prendre un rendez-vous avec les entreprises. La 2e avec qui j'avais discuté m'avait contacté car ils avaient remarqué mon profil. Je me suis donc dit que ce serait utile de lire l'offre d'emploie qu'elle avait mis sur la page de l'évènement. Point qui a été utile lors de la discussion. Je trouve que lire les informations disponibles est important pour bien se préparer et pour plus tard pour un entretien d'embauche."
+      ]
+    ],
+    "preuves": [
+      {
+        "lien": "talentNight1.jpg",
+        "legende": "début de l'event"
+      },
+      {
+        "lien": "talentNight2.jpg",
+        "legende": "suite de l'apéro de l'event"
+      },
+      {
+        "lien": "talentNight4.jpg",
+        "legende": "Intérieur du bâtiment The Pod"
+      },
+      {
+        "lien": "talentNight3.jpg",
+        "legende": "fin de l'event"
+      }
+    ]
+  },
+  {
+    "cours": "Semaine internationale",
+    "catégorie": "Organisation évènement",
+    "nom": "SoftMakers",
+    "date": "30/03/2026 & 01/04/2026",
+    "heures_prestees": "4h",
+    "heures_valorisees": "0h",
+    "description": [
+      "Je suis venu aidé M. Noël pour la semaine internationale qu'il a encadrée à l'Ephec. Mon rôle consistait à aider les étudiants lors de leurs réflexions aux problématiques présentées par deux intervenants atteint d'illétrisme et/ou d'analphabétisme"
+    ],
+    "preuves": [
+      { "lien": "Ephec_SoftMakers_LLN-7.jpg", "legende": "intro semaine inter" }
+    ]
+  },
+  {
+    "cours": "Développement informatique",
+    "catégorie": "site web",
+    "nom": "yugioh card tracker",
+    "date": "05/05/2026",
+    "heures_prestees": "2.5h",
+    "heures_valorisees": "2.5h",
+    "description": [
+      "Je m'occupais de trier un peu ma collection de cartes et de checker mon excel en lien. Vu qu'il n'était pas très optimisé, j'ai refais l'inventaire en python avec un fichier json comme DB et un affichage graphique avec TKinter"
+    ],
+    "preuves": [
+      {
+        "lien": "https://github.com/Akanaifu/yugioh_card_tracker",
+        "legende": "github projet"
+      },
+      { "lien": "clockify_ygo.png", "legende": "clockify mini projet" },
+      { "lien": "interface_ygo.png", "legende": "interface graphique" },
+      { "lien": "excel_ygo.png", "legende": "version excel très basique" }
+    ]
+  }
 ]
