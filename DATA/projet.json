@@ -1,23 +1,29 @@
 {
-	"hero": {
-		"title": "Mon projet",
-		"subtitle": "Projection après l’EPHEC et orientations professionnelles"
-	},
-	"sections": [
-		{
-			"type": "about",
-			"className": "content-section about",
-			"title": "Vue d'ensemble",
-			"paragraphs": [
-				"Après l'Ephec, je ne pense pas tout de suite faire un master. Je me dis que l'expérience en entreprise est essentiel et que donc, ça peut remplacer 2-3 ans d'études et plus (passerelle + master en 60 ou 120 crédits).",
-				"Le domaine dans lequel je me vois, est plus dans le développement web vu qu'il s'agit de la partie qui m'a le plus intéressée lors de mes 3 ans d'études. Sinon, un travaille en lien avec ce que j'ai fait durant mon stage me convient aussi. La manipulation de machine de prototypages est une compétence utile dans sa globalité. Ca nécessite d'être curieux pour apprendre à bien maitriser la machine et il y a un côté physique qui, je trouve, est moins marquant dans les autres cours du cursus"
-			]
-		},
-		{
-			"type": "about",
-			"className": "content-section about",
-			"title": "Forces et Faiblesses ",
-			"paragraphs": ["", ""]
-		}
-	]
+  "hero": {
+    "title": "Mon projet",
+    "subtitle": "Projection après l’EPHEC et orientations professionnelles"
+  },
+  "sections": [
+    {
+      "type": "about",
+      "className": "content-section about",
+      "title": "Vue d'ensemble",
+      "paragraphs": [
+        "Après l’EPHEC, je ne pense pas faire de master tout de suite. Je préfère acquérir de l’expérience en entreprise. Cela peut remplacer deux ou trois ans d’études,sans compter une potentielle passerelle.",
+        "Le domaine dans lequel je me vois le plus est le développement web, car c’est la partie qui m’a le plus intéressé pendant mes trois années d’études. J’ai d’ailleurs choisi Technologie de l’informatique à l’EPHEC après deux ans d'Ingenieur civil, parce que le cours de programmation me convenait le mieux. Même si certains aspects du développement web me plaisent moins, comme la documentation ou les tests unitaires, créer un site de zéro, pour soi ou pour un client, reste très gratifiant.",
+        "Un métier en lien avec mon stage me conviendrait aussi. La manipulation de machines de prototypage m’intéresse beaucoup. J’aime chercher à comprendre leur fonctionnement et à maîtriser les logiciels nécessaires. Il y a aussi un aspect manuel que l’on retrouve uniquement dans les cours d’électronique."
+      ]
+    },
+    {
+      "type": "about",
+      "className": "content-section about",
+      "title": "Forces et faiblesses",
+      "paragraphs": [
+        "Je me décrirais comme quelqu’un de curieux et d’appliqué, que ce soit au travail ou dans la vie quotidienne. Que ce soit en développement ou en électronique, la curiosité est essentielle. En développement, il faut oser : tester d’autres technologies,  casser pour mieux comprendre, se renseigner sur ce qui existe,...",
+        "En électronique, elle me pousse à mieux comprendre les composants utilisés et les logiciels utilisés. Mon côté appliqué vient aussi de là : quand je cherche quelque chose, j’essaie d’aller au bout des choses sérieusement. En revanche, cette curiosité peut me faire perdre du temps ou me servir d’excuse pour ne pas avancer sur autre chose.",
+        "J’ai aussi pu mettre cette curiosité en pratique pendant mon stage. J’ai dû utiliser LightBurn pour la découpeuse laser du local. Pour mieux comprendre le logiciel, j’ai regardé plusieurs tutos qui expliquaient les différentes options afin de créer une maquette correctement à la place de prendre du tout fait. J’ai aussi cherché comment limiter au maximum les traces de brûlure sur le bois lors de la découpe. Parfois, je me renseignais plus sur lightburn que m'occuper d'une autre machine",
+        "L’une des remarques que j'entends parfois d'amis ou que je me fais à moi-même, c'est que je suis trop impliqué dans mes actions, as forcément une tâche liée au travail."
+      ]
+    }
+  ]
 }
