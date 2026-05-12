@@ -127,28 +127,41 @@ function renderDescription(main, description) {
   main.appendChild(section);
 }
 
-function displayActivity(activity) {
-  const container = document.getElementById("detail-container");
-
-  const preuvesHtml = activity.preuves
-    .map((preuve) => {
-      const lien = preuve.lien;
-      const legende = preuve.legende || "";
-
-      if (lien.includes("instagram.com")) {
-        return `
+function displayIMG(src, legend) {
+  return `
+          <div class="preuve-item image-preuve">
+            <img src="${src}" alt="${legend}" class="zoomable-image" />
+            <p class="image-caption">${legend}</p>
+          </div>
+        `;
+}
+function displayPDF(src, legend) {
+  return `
+          <div class="preuve-item pdf-preuve">
+            <div class="pdf-controls">
+              <button class="btn-print" data-src="${src}">Imprimer</button>
+              <a class="btn-open" href="${src}" target="_blank" rel="noopener noreferrer">Ouvrir dans un nouvel onglet</a>
+            </div>
+            <iframe class="pdf-frame" src="${src}" title="${legend || "PDF"}"></iframe>
+            ${legend ? `<p class="pdf-caption">${legend}</p>` : ""}
+          </div>
+        `;
+}
+function displayInsta(lien, legend) {
+  return `
         <div class="preuve-item instagram-embed">
           <a href="${lien}" target="_blank" rel="noopener noreferrer">
             Voir le post Instagram
           </a>
           <blockquote class="instagram-media" data-instgrm-permalink="${lien}" data-instgrm-version="14"></blockquote>
-          ${legende ? `<p class="preuve-legend">${legende}</p>` : ""}
+          ${legend ? `<p class="preuve-legend">${legend}</p>` : ""}
         </div>
       `;
-      } else if (lien.includes("facebook.com")) {
-        const fbConfig = parseFacebookEmbedConfig(lien);
-        const fbUrl = encodeURIComponent(fbConfig.href);
-        return `
+}
+function displayFb(lien, legend) {
+  const fbConfig = parseFacebookEmbedConfig(lien);
+  const fbUrl = encodeURIComponent(fbConfig.href);
+  return `
         <div class="preuve-item facebook-embed">
 					<iframe src="https://www.facebook.com/plugins/post.php?href=${fbUrl}&show_text=${fbConfig.showText}&width=${fbConfig.width}" 
 									width="${fbConfig.width}" 
@@ -159,65 +172,73 @@ function displayActivity(activity) {
                   allowfullscreen="true" 
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
           </iframe>
-          ${legende ? `<p class="preuve-legend">${legende}</p>` : ""}
+          ${legend ? `<p class="preuve-legend">${legend}</p>` : ""}
         </div>
         `;
-      } else if (lien.includes("strava.com/athletes/")) {
-        return `
+}
+function displayStrava(lien, legend) {
+  return `
         <div class="preuve-item strava-badge-container">
           <a href="${lien}" class="strava-badge- strava-badge-follow" target="_blank" rel="noopener noreferrer">
             <img src="//badges.strava.com/echelon-sprite-48.png" alt="Strava" />
           </a>
-          <p class="strava-caption">${legende || "Voir le profil Strava"}</p>
+          <p class="strava-caption">${legend || "Voir le profil Strava"}</p>
         </div>
         `;
-      } else if (lien.includes("github.com")) {
-        return `
+}
+function displayGithub(lien, legend) {
+  return `
         <div class="preuve-item github-preuve">
           <a class="github-link" href="${lien}" target="_blank" rel="noopener noreferrer">
             <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
               <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
             </svg>
-            <span>${legende || "Voir le repository GitHub"}</span>
+            <span>${legend || "Voir le repository GitHub"}</span>
           </a>
         </div>
         `;
+}
+function displayVideo(src, legend) {
+  return `
+          <div class="preuve-item video-preuve">
+            <video controls>
+              <source src="${src}" type="video/mp4">
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <p class="video-caption">${legend}</p>
+          </div>
+        `;
+}
+
+function displayActivity(activity) {
+  const container = document.getElementById("detail-container");
+
+  const preuvesHtml = activity.preuves
+    .map((preuve) => {
+      const lien = preuve.lien;
+      const legende = preuve.legende || "";
+      const src = `../IMG/preuve_portfolio/${preuve.lien}`;
+
+      if (lien.includes("instagram.com")) {
+        return displayInsta(lien, legende);
+      } else if (lien.includes("facebook.com")) {
+        return displayFb(lien, legende);
+      } else if (lien.includes("strava.com/athletes/")) {
+        return displayStrava(lien, legende);
+      } else if (lien.includes("github.com")) {
+        return displayGithub(lien, legende);
       } else if (lien.startsWith("http")) {
         return `<div class="preuve-item"><a href="${lien}" target="_blank" rel="noopener noreferrer">${
           legende || lien
         }</a></div>`;
       } else if (lien.match(/\.(mp4|webm|ogg)$/i)) {
-        return `
-          <div class="preuve-item video-preuve">
-            <video controls>
-              <source src="../IMG/preuve_portfolio/${lien}" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de vidéos.
-            </video>
-            <p class="video-caption">${legende}</p>
-          </div>
-        `;
+        return displayVideo(src, legende);
       } else if (lien.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
-        return `
-          <div class="preuve-item image-preuve">
-            <img src="../IMG/preuve_portfolio/${lien}" alt="${legende}" class="zoomable-image" />
-            <p class="image-caption">${legende}</p>
-          </div>
-        `;
+        return displayIMG(src, legende);
       } else if (lien.match(/\.(pdf)$/i)) {
-        // Embed PDF in an iframe with print/open controls
-        const src = `../IMG/preuve_portfolio/${lien}`;
-        return `
-          <div class="preuve-item pdf-preuve">
-            <div class="pdf-controls">
-              <button class="btn-print" data-src="${src}">Imprimer</button>
-              <a class="btn-open" href="${src}" target="_blank" rel="noopener noreferrer">Ouvrir dans un nouvel onglet</a>
-            </div>
-            <iframe class="pdf-frame" src="${src}" title="${legende || "PDF"}"></iframe>
-            ${legende ? `<p class="pdf-caption">${legende}</p>` : ""}
-          </div>
-        `;
+        return displayPDF(src, legende);
       } else {
-        return `<div class="preuve-item"><a href="../IMG/preuve_portfolio/${lien}" target="_blank">${
+        return `<div class="preuve-item"><a href="${lien}" target="_blank">${
           legende || lien
         }</a></div>`;
       }
@@ -280,6 +301,8 @@ function initImageZoom() {
   const lightboxImg = document.getElementById("lightbox-img");
   const lightboxCaption = document.querySelector(".lightbox-caption");
   const closeBtn = document.querySelector(".lightbox-close");
+  const previousBodyOverflow = document.body.style.overflow;
+  const previousHtmlOverflow = document.documentElement.style.overflow;
 
   document.querySelectorAll(".zoomable-image").forEach((img) => {
     img.addEventListener("click", function () {
@@ -287,6 +310,7 @@ function initImageZoom() {
       lightboxImg.src = this.src;
       lightboxCaption.textContent = this.alt || "";
       document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
     });
   });
 
@@ -306,7 +330,8 @@ function initImageZoom() {
 
   function closeLightbox() {
     lightbox.style.display = "none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = previousBodyOverflow;
+    document.documentElement.style.overflow = previousHtmlOverflow;
   }
 }
 
