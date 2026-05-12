@@ -45,7 +45,7 @@ function getFilteredList() {
         ]
       : animeData[currentType].map((e) => ({ ...e, _type: currentType }));
   if (searchTerm) {
-    const t = searchTerm.toLowerCase();
+    const t = searchTerm.toLowerCase().trim();
     list = list.filter((e) => e.title.toLowerCase().includes(t));
   }
   if (favFilter === "fav")

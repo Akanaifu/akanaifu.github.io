@@ -301,6 +301,8 @@ function initImageZoom() {
   const lightboxImg = document.getElementById("lightbox-img");
   const lightboxCaption = document.querySelector(".lightbox-caption");
   const closeBtn = document.querySelector(".lightbox-close");
+  const previousBodyOverflow = document.body.style.overflow;
+  const previousHtmlOverflow = document.documentElement.style.overflow;
 
   document.querySelectorAll(".zoomable-image").forEach((img) => {
     img.addEventListener("click", function () {
@@ -308,6 +310,7 @@ function initImageZoom() {
       lightboxImg.src = this.src;
       lightboxCaption.textContent = this.alt || "";
       document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
     });
   });
 
@@ -327,7 +330,8 @@ function initImageZoom() {
 
   function closeLightbox() {
     lightbox.style.display = "none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = previousBodyOverflow;
+    document.documentElement.style.overflow = previousHtmlOverflow;
   }
 }
 
