@@ -1,7 +1,29 @@
-function redirectToProfileEasterEgg() {
-  const urlParts = ["https://www.", "youtube.com/watch?v=", "dQw4w9WgXcQ"];
-  const targetUrl = urlParts.join("");
-  window.open(targetUrl, "_blank", "noopener,noreferrer");
+function createProfileImage(relativePath, profilePhotoSrc) {
+  const image = document.createElement("img");
+  image.src = profilePhotoSrc;
+  image.alt = "Nathan Lemaire";
+  image.className = "header-profile-img";
+  image.dataset.profileMedia = "photo";
+  image.dataset.profilePhotoSrc = profilePhotoSrc;
+  image.dataset.profileVideoSrc = `${relativePath}IMG/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) [dQw4w9WgXcQ].mp4`;
+  return image;
+}
+
+function createProfileVideo(profilePhotoSrc, profileVideoSrc) {
+  const video = document.createElement("video");
+  video.className = "header-profile-img";
+  video.dataset.profileMedia = "video";
+  video.dataset.profilePhotoSrc = profilePhotoSrc;
+  video.dataset.profileVideoSrc = profileVideoSrc;
+  video.autoplay = true;
+  video.playsInline = true;
+  video.preload = "auto";
+  video.controls = false;
+  video.loop = false;
+  video.muted = false;
+  video.volume = 1;
+  video.src = profileVideoSrc;
+  return video;
 }
 
 async function countProfilePhotos(relativePath, maxPhotos = 50) {
@@ -37,6 +59,7 @@ async function createHeader() {
   const safePhotoCount = profilePhotoCount > 0 ? profilePhotoCount : 1;
   const randomPhotoIndex = Math.floor(Math.random() * safePhotoCount) + 1;
   const profilePhotoSrc = `${relativePath}IMG/photo_profil/Nathan${randomPhotoIndex}.jpg`;
+  const profileVideoSrc = `${relativePath}IMG/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) [dQw4w9WgXcQ].mp4`;
 
   const header = document.createElement("header");
   header.innerHTML = `
@@ -51,7 +74,7 @@ async function createHeader() {
         ☰
       </button>
       <nav class="header-nav">
-        <a href="${relativePath}projets.html">Projets</a>
+        <a href="${relativePath}projets.html">Mon projet</a>
         <a href="${relativePath}cv.html">CV</a>
         <a href="${relativePath}tabPortfolio.html">Portfolio</a>
       </nav>
@@ -63,9 +86,33 @@ async function createHeader() {
   const menuToggle = header.querySelector(".menu-toggle");
   const nav = header.querySelector(".header-nav");
   const profileLink = header.querySelector(".header-profile-link");
+  const profileMedia = createProfileImage(relativePath, profilePhotoSrc);
 
   if (profileLink) {
-    profileLink.addEventListener("click", redirectToProfileEasterEgg);
+    profileLink.replaceChildren(profileMedia);
+
+    profileLink.addEventListener("click", async () => {
+      const currentMedia = profileLink.querySelector("[data-profile-media]");
+      const isVideo = currentMedia?.dataset.profileMedia === "video";
+
+      if (isVideo) {
+        profileLink.replaceChildren(
+          createProfileImage(relativePath, profilePhotoSrc),
+        );
+        return;
+      }
+
+      const video = createProfileVideo(profilePhotoSrc, profileVideoSrc);
+      profileLink.replaceChildren(video);
+
+      try {
+        await video.play();
+      } catch {
+        profileLink.replaceChildren(
+          createProfileImage(relativePath, profilePhotoSrc),
+        );
+      }
+    });
   }
 
   menuToggle.addEventListener("click", () => {
