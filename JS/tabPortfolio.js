@@ -123,6 +123,8 @@ function injectCategoryStyles(categoryColors) {
 }
 
 function buildGroupedTbodyHtml(groups, headers) {
+  const hiddenHoursColumn = ' class="hours-column" hidden';
+
   return groups
     .map(({ categorie, rows }) => {
       const catClass = `cat-${slugify(categorie)}`;
@@ -137,8 +139,8 @@ function buildGroupedTbodyHtml(groups, headers) {
               `<td class="category-label ${catClass}" data-label="${headers[0]}" rowspan="${rows.length}">${capitalizeFirstLetter(categorie)}</td>`,
               `<td data-label="${headers[1]}">${row.cours ?? ""}</td>`,
               `<td data-label="${headers[2]}"><u>${nomLink}</u></td>`,
-              `<td data-label="${headers[3]}">${row.heures_prestees ?? ""}</td>`,
-              `<td data-label="${headers[4]}">${row.heures_valorisees ?? ""}</td>`,
+              `<td${hiddenHoursColumn} data-label="${headers[3]}">${row.heures_prestees ?? ""}</td>`,
+              `<td${hiddenHoursColumn} data-label="${headers[4]}">${row.heures_valorisees ?? ""}</td>`,
             ];
             return `<tr class="${catClass}">${firstRowCells.join("")}</tr>`;
           }
@@ -146,8 +148,8 @@ function buildGroupedTbodyHtml(groups, headers) {
           const otherRowCells = [
             `<td data-label="${headers[1]}">${row.cours ?? ""}</td>`,
             `<td data-label="${headers[2]}"><u>${nomLink}</u></td>`,
-            `<td data-label="${headers[3]}">${row.heures_prestees ?? ""}</td>`,
-            `<td data-label="${headers[4]}">${row.heures_valorisees ?? ""}</td>`,
+            `<td${hiddenHoursColumn} data-label="${headers[3]}">${row.heures_prestees ?? ""}</td>`,
+            `<td${hiddenHoursColumn} data-label="${headers[4]}">${row.heures_valorisees ?? ""}</td>`,
           ];
           return `<tr class="${catClass}">${otherRowCells.join("")}</tr>`;
         })
@@ -182,10 +184,29 @@ function buildTotalRow(headers, totals) {
       <td class="category-label total-label" data-label="${headers[0]}">Total</td>
       <td data-label="${headers[1]}"></td>
       <td data-label="${headers[2]}"></td>
-      <td data-label="${headers[3]}">~${totals.totalPrestees}h</td>
-      <td data-label="${headers[4]}">${totals.totalValorisees}h</td>
+      <td class="hours-column" hidden data-label="${headers[3]}">~${totals.totalPrestees}h</td>
+      <td class="hours-column" hidden data-label="${headers[4]}">${totals.totalValorisees}h</td>
     </tr>
   `;
+}
+
+function setupHoursToggle(table) {
+  const toggle = document.getElementById("toggle-hours");
+  if (!toggle) return;
+
+  const hoursColumns = table.querySelectorAll(".hours-column");
+
+  toggle.addEventListener("click", () => {
+    const shouldShow = toggle.getAttribute("aria-pressed") !== "true";
+
+    hoursColumns.forEach((column) => {
+      column.hidden = !shouldShow;
+    });
+    toggle.setAttribute("aria-pressed", String(shouldShow));
+    toggle.textContent = shouldShow
+      ? "Masquer les heures"
+      : "Afficher les heures";
+  });
 }
 
 async function createTab(idTab, file) {
@@ -210,6 +231,7 @@ async function createTab(idTab, file) {
 
     tbody.innerHTML =
       buildGroupedTbodyHtml(groups, headers) + buildTotalRow(headers, totals);
+    setupHoursToggle(table);
   } catch (err) {
     console.error(err);
   }

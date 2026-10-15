@@ -9,6 +9,27 @@
 	align-items: center;
 }
 
+.toggle-hours {
+	align-self: flex-end;
+	margin: 24px max(calc((100% - 1200px) / 2), 0px) 0 0;
+	padding: 10px 16px;
+	border: 1px solid #00ffff;
+	border-radius: 6px 6px 0 0;
+	background: #0d0d0d;
+	color: #00ffff;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.toggle-hours:hover,
+.toggle-hours:focus-visible {
+	background: #00ffff;
+	color: #0d0d0d;
+	outline: none;
+}
+
 .filter-controls {
 	display: flex;
 	align-items: center;
@@ -75,6 +96,10 @@
 	font-size: 0.95rem;
 	text-align: center;
 	color: #00ffff;
+}
+
+#table [hidden] {
+	display: none !important;
 }
 
 #table thead th {
@@ -179,6 +204,10 @@
 	.filter-controls {
 		max-width: 95%;
 	}
+
+	.toggle-hours {
+		margin-right: 2.5%;
+	}
 }
 
 @media (max-width: 768px) {
@@ -200,6 +229,10 @@
 		max-width: 95%;
 		gap: 12px;
 		padding: 12px;
+	}
+
+	.toggle-hours {
+		margin-right: 2.5%;
 	}
 }
 
@@ -325,6 +358,12 @@
 
 	#table tr.total-row td {
 		font-weight: 800;
+	}
+
+	.toggle-hours {
+		align-self: center;
+		margin: 16px 0 0;
+		border-radius: 6px;
 	}
 }
 
