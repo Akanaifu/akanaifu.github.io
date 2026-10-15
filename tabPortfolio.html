@@ -1,32 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tableau Portfolio</title>
-		<link rel="stylesheet" href="CSS/header.css">
-		<link rel="stylesheet" href="CSS/main.css">
-		<link rel="stylesheet" href="CSS/tabPortfolio.css">
-		<link rel="stylesheet" href="CSS/footer.css">
-		<script src="JS/header.js"></script>
-		<script src="JS/footer.js"></script>
-		<script src="JS/strava/stravaStats.js"></script>
-		<script type="module" src="JS/tabPortfolio.js"></script>
-	</head>
-	<body>
-		<main id="tab-portfolio-main">
-			<div id="tab-portfolio-content"></div>
-			<div class="table-container">
-				<table id="table">
-					<thead>
-						<th>Catégorie</th>
-						<th>Cours</th>
-						<th>Nom</th>
-						<th>Heures prestées</th>
-						<th>Heures valorisées</th>
-					</thead>
-				</table>
-			</div>
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau Portfolio</title>
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/tabPortfolio.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <script src="JS/header.js"></script>
+    <script src="JS/footer.js"></script>
+    <script src="JS/strava/stravaStats.js"></script>
+    <script type="module" src="JS/tabPortfolio.js"></script>
+  </head>
+  <body>
+    <main id="tab-portfolio-main">
+      <div id="tab-portfolio-content"></div>
+      <div class="table-container">
+        <button
+          id="toggle-hours"
+          class="toggle-hours"
+          type="button"
+          aria-controls="table"
+          aria-pressed="false"
+        >
+          Afficher les heures
+        </button>
+        <table id="table">
+          <thead>
+            <th>Catégorie</th>
+            <th>Cours</th>
+            <th>Nom</th>
+            <th class="hours-column" hidden>Heures prestées</th>
+            <th class="hours-column" hidden>Heures valorisées</th>
+          </thead>
+        </table>
+      </div>
+    </main>
+  </body>
 </html>

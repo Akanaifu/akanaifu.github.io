@@ -1,124 +1,137 @@
 {
-	"hero": {
-		"title": "Bienvenue sur mon Portfolio",
-		"subtitle": "Développeur passionné par la programmation, l'électronique et les défis technologiques"
-	},
-	"sections": [
-		{
-			"type": "about",
-			"className": "content-section about",
-			"title": "Qui suis-je",
-			"paragraphs": [
-				"Je suis un passionné de technologie et de création. Curieux par nature, j'aime explorer des domaines variés allant de la <strong>programmation</strong> à l'<strong>électronique</strong>.",
-				"Au-delà du code, je suis également fasciné par l'univers des animés et j'aime me détendre en pratiquant du sport ou en jouant à l'un ou l'autre jeu vidéo. Pour moi, l'important est de rester en apprentissage continu et de diversifier ces centres d'intérêts."
-			]
-		},
-		{
-			"type": "timeline",
-			"className": "content-section timeline",
-			"title": "Mon Parcours",
-			"items": [
-				{
-					"title": "Ephec",
-					"entries": [
-						{
-							"badge": "Secteur",
-							"text": "En cours de Bac 3 en Technologie de l'informatique."
-						},
-						{
-							"badge": "Stage",
-							"text": "Actuellement en stage à l'Ephec en électronique. Je m'occupe de la gestion de différentes machine de prototypages (imprimante 3D, découpeuse laser, CNC)."
-						}
-					]
-				},
-				{
-					"title": "UCLouvain - Ingénieur civil",
-					"entries": [
-						{
-							"badge": "Bac 1 + Année bisseur",
-							"text": "Consolidation des fondamentaux en génie civil"
-						}
-					]
-				},
-				{
-					"title": "Secondaire - Saint Boniface Parnasse",
-					"entries": [
-						{
-							"badge": "Secondaire",
-							"text": "Science et Mathématiques avancées"
-						},
-						{
-							"badge": "Prépa",
-							"text": "1 an de prépa math pour l'examen d'entré d'ingénieur civil lors de ma rétho"
-						}
-					]
-				}
-			]
-		},
-		{
-			"type": "cards",
-			"className": "content-section skills",
-			"title": "Domaines d'Expertise",
-			"cards": [
-				{
-					"title": "Programmation",
-					"description": "Développement web, backend et scripting en plusieurs langages",
-					"detail": []
-				},
-				{
-					"title": "Électronique",
-					"description": "Conception de circuits et projets embarqués",
-					"detail": []
-				}
-			]
-		},
-		{
-			"type": "cards",
-			"className": "content-section skills",
-			"title": "Compétences",
-			"cards": [
-				{
-					"title": "Développement Web",
-					"description": "Languages de programmation pour le développement web",
-					"detail": [
-						"react.js",
-						"mongoDB",
-						"firebase",
-						"NoSQL",
-						"MySQL",
-						"Typescript",
-						"Flask",
-						"fastapi",
-						"node.js",
-						"python",
-						"angularJS",
-						"react native",
-						"CSS",
-						"HTML",
-						"JS"
-					]
-				},
-				{
-					"title": "Programmation",
-					"description": "Algorithmes, résolution de problèmes, architecture logique",
-					"detail": ["C", "panda", "numpy"]
-				},
-				{
-					"title": "Outils & Versioning",
-					"description": "Git, GitHub et suivi des versions",
-					"detail": ["git", "github"]
-				},
-				{
-					"title": "Électronique",
-					"description": "Prototypage, fabrication numérique, gestion de machines de labo",
-					"detail": ["kiCad", "LightBurn", "micropython"]
-				},
-				{
-					"title": "Gestion de Projet",
-					"description": "Participation à des hackathons, coordination, travail en équipe, autonomie, communication,",
-					"detail": []
-				}
-			]
-		}
-	]
+  "hero": {
+    "title": "Bienvenue sur mon Portfolio",
+    "subtitle": "Développeur passionné par la programmation, l'électronique et les défis technologiques"
+  },
+  "sections": [
+    {
+      "type": "about",
+      "className": "content-section about",
+      "title": "Qui suis-je",
+      "paragraphs": [
+        "Je suis un passionné de technologie et de création. Curieux par nature, j'aime explorer des domaines variés allant de la <strong>programmation</strong> à l'<strong>électronique</strong>.",
+        "Au-delà du code, je suis également fasciné par l'univers des animés et j'aime me détendre en pratiquant du sport ou en jouant à l'un ou l'autre jeu vidéo. Pour moi, l'important est de rester en apprentissage continu et de diversifier ces centres d'intérêts."
+      ]
+    },
+    {
+      "type": "timeline",
+      "className": "content-section timeline",
+      "title": "Mon Parcours",
+      "items": [
+        {
+          "title": "TECHNOFUTUR TIC",
+          "entries": [
+            {
+              "badge": "Secteur",
+              "text": "En cours d'une formation en ICT Technical Business Analyst."
+            }
+          ]
+        },
+        {
+          "title": "Ephec",
+          "entries": [
+            {
+              "badge": "Secteur",
+              "text": "Technologie de l'informatique."
+            },
+            {
+              "badge": "Stage",
+              "text": "J'ai effectué mon stage de fin de bachelier à l'Ephec en électronique. Je m'occupais de la gestion de différentes machine de prototypages (imprimante 3D, découpeuse laser, CNC)."
+            },
+            {
+              "badge": "Prolongation de stage",
+              "text": "A la fin de mon stage, l'Ephec m'a proposé de prolonger de 2 semaines afin de former le personel Ephec a utiliser les machines de prototypages"
+            }
+          ]
+        },
+        {
+          "title": "UCLouvain - Ingénieur civil",
+          "entries": [
+            {
+              "badge": "Bac 1 + Année bisseur",
+              "text": "Consolidation des fondamentaux en génie civil"
+            }
+          ]
+        },
+        {
+          "title": "Secondaire - Saint Boniface Parnasse",
+          "entries": [
+            {
+              "badge": "Secondaire",
+              "text": "Science et Mathématiques avancées"
+            },
+            {
+              "badge": "Prépa",
+              "text": "1 an de prépa math pour l'examen d'entré d'ingénieur civil lors de ma rétho"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "className": "content-section skills",
+      "title": "Domaines d'Expertise",
+      "cards": [
+        {
+          "title": "Programmation",
+          "description": "Développement web, backend et scripting en plusieurs langages",
+          "detail": []
+        },
+        {
+          "title": "Électronique",
+          "description": "Conception de circuits et projets embarqués",
+          "detail": []
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "className": "content-section skills",
+      "title": "Compétences",
+      "cards": [
+        {
+          "title": "Développement Web",
+          "description": "Languages de programmation pour le développement web",
+          "detail": [
+            "react.js",
+            "mongoDB",
+            "firebase",
+            "NoSQL",
+            "MySQL",
+            "Typescript",
+            "Flask",
+            "fastapi",
+            "node.js",
+            "python",
+            "angularJS",
+            "react native",
+            "CSS",
+            "HTML",
+            "JS"
+          ]
+        },
+        {
+          "title": "Programmation",
+          "description": "Algorithmes, résolution de problèmes, architecture logique",
+          "detail": ["C", "panda", "numpy"]
+        },
+        {
+          "title": "Outils & Versioning",
+          "description": "Git, GitHub et suivi des versions",
+          "detail": ["git", "github"]
+        },
+        {
+          "title": "Électronique",
+          "description": "Prototypage, fabrication numérique, gestion de machines de labo",
+          "detail": ["kiCad", "LightBurn", "micropython"]
+        },
+        {
+          "title": "Gestion de Projet",
+          "description": "Participation à des hackathons, coordination, travail en équipe, autonomie, communication,",
+          "detail": []
+        }
+      ]
+    }
+  ]
 }
